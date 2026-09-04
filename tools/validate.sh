@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+export PYTHONDONTWRITEBYTECODE=1
 
 mode="${1:---all}"
 repo_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -28,6 +29,14 @@ run_static_checks() {
         tests/test_ui_pixel_math.c main/ui_pixel_math.c \
         -o "${test_dir}/test_ui_pixel_math"
     "${test_dir}/test_ui_pixel_math"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain \
+        tests/test_minecraft_guide_state.c main/minecraft_guide_state.c \
+        -o "${test_dir}/test_minecraft_guide_state"
+    "${test_dir}/test_minecraft_guide_state"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain \
+        tests/test_minecraft_adpcm.c main/minecraft_adpcm.c \
+        -o "${test_dir}/test_minecraft_adpcm"
+    "${test_dir}/test_minecraft_adpcm"
     python3 tests/test_verify_firmware.py
     rm -rf "${test_dir}"
     echo "Host tests: PASS"

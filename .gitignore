@@ -4,3 +4,7 @@ sdkconfig.old
 managed_components/
 .vscode/
 .idea/
+__pycache__/
+*.pyc
+.DS_Store
+*.fap-capture.json

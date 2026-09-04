@@ -17,6 +17,20 @@ Store reusable font files and generated font sources in `fonts/`.
 - Check Flash and internal-RAM impact before adding a font; the ESP32-C3 has no PSRAM.
 - Do not commit fonts whose license does not permit redistribution.
 
+### Minecraft guide Chinese subset
+
+- `fonts/minecraft_zh_16.c` is a 16 px, 2 bpp LVGL subset generated from
+  Noto Sans CJK SC Regular for the Chinese strings used by the guide. It falls
+  back to LVGL Montserrat 14 for Latin letters and digits and is compiled by
+  `main/CMakeLists.txt`.
+- Source: [Noto Sans CJK](https://github.com/notofonts/noto-cjk), licensed under
+  the SIL Open Font License 1.1. The license text is stored as
+  `fonts/OFL-NotoSansCJK.txt`.
+- Regenerate with `lv_font_conv`, using the visible Chinese strings from
+  `main/minecraft_guide.c` as `--symbols`, `--size 16`, `--bpp 2`, and
+  `--lv-fallback lv_font_montserrat_14`. Keep `--no-compress`: this firmware
+  disables `LV_USE_FONT_COMPRESSED`, so compressed glyphs will not render.
+
 ## Images
 
 Store reusable source images and generated display assets in `images/`.
@@ -34,3 +48,14 @@ Store reusable music and sound-effect sources in `music/`.
 - Prefer 16 kHz, 16-bit mono PCM when it matches the current BSP audio path.
 - Check Flash and internal-RAM cost before embedding audio; stream or chunk long recordings.
 - Do not commit media without redistribution permission.
+
+### Minecraft guide entry narration
+
+- `music/minecraft_guide_entries/` contains twenty project-authored Chinese TTS
+  clips, one per guide entry. They are 16 kHz, 16-bit, mono PCM, generated
+  locally with the macOS Tingting system voice and contain no third-party
+  recording.
+- `tools/generate_minecraft_guide_audio.py` packs the ordered WAV files into
+  `main/minecraft_guide_audio.c` as IMA ADPCM. The firmware decodes each clip in
+  512-sample chunks and interrupts the current clip when the user switches to
+  another entry.

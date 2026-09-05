@@ -1,0 +1,218 @@
+[
+  {
+    "id": 0,
+    "idiom": "守株待兔",
+    "text": "没关系。正确成语是，守株待兔。意思是，比喻不主动努力，只盼着意外的好运。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 117303,
+    "sha256": "d8d2c44e7cb4d9c0dbb0d17be32f1aa0f7a11df8550baf9b30da8df84271a626"
+  },
+  {
+    "id": 1,
+    "idiom": "画蛇添足",
+    "text": "没关系。正确成语是，画蛇添足。意思是，比喻做多余的事，反而把事情弄坏。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 120461,
+    "sha256": "90a5ccf9b843a75ca569e61fab8372ff21b99bf1269a90a8a3055a6eb2376826"
+  },
+  {
+    "id": 2,
+    "idiom": "亡羊补牢",
+    "text": "没关系。正确成语是，亡羊补牢。意思是，出了问题及时补救，避免继续受到损失。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 126220,
+    "sha256": "f998801c878ace397e4aaead622122872c5e04dd865d2e39704e4e4131bde065"
+  },
+  {
+    "id": 3,
+    "idiom": "掩耳盗铃",
+    "text": "没关系。正确成语是，掩耳盗铃。意思是，比喻自己欺骗自己，掩盖不了真实情况。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 125848,
+    "sha256": "310d5ffdf30ce8ddfe94032a1ab0ec6957997fbd610cf5aaf25dd32dce871e2a"
+  },
+  {
+    "id": 4,
+    "idiom": "井底之蛙",
+    "text": "没关系。正确成语是，井底之蛙。意思是，比喻见识很少，眼界不够开阔。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 110244,
+    "sha256": "43ba5e1cd0166b18fbf8b2973ea166a72d515c57d6221517e12a1ce0323ee57e"
+  },
+  {
+    "id": 5,
+    "idiom": "狐假虎威",
+    "text": "没关系。正确成语是，狐假虎威。意思是，比喻借别人的威势，欺压或吓唬他人。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 119904,
+    "sha256": "f65ea3eced6a65996725ca5cfce299ebe656a2b85e42765f276181760ba6f8b7"
+  },
+  {
+    "id": 6,
+    "idiom": "拔苗助长",
+    "text": "没关系。正确成语是，拔苗助长。意思是，急于求成，违背规律，反而把事情弄坏。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 128077,
+    "sha256": "d2b1359a1ca0fc21935c9368aae3e064aa7021e0f294e056efcd7d5ae032783f"
+  },
+  {
+    "id": 7,
+    "idiom": "叶公好龙",
+    "text": "没关系。正确成语是，叶公好龙。意思是，比喻表面说喜欢，实际上并不真喜欢。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 124548,
+    "sha256": "8e48c41e3445ff1a33fb4c55dbb320bc6136b826fbf6b6d294d6b48e7c66a950"
+  },
+  {
+    "id": 8,
+    "idiom": "专心致志",
+    "text": "没关系。正确成语是，专心致志。意思是，把心思集中在一件事上，十分认真。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 120833,
+    "sha256": "ee0adad9b2472d97f7504a7c704ba4c2acaf0685b1d3aacdf618a2c01127e0e4"
+  },
+  {
+    "id": 9,
+    "idiom": "坚持不懈",
+    "text": "没关系。正确成语是，坚持不懈。意思是，坚持到底，一点也不松懈。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 104114,
+    "sha256": "1b4a97fa0b2ad5c23868d4e60ac50978379552c5a23ec204db9692cc53767658"
+  },
+  {
+    "id": 10,
+    "idiom": "举一反三",
+    "text": "没关系。正确成语是，举一反三。意思是，从一件事推想到其他同类的事情。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 116003,
+    "sha256": "fcdef5f8c2ad6f09224bfd9d3f7cbc8d6cf423149e5013bb08bf21ba5e334f85"
+  },
+  {
+    "id": 11,
+    "idiom": "熟能生巧",
+    "text": "没关系。正确成语是，熟能生巧。意思是，做得熟练了，就能找到巧妙的办法。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 117489,
+    "sha256": "66f6345a0a1e12c7e7d220808ebb6391265e2ad75fa9fead8f4c5db62c803959"
+  },
+  {
+    "id": 12,
+    "idiom": "一丝不苟",
+    "text": "没关系。正确成语是，一丝不苟。意思是，做事认真细致，一点儿也不马虎。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 108201,
+    "sha256": "3b9228e0c26d68703d15c2d821432bad14a08a28777df6dfc3506a1a6eb10b60"
+  },
+  {
+    "id": 13,
+    "idiom": "半途而废",
+    "text": "没关系。正确成语是，半途而废。意思是，事情还没有做完，中途就停止不做。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 119161,
+    "sha256": "c1811702d47408fe3404a4fe7675554df9192610434335352d88b0cf7723be50"
+  },
+  {
+    "id": 14,
+    "idiom": "不耻下问",
+    "text": "没关系。正确成语是，不耻下问。意思是，愿向学问或地位不如自己的人请教。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 115632,
+    "sha256": "909f84dfe0842fdeb0ef9dc1cdb4f4b4c044e5a82ac21532dde5fa2a35b6228d"
+  },
+  {
+    "id": 15,
+    "idiom": "温故知新",
+    "text": "没关系。正确成语是，温故知新。意思是，温习旧知识，得到新的理解和体会。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 117118,
+    "sha256": "db396504d16af986e8e55270841fc0ed2fdc9c086afd7b1cce98bb49b141b095"
+  },
+  {
+    "id": 16,
+    "idiom": "雪中送炭",
+    "text": "没关系。正确成语是，雪中送炭。意思是，比喻在别人急需时，给予帮助。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 112659,
+    "sha256": "a8508c4fb730b142f98b37447fb8c0125a697a05f21acdeabe5b7b07f1461f55"
+  },
+  {
+    "id": 17,
+    "idiom": "齐心协力",
+    "text": "没关系。正确成语是，齐心协力。意思是，想法一致，共同努力。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 98913,
+    "sha256": "d70c33a7941d05f79748818692fc062d9e9ffb43e8a7395ba16b5cf3b9e02104"
+  },
+  {
+    "id": 18,
+    "idiom": "将心比心",
+    "text": "没关系。正确成语是，将心比心。意思是，用自己的心情，去体会别人的心情。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 119347,
+    "sha256": "cf1d04100c32e4f3b0b9e5b53bc1ca2dc4ac15c014f72c42d91460a27c73a3f1"
+  },
+  {
+    "id": 19,
+    "idiom": "言而有信",
+    "text": "没关系。正确成语是，言而有信。意思是，说话算数，遵守自己的承诺。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 108387,
+    "sha256": "89193b879a5aaa4a1b9985f89bb3d9a26034e853906bc567e25330bb4cc4e3c1"
+  },
+  {
+    "id": 20,
+    "idiom": "饮水思源",
+    "text": "没关系。正确成语是，饮水思源。意思是，比喻得到好处时，不忘它的来源。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 116375,
+    "sha256": "c0b09d1421aabe5c545c613c4abc2026624e7267d552eee70e71944b622224dd"
+  },
+  {
+    "id": 21,
+    "idiom": "取长补短",
+    "text": "没关系。正确成语是，取长补短。意思是，吸取别人的长处，弥补自己的短处。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 113960,
+    "sha256": "1e6d2be4672038dd843fba60475afa02e17977336022d12014965a8a90757b35"
+  },
+  {
+    "id": 22,
+    "idiom": "助人为乐",
+    "text": "没关系。正确成语是，助人为乐。意思是，把帮助别人当作快乐的事情。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 104486,
+    "sha256": "6070bffd03f420673545f1ef4ef45bcb16dda31a1a1f483fea01f1554ee9d5ec"
+  },
+  {
+    "id": 23,
+    "idiom": "同甘共苦",
+    "text": "没关系。正确成语是，同甘共苦。意思是，共同享受幸福，共同承担艰苦。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 116189,
+    "sha256": "1531f2bf71fe7d27efcb14c81f12f193aab85d3426685f42262bcfc07ff9a625"
+  }
+]

@@ -6,6 +6,18 @@
 
 ## Unreleased
 
+- Add 20 submitted applications alongside Talking Minecraft Guide, with independent `FAP_APP` builds and state, audio and asset tests.
+- Exclude unsubmitted drafts, publication receipts, device records and workstation paths from the source collection.
+
+- Replaced the BSP demo menu with a boot-direct Minecraft guide containing twenty
+  illustrated entries. UP/DOWN cycles through the catalog and narrates the new
+  entry, OK repeats the current narration, battery status remains visible, and
+  audio decoding runs in a worker task from compact embedded IMA-ADPCM assets.
+- Refined the guide into a Minecraft-inspired block inventory layout with a
+  no-wrap battery badge and three compact, evenly spaced navigation controls.
+- Added the read-only serial screen-capture contract required to create a fresh
+  runtime proof image for community publishing.
+
 - Added the supplied 80-byte CW2017 profile for the specified 520 mAh cell, including content/update-flag checks, verified writes, the required restart sequence, and bounded SOC-readiness polling.
 
 - Reorganized the documentation by function area with a dual entry point: the root `AGENTS.md` is now a thin router (hard constraints + task routing only) and the detailed AI workflow lives in `docs/development/ai-guide.md`; `agent-guide.md` was folded in. `docs/development/` gained a second level (`engineering/`, `ci/`, `release/`), and the `plays/` application archive and `experiences/` moved into a `docs/reference/` area with a dedicated README. Removed `docs/software-design/` (empty scaffold); folded the three `assets/{fonts,images,music}/README` leaves into the `assets/` README; flattened the six `project-completion` sub-documents into a single file; and unified each directory to a single README, eliminating every `INDEX` file and a duplicated experience index. All cross-references and bibliographic links were updated; no content was dropped.

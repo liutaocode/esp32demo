@@ -50,10 +50,17 @@ lv_obj_t *ui_pixel_screen_create(const char *title)
     }
 
     block(scr, 9, 12, 151, 33, UI_INK);
-    lv_obj_t *plate = block(scr, 5, 8, 151, 33, UI_PAPER);
+    lv_obj_t *plate = block(scr, 5, 8, 151, 33, 0x76502D);
     lv_obj_set_style_border_color(plate, lv_color_hex(UI_INK), 0);
     lv_obj_set_style_border_width(plate, 3, 0);
-    lv_obj_t *heading = ui_pixel_label(plate, title, &lv_font_montserrat_20, UI_INK);
+    block(plate, 0, 0, 151, 7, 0x69A72C);
+    block(plate, 9, 24, 12, 6, 0x5A3A24);
+    block(plate, 87, 21, 18, 9, 0x5A3A24);
+    lv_obj_t *heading_shadow = ui_pixel_label(plate, title, &lv_font_unscii_16, UI_INK);
+    lv_obj_center(heading_shadow);
+    lv_obj_set_pos(heading_shadow, lv_obj_get_x(heading_shadow) + 2,
+                   lv_obj_get_y(heading_shadow) + 2);
+    lv_obj_t *heading = ui_pixel_label(plate, title, &lv_font_unscii_16, 0xFFFFFF);
     lv_obj_center(heading);
     return scr;
 }

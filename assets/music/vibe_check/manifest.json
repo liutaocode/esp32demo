@@ -1,0 +1,114 @@
+[
+  {
+    "id": "welcome",
+    "text": "欢迎来到气场测试。五次选择，解锁你的隐藏人格。按确定键开始。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 102195,
+    "sha256": "fa200644ff692ab6432d1a81e6568a826e1361d204e6ec03231882a46a3569f1"
+  },
+  {
+    "id": "question_1",
+    "text": "第一题，你现在的电量？按上键选择窝着充电，按下键选择能量满格。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 107293,
+    "sha256": "1bb2b6531418d9bd6fb4976b4c0d0ecb1196b26a28dc71cd110b7d6ecc97d340"
+  },
+  {
+    "id": "question_2",
+    "text": "第二题，突然多出一小时？按上键选择出门探索，按下键选择动手创造。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 115280,
+    "sha256": "21b4a08f47be705118daefd5b52d0fbdd1a0ebfb0af9912f6daa0193d52edd79"
+  },
+  {
+    "id": "question_3",
+    "text": "第三题，剧情突然反转？按上键选择静观其变，按下键选择冲上去玩。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 115466,
+    "sha256": "97b5a57a14bc945d865e59123379d034d8719cdcb13afc4f9707309ec0c20ccb"
+  },
+  {
+    "id": "question_4",
+    "text": "第四题，群聊里你通常？按上键选择安静潜水，按下键选择带头开聊。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 113980,
+    "sha256": "a781431f072473708d2c9c130986073e6d5f15b9aaff6a68601ea764f16f8a71"
+  },
+  {
+    "id": "question_5",
+    "text": "第五题，选一个增益？按上键选择好运加成，按下键选择专注加成。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 107850,
+    "sha256": "aba24f19a5fb7e64803071c1b0a0af29f6a9b650ff1f91783b9fd3eecc373d93"
+  },
+  {
+    "id": "result_1",
+    "text": "你的今日人格是，安静预言家。总能看见别人忽略的细节。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 81108,
+    "sha256": "b8a124d83cdd3773b7b4e751d9dda5ba0e4397bf5fdf54d956e6eb89ea853f89"
+  },
+  {
+    "id": "result_2",
+    "text": "你的今日人格是，幸运探路者。总能在墙上找到一扇门。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 81851,
+    "sha256": "9e72305b9f7e8ddb1b41299298937411e25a2be40b8efde7e73eb8cc306c5637"
+  },
+  {
+    "id": "result_3",
+    "text": "你的今日人格是，夜行建造师。把脑洞一步步变成现实。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 82222,
+    "sha256": "c2171a57aa3d8eea4771a01b79a97ba3dd2289a286c3f2946abe3a2d2bb34626"
+  },
+  {
+    "id": "result_4",
+    "text": "你的今日人格是，梦境黑客。把古怪想法变成现实。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 77393,
+    "sha256": "317d8dfc7453bd85d3cae2abc3d0ab372c590d953e534fb4c7d02d46f267c600"
+  },
+  {
+    "id": "result_5",
+    "text": "你的今日人格是，治愈魔法师。柔软也是一种超能力。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 74792,
+    "sha256": "b4f18b5316463f9bbe5e93eb19fa12fe8a1dd6724a278508a32d4662f1f659b7"
+  },
+  {
+    "id": "result_6",
+    "text": "你的今日人格是，天选主角。今天自带主角光环。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 73306,
+    "sha256": "638d34bc4a0d80a3a9cb81497a0d33238b983e1a7811468d4b32badcf3ef3b41"
+  },
+  {
+    "id": "result_7",
+    "text": "你的今日人格是，混沌精灵。规则只是温柔的建议。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 70705,
+    "sha256": "e25d2d3e16ffbca126b0f86c710117380be10e8e4bdfe5da4d3589a92c684c0a"
+  },
+  {
+    "id": "result_8",
+    "text": "你的今日人格是，涡轮英雄。今天一路全速前进。",
+    "voice": "Tingting",
+    "rate": 190,
+    "samples": 72191,
+    "sha256": "cfd5297d72613a412f05de679c6dc5182f595345e7a11fbb6038d50dbeb6d89e"
+  }
+]

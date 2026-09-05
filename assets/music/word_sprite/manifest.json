@@ -1,0 +1,618 @@
+[
+  {
+    "id": "cat",
+    "text": "cat",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7617,
+    "sha256": "d61a8a063ddce01e9be4beaf88523590804630810c89713eafcd3da2bc0d378f"
+  },
+  {
+    "id": "dog",
+    "text": "dog",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 6303,
+    "sha256": "19a1cf68419f95cbd2dfa3c28cce666ab3cc3c8d948cb9dc4c6c49d0779480ab"
+  },
+  {
+    "id": "bird",
+    "text": "bird",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 5694,
+    "sha256": "05e1247cc1d4637ce7f49c76a3c482f3c005485c1480554cd2f984c5d46df428"
+  },
+  {
+    "id": "fish",
+    "text": "fish",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7978,
+    "sha256": "c1d5c75e10ecd0feef96a47b10bc18b1aafb800291d7b934f6a846a2bea6746b"
+  },
+  {
+    "id": "duck",
+    "text": "duck",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 6675,
+    "sha256": "9a1e8975c8c12a71f230b39c1388fa5b4c25764f04a019589aa9306bc6915067"
+  },
+  {
+    "id": "rabbit",
+    "text": "rabbit",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8627,
+    "sha256": "2bec7937c0e49db0a078aabcd3409be7d1bcfcd9dd814213477f06824e21bf3f"
+  },
+  {
+    "id": "panda",
+    "text": "panda",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7737,
+    "sha256": "b8be93797bd8ed009e7589bc732f8484a5355b785cb6dbc8dd9aec63a8b6a992"
+  },
+  {
+    "id": "tiger",
+    "text": "tiger",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8489,
+    "sha256": "b4bd7bd23569a0bacf7d818ffa699f07f47c52407e5e06ba447b6566c819d865"
+  },
+  {
+    "id": "lion",
+    "text": "lion",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8019,
+    "sha256": "de0dc1a9d1227d0580799ca1ee8906477807c72fac1da395af22a500153208df"
+  },
+  {
+    "id": "monkey",
+    "text": "monkey",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 9136,
+    "sha256": "da22988667b6d864241339eaf244e5219de49b831dd6e69d5d7ea5aea139d3e5"
+  },
+  {
+    "id": "elephant",
+    "text": "elephant",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 10503,
+    "sha256": "15dd6e05c61a386c4ee348836d98755329086a942e97c02d974ece8b342d4f4a"
+  },
+  {
+    "id": "bear",
+    "text": "bear",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 5508,
+    "sha256": "fdfede56d0ca8e0d141901c43452cfd19edaab9aa6e56de4b316856ca9698b1f"
+  },
+  {
+    "id": "apple",
+    "text": "apple",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7717,
+    "sha256": "9a061553f2e7ff2cd951880aa27c3f663a83d8a649926b04f1e79ae4faf40ba0"
+  },
+  {
+    "id": "banana",
+    "text": "banana",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8750,
+    "sha256": "81e09df2c96c126d8d1a02ad40208f99a59fa4b55caa93bb5ed59a2400362d74"
+  },
+  {
+    "id": "pear",
+    "text": "pear",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 6240,
+    "sha256": "1a76ea3c2edc43d571460c000fdccae22efacd64fc1a4e2dcf7860d76f110b2e"
+  },
+  {
+    "id": "grape",
+    "text": "grape",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7133,
+    "sha256": "57352de895a85296611b1dadab0a1bc79523614bd3fc9871fe1f8d105c127d5e"
+  },
+  {
+    "id": "peach",
+    "text": "peach",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8655,
+    "sha256": "9884a0c22423b945a1887b7938745a0fc9ca51a368315627dfc19f841f45cac9"
+  },
+  {
+    "id": "watermelon",
+    "text": "watermelon",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 12448,
+    "sha256": "ec8014bf511705a7b1014cd96a13a9647c486a71c650902cc9071363c84a6f01"
+  },
+  {
+    "id": "milk",
+    "text": "milk",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7286,
+    "sha256": "76c83972a16b5af907b0087dddf319a792c003af69c34f4e1294d00386314b82"
+  },
+  {
+    "id": "bread",
+    "text": "bread",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 6251,
+    "sha256": "dc866821851ba005b245e462b319e36bb0b3d2b27ab23d961ee163edd839f5c3"
+  },
+  {
+    "id": "rice",
+    "text": "rice",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8815,
+    "sha256": "99766b3ce38586d54aaebdcc28824033da3201dd42aff5a7392bb091d498a483"
+  },
+  {
+    "id": "egg",
+    "text": "egg",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 5132,
+    "sha256": "016b7d4f4ae534fe264f54334eafdcc7c63a994fbdb492e3a282f84fb968e874"
+  },
+  {
+    "id": "water",
+    "text": "water",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7432,
+    "sha256": "453bb56d6033289a7dafc0635b260b74e445a353a753b855f62f69e4a9f820a3"
+  },
+  {
+    "id": "cake",
+    "text": "cake",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7988,
+    "sha256": "20574c227600bc6a82266411fb7ec255385e227c54e68eab35c860013b697a6b"
+  },
+  {
+    "id": "book",
+    "text": "book",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 5694,
+    "sha256": "db1cd80ff7c5d65cf3b538f124ee9595d0ea56f99cee3e8979abad4ed1142e84"
+  },
+  {
+    "id": "pen",
+    "text": "pen",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7169,
+    "sha256": "11e73493f1bd1c4516ed5f1a69b570d52b27a1ff35aa3c01ed9c928d9daf575f"
+  },
+  {
+    "id": "pencil",
+    "text": "pencil",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 9398,
+    "sha256": "98e3cc812ade56bed0765044a22d731851055b3dfb9001d5b79879919f142aff"
+  },
+  {
+    "id": "eraser",
+    "text": "eraser",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 10152,
+    "sha256": "5e29ef794e25325e8318157b15de7a0d4b4620d3351ec36a7aa9a86c897b164c"
+  },
+  {
+    "id": "ruler",
+    "text": "ruler",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8627,
+    "sha256": "0829d903c1678b6a008a53abf687ebaa36e0b6def99cc6b6089012ef48aa4e21"
+  },
+  {
+    "id": "bag",
+    "text": "bag",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 6251,
+    "sha256": "e8cdd423dee001d0d2a31779996cdd6af9f3304650a71771a39ce771372b7243"
+  },
+  {
+    "id": "desk",
+    "text": "desk",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 7602,
+    "sha256": "ed1848a7badb018e221af27d8ba89a0c41fde60c6f90480db9b5a8c688301565"
+  },
+  {
+    "id": "chair",
+    "text": "chair",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 6734,
+    "sha256": "2b86c8769853e0ddde247b42cfed355f6414744c48d1337e8f2145e63c762546"
+  },
+  {
+    "id": "door",
+    "text": "door",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 5562,
+    "sha256": "2147e3e52dd84207a270e41bb447575ca2b8ce59d08e79bc5a4f8e2e367814f7"
+  },
+  {
+    "id": "window",
+    "text": "window",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8733,
+    "sha256": "785c8f76e12ae4d34c356b22437e5b589c83707b356d9f3064484419a861ca2e"
+  },
+  {
+    "id": "teacher",
+    "text": "teacher",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 8671,
+    "sha256": "8ca10d9b081cac45965c09d9a6da4d2150f843e37f6ffe6edb66a9fbfc06c963"
+  },
+  {
+    "id": "student",
+    "text": "student",
+    "voice": "Samantha",
+    "rate": 140,
+    "samples": 10223,
+    "sha256": "012e0a299a8b311ee204d482815fb903746647ff7c0230a13a5a981abdeca0ea"
+  },
+  {
+    "id": "welcome",
+    "text": "听单词，选中文。一起唤醒单词精灵！",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 67483,
+    "sha256": "742891424b84d206b3636defada8c7836ae14ddf2b5137fe550ad8678c4e2e0d"
+  },
+  {
+    "id": "correct",
+    "text": "答对了！跟着读一遍吧。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 32019,
+    "sha256": "716477247e2b7d6a8c91cacbde051286a8d582293e3abcce6ef28beb17d7dd7f"
+  },
+  {
+    "id": "retry",
+    "text": "没关系，听一听，再记一次。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 47805,
+    "sha256": "fa5809b0c26e947f8345f7e20fe42236726574a048593bd7e27df70f1b726b31"
+  },
+  {
+    "id": "finish",
+    "text": "挑战完成！让眼睛休息一下吧。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 50764,
+    "sha256": "6f8927a42e71252856d2d01b656f8a15dd4740dfb219ce106f35330ed62210d4"
+  },
+  {
+    "id": "review",
+    "text": "一起找回这些单词吧！",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 32564,
+    "sha256": "0be10dc200e1d6e0fa29d34f5db63b237a91f6fd7b6cd50bf534f4b269ee667a"
+  },
+  {
+    "id": "meaning_cat",
+    "text": "这个单词的意思是：猫。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 34530,
+    "sha256": "c852c14eafaaeb609a90b39f5a2f126f3c94ff50d2a7c09e209bf8401fdc73c6"
+  },
+  {
+    "id": "meaning_dog",
+    "text": "这个单词的意思是：狗。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 33787,
+    "sha256": "65e7a6672c9d98064346dcd696856a86ef09b098c03e58f4177bc73f6b93d08a"
+  },
+  {
+    "id": "meaning_bird",
+    "text": "这个单词的意思是：鸟。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 34902,
+    "sha256": "2a7b5cb8eefb2768d3bb6cd430febab7349b403765422ad9c61737eee8360291"
+  },
+  {
+    "id": "meaning_fish",
+    "text": "这个单词的意思是：鱼。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 33415,
+    "sha256": "3b163d4e361425c7ce3db5eb4fd30347537f8efbc9ab1105eaebcbd092d8afce"
+  },
+  {
+    "id": "meaning_duck",
+    "text": "这个单词的意思是：鸭子。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 36016,
+    "sha256": "e04733ad889e0c86a81486d995446e479308774a245a6c9e3fde06e85679aee5"
+  },
+  {
+    "id": "meaning_rabbit",
+    "text": "这个单词的意思是：兔子。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 36388,
+    "sha256": "2091ef090233c33ecc55056e85fd98945165aa088c3b270a6ceb44c9465745a8"
+  },
+  {
+    "id": "meaning_panda",
+    "text": "这个单词的意思是：熊猫。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 38802,
+    "sha256": "a213792ee15a9f9a288354feb11b2faa518f56e9777432892c0399b9bc8272b5"
+  },
+  {
+    "id": "meaning_tiger",
+    "text": "这个单词的意思是：老虎。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37688,
+    "sha256": "89ae58ed76933c5a9a4e1c9d9998b269a956962026ded27d91f4d55f192fbd21"
+  },
+  {
+    "id": "meaning_lion",
+    "text": "这个单词的意思是：狮子。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37131,
+    "sha256": "c052726433f5c2c8f1846126f0725477639e2e850cee03210c40d171c46f9a09"
+  },
+  {
+    "id": "meaning_monkey",
+    "text": "这个单词的意思是：猴子。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 36945,
+    "sha256": "78250682ee3af4a831ca193c3fa462e616807de4ff1a41885f5f8a617a3d61ff"
+  },
+  {
+    "id": "meaning_elephant",
+    "text": "这个单词的意思是：大象。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37874,
+    "sha256": "92fd11f97fa1fccce0c068f465826b5a066ad434621f1801e8f35fbb303e2f0e"
+  },
+  {
+    "id": "meaning_bear",
+    "text": "这个单词的意思是：熊。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 35830,
+    "sha256": "1f849475af097e845d7c2a1f5ae7d480e3b253cbafc537d089aeda091a4979b7"
+  },
+  {
+    "id": "meaning_apple",
+    "text": "这个单词的意思是：苹果。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37688,
+    "sha256": "9a23b7e5821469c30344ecdadcd3ab2a8dd38e40253aa1dc817ecaa8a07c2d08"
+  },
+  {
+    "id": "meaning_banana",
+    "text": "这个单词的意思是：香蕉。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 39917,
+    "sha256": "920f11dce0e146598b14dff1f4f661b46dddf18e544290b20fa7a041847219b2"
+  },
+  {
+    "id": "meaning_pear",
+    "text": "这个单词的意思是：梨。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 34530,
+    "sha256": "444cfe189a8045878fb9e9c5f5fdaf3e0445debddbb78a7d15ac06aecbd6b643"
+  },
+  {
+    "id": "meaning_grape",
+    "text": "这个单词的意思是：葡萄。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 38059,
+    "sha256": "1d66a0e0c1ad949a6d3d88600cd0e2e77f032fc6d9ae434b77794c01203b3df5"
+  },
+  {
+    "id": "meaning_peach",
+    "text": "这个单词的意思是：桃子。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 36759,
+    "sha256": "45071cd27d37d0a38259097d939101178eb360e1bd5334be4ffd02de4829745b"
+  },
+  {
+    "id": "meaning_watermelon",
+    "text": "这个单词的意思是：西瓜。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 38617,
+    "sha256": "f7ccef1a8fc4cfaf157605a30f49248c1a548c18820789750f5bbee8ca71e07e"
+  },
+  {
+    "id": "meaning_milk",
+    "text": "这个单词的意思是：牛奶。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37502,
+    "sha256": "9eec2bddc32219512bc7e3dc0f94c94cdf43ca411fc7aad829cae040dcee20c6"
+  },
+  {
+    "id": "meaning_bread",
+    "text": "这个单词的意思是：面包。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37502,
+    "sha256": "0bbbad74214653dc5acb3be94f048782ebb38bd491c070623650222e0a6b1221"
+  },
+  {
+    "id": "meaning_rice",
+    "text": "这个单词的意思是：米饭。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37502,
+    "sha256": "e99e6aec33c4ad982080002411227bcc786741e838e00d42cd719ef30d4d18fd"
+  },
+  {
+    "id": "meaning_egg",
+    "text": "这个单词的意思是：鸡蛋。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 36945,
+    "sha256": "8ab147f546de7b8c7ead65ff37eb97605816919fb2c48812971dcaeb9e93faee"
+  },
+  {
+    "id": "meaning_water",
+    "text": "这个单词的意思是：水。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 35645,
+    "sha256": "971e981f95f6f86738e30abdb29c2f7df07050076227c453122346e78a244a75"
+  },
+  {
+    "id": "meaning_cake",
+    "text": "这个单词的意思是：蛋糕。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37502,
+    "sha256": "75cf0a070b6e34479a86ba33123eb0ca91090b7a5dd9c1d8514cc3ebed02cc9c"
+  },
+  {
+    "id": "meaning_book",
+    "text": "这个单词的意思是：书。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 34716,
+    "sha256": "1a41365355a8ad45625cf8d2b22ff5de6104ac5ab38d7a31a228f64b31fcb23c"
+  },
+  {
+    "id": "meaning_pen",
+    "text": "这个单词的意思是：钢笔。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 36388,
+    "sha256": "7cc9856342ae658b216b57c62fa628c92dc101b40db1c6b64647f3bf4b91bb7f"
+  },
+  {
+    "id": "meaning_pencil",
+    "text": "这个单词的意思是：铅笔。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37502,
+    "sha256": "81a1a239640141605a8faf315ec9f3a09b7da04844f51a04d181c17acfcb3c67"
+  },
+  {
+    "id": "meaning_eraser",
+    "text": "这个单词的意思是：橡皮。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 40103,
+    "sha256": "e24794bbef525160f3bd7e0505a0041e158e24d1c9c98470c32940cb6d89b543"
+  },
+  {
+    "id": "meaning_ruler",
+    "text": "这个单词的意思是：尺子。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 36945,
+    "sha256": "3e4f0258e065c09e93e44ea42e1b0d3321c32788ad971a44d620f09eb5ec05f1"
+  },
+  {
+    "id": "meaning_bag",
+    "text": "这个单词的意思是：包。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 33787,
+    "sha256": "a53c140a78450d27a8b0db62bee2ab77a570d0a549209a70b55b47ed1e4358c7"
+  },
+  {
+    "id": "meaning_desk",
+    "text": "这个单词的意思是：课桌。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37316,
+    "sha256": "22c07e67edbc70c85c4d9225a4cb33c0d2f0d43b3e26ef5f8270e97cbb67e9fc"
+  },
+  {
+    "id": "meaning_chair",
+    "text": "这个单词的意思是：椅子。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 36016,
+    "sha256": "4be1a37699376fd77291f335059c7aacad1d1816cb450fa80cb48906beab11a4"
+  },
+  {
+    "id": "meaning_door",
+    "text": "这个单词的意思是：门。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 34902,
+    "sha256": "e9bbb1d98fd4da1f4566493b607375e80cd7f9aaf42a33fbe7b7f76f49c53ea7"
+  },
+  {
+    "id": "meaning_window",
+    "text": "这个单词的意思是：窗户。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 37502,
+    "sha256": "629b6f846333fb521d78ac55dc3ffe0125ca634b07958d5ed010ca3b2a78b4f9"
+  },
+  {
+    "id": "meaning_teacher",
+    "text": "这个单词的意思是：老师。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 38617,
+    "sha256": "1f645af7c7ea3635529cbecaecbb69701d742e69e55cd527ba463f8fdd7bab12"
+  },
+  {
+    "id": "meaning_student",
+    "text": "这个单词的意思是：学生。",
+    "voice": "Tingting",
+    "rate": 175,
+    "samples": 39731,
+    "sha256": "c790ceac5f16f2ac95aead52c99a78b3ee5c75aac91aae2fd0dfa7f073945563"
+  }
+]

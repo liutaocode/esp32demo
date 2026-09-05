@@ -4,3 +4,20 @@ sdkconfig.old
 managed_components/
 .vscode/
 .idea/
+__pycache__/
+*.pyc
+.DS_Store
+*.fap-capture.json
+
+# Local publishing and device records
+projects/
+**/publication.json
+**/publish-draft.json
+**/submission*.json
+*.log
+*.elf
+*.map
+*.pem
+*.key
+.env
+.env.*

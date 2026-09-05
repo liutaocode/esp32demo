@@ -1,0 +1,386 @@
+[
+  {
+    "id": "peashooter",
+    "text": "豌豆射手。沿着所在行发射豌豆。坚果在前，射手在后。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 84796,
+    "sha256": "c83441f05c0265753372d2b57bab36f7776a37b10fec07d76bdc2eac563ae3ad"
+  },
+  {
+    "id": "sunflower",
+    "text": "向日葵。持续生产阳光。先有阳光，才有更多守卫。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 75885,
+    "sha256": "7d481d28f250526cd343584648676a9e63145fb9b3f64c4dfbb5f98adf66ac83"
+  },
+  {
+    "id": "cherry",
+    "text": "樱桃炸弹。炸掉附近一片僵尸。敌人聚在一起时再出手。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 82756,
+    "sha256": "a7ade81c435a53187e18410e210fbd98a24d95b14f290190fb9232713b1a4f19"
+  },
+  {
+    "id": "wallnut",
+    "text": "坚果墙。用坚硬外壳阻挡啃咬。给后排射手多争取时间。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 84267,
+    "sha256": "2397d3cd13cf1345e9123bd46757d359c05bf921be85616f4ae596dac3972293"
+  },
+  {
+    "id": "potato",
+    "text": "土豆地雷。出土就绪后接触爆炸。提前布置，等敌人走过来。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 85168,
+    "sha256": "5d60ded2ba57e7249ed3ef5966d780c625643ed217ea9a3a59ed039b82255495"
+  },
+  {
+    "id": "snowpea",
+    "text": "寒冰射手。冰豌豆能减慢敌人。减速配合持续火力更从容。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 83761,
+    "sha256": "ced409694d0744db7634d98ab2fb261d0cf8509e1d5f8b768d86288fcfc1d5c1"
+  },
+  {
+    "id": "chomper",
+    "text": "大嘴花。一口吞下靠近的僵尸。吞完要咀嚼，记得保护它。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 83904,
+    "sha256": "6a6213848ae775ff82e4a309419eac3fcedc60f362ec50797e4b8774bc188cfa"
+  },
+  {
+    "id": "repeater",
+    "text": "双发射手。每轮连续发射两颗豌豆。适合加强单行的火力。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 83840,
+    "sha256": "a1ca43269c133132413dd7f969378734078cd09f613e97d3057de84b540970fb"
+  },
+  {
+    "id": "puff",
+    "text": "小喷菇。免费发射近距离孢子。白天会睡觉，夜晚更合适。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 86288,
+    "sha256": "733af913f54865a40648b82a7e014c977e8cd7b76cca81b0d9eb8708f0758f08"
+  },
+  {
+    "id": "lily",
+    "text": "睡莲。让其他植物种在水面。先铺好水路，再安排队友。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 83840,
+    "sha256": "194dd4bdf1b4dcad80ab44ff7a9b1b8331daa038d0b049d06012163954cb6282"
+  },
+  {
+    "id": "squash",
+    "text": "窝瓜。跳起压扁附近的敌人。留给靠得太近的麻烦。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 69398,
+    "sha256": "c5b7f85f58c279a43a4ab8592e44557cbd3d7c25f54fb598f84096ae4e3c8449"
+  },
+  {
+    "id": "jalapeno",
+    "text": "火爆辣椒。烈焰清除一整行敌人。一行告急时用它救场。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 80670,
+    "sha256": "a6339942aa43a3b1ff97676cb1a0715725e90af35b437d866967ff6382d2ea88"
+  },
+  {
+    "id": "torch",
+    "text": "火炬树桩。让经过的普通豌豆着火。把它放在豌豆射手前方。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 82714,
+    "sha256": "dffa2c8839c806770a7b2a2b721feba07513f89d4a0118a20330070908722518"
+  },
+  {
+    "id": "tallnut",
+    "text": "高坚果。高大的身躯阻挡撑杆跳。对付爱跳跃的敌人很实用。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 82499,
+    "sha256": "4f10272901e8b63259ae4692f127bd52828d42ede6ec4dcc3ebc3b9d4350e6e6"
+  },
+  {
+    "id": "cactus",
+    "text": "仙人掌。尖刺可以击破僵尸气球。看到空中来客就安排它。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 88146,
+    "sha256": "854fba474ecc42cc4ef35e62b12a880c3d52c74644505c0efad3e4ffc8631c26"
+  },
+  {
+    "id": "magnet",
+    "text": "磁力菇。吸走铁桶等金属装备。移走护甲，更容易击败。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 77416,
+    "sha256": "3c481dcb60051b366664cb1705d51ae4f4f69dda62961e3ef94238ea2bb1c6cf"
+  },
+  {
+    "id": "zombie",
+    "text": "普通僵尸。缓慢前进并啃咬植物。尽早用远程火力拦住它。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 86080,
+    "sha256": "d2caac8db98382523410c8bc2f8244b6b09333177aa2ca6d9afdc22bf084c4c0"
+  },
+  {
+    "id": "cone",
+    "text": "路障僵尸。头顶路障增加防护。用更多火力打掉路障。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 75861,
+    "sha256": "2ce023e72320b832e918a2f6eb6bcb1c68bbcc175935a0ed0c3133e1713184f4"
+  },
+  {
+    "id": "bucket",
+    "text": "铁桶僵尸。铁桶让它更耐打。磁力菇可以移走铁桶。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 73842,
+    "sha256": "817b1a91d2e98c071eeabec6b74aaf45ba458af6f402f0b68a8e0c05f797be2d"
+  },
+  {
+    "id": "pole",
+    "text": "撑杆僵尸。用撑杆越过遇到的矮植物。高坚果能拦住它的跳跃。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 84311,
+    "sha256": "52abdc16adf78b8176f18078ad65cf73b4a2d7125efea119d30e1783c7506413"
+  },
+  {
+    "id": "paper",
+    "text": "读报僵尸。报纸被打破后移动变快。报纸破了就要提高警惕。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 85947,
+    "sha256": "688256000a6ef27006e76f3de3962373adf7c354d859e0467ca5db563b83a19c"
+  },
+  {
+    "id": "football",
+    "text": "橄榄球僵尸。穿着厚护甲快速前进。用磁力菇移走金属头盔。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 90115,
+    "sha256": "207fa8089fd1bb84f414616ed3fd60abab4ab8ba579ed174487dd74d87e74760"
+  },
+  {
+    "id": "balloon",
+    "text": "气球僵尸。借气球飞过地面防线。用仙人掌刺破气球。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 82410,
+    "sha256": "692c90808dadba3a951cdd751cdb9a7de144b53eeb7b7c4cafcbc30c572a5bc6"
+  },
+  {
+    "id": "gargantuar",
+    "text": "伽刚特尔。挥动武器砸坏挡路植物。重火力和爆破一起应对。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 84639,
+    "sha256": "3de0be822bc1c6e8a14b759a718d135953d988da1b7bfcdb0d1b581e01f68fb1"
+  },
+  {
+    "id": "peashooter_clue",
+    "text": "我的嘴像炮筒，会吐绿色豆子。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 42637,
+    "sha256": "3b09dee8e7c48d6ebed7c46d297f7b88271f8b92587a6f9b2fc570358a2ac692"
+  },
+  {
+    "id": "sunflower_clue",
+    "text": "我笑起来像太阳，还会生产阳光。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 49695,
+    "sha256": "b347e0a7ea292c2c0fb06f138706b182dd3b1bbbc0312a5542339beb6ee1013e"
+  },
+  {
+    "id": "cherry_clue",
+    "text": "我们是红色双胞胎，一起爆炸。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 43194,
+    "sha256": "ee19e65b58e2f5ce1d3dbd22869e12620403f62aebd2df0271038a35f6a52f60"
+  },
+  {
+    "id": "wallnut_clue",
+    "text": "我没有武器，靠硬壳挡在前面。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 45052,
+    "sha256": "3f0a23d455bf623b6fbaad73dbd6e39520c865bced5d48dcfc3098c7a4c71b15"
+  },
+  {
+    "id": "potato_clue",
+    "text": "我躲在土里，准备好才会炸。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 41522,
+    "sha256": "d1f64cd96f1f9278e90a89c46c0235b03d2ae2aac775bbea1c0f6933ff9c7d05"
+  },
+  {
+    "id": "snowpea_clue",
+    "text": "我也吐豆子，却能让敌人变慢。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 42265,
+    "sha256": "1d82e18660be0fdef849023076f89d93a4f0cd39c678d9a6b82f31928b59ba82"
+  },
+  {
+    "id": "chomper_clue",
+    "text": "我嘴巴很大，吃完要嚼好久。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 41522,
+    "sha256": "aa80cde46bdce58f81288a7cc5be37d973a5564203f7ce034a313d57df044b0b"
+  },
+  {
+    "id": "repeater_clue",
+    "text": "我每次连吐两颗绿色豆子。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 35206,
+    "sha256": "3b09efae568c78971daf703581d47bfcbb452cbf925ff4e3e8f22b61ed4401a1"
+  },
+  {
+    "id": "puff_clue",
+    "text": "我是免费的小蘑菇，射程不远。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 42636,
+    "sha256": "6d8bea638494f0fdc4cd2d497c23af5d422fd5b54cb9f4d81eef2f2071a57f86"
+  },
+  {
+    "id": "lily_clue",
+    "text": "我像浮在水面的绿色小托盘。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 40965,
+    "sha256": "9e90bbabf1a7473a1b5c1b19b53bfdbf899dd9c5e05369afdc8eb79845346dc9"
+  },
+  {
+    "id": "squash_clue",
+    "text": "我皱着眉，跳起来把敌人压扁。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 41888,
+    "sha256": "c6738459f6e0b5b92684327dde49c2113e3e3700cf801c763bc533b104e8208d"
+  },
+  {
+    "id": "jalapeno_clue",
+    "text": "我很火辣，出手就是一整行火。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 44116,
+    "sha256": "634835bb65d68928b18959c043494b73132412e3a662a519b77c18f0bd88d54e"
+  },
+  {
+    "id": "torch_clue",
+    "text": "我头上燃着火，帮豌豆变火球。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 46352,
+    "sha256": "27b80ff9ea80ff4bb6c1246ed8904e3292cac583d7f0aba43f7073b4cef25a86"
+  },
+  {
+    "id": "tallnut_clue",
+    "text": "我比普通坚果高，撑杆也难跳过。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 48024,
+    "sha256": "d0c6bdd8c950af43c77cd6b95c527d7df979485b09c920f9ca2c7d216a4304d6"
+  },
+  {
+    "id": "cactus_clue",
+    "text": "我浑身带刺，还能扎破气球。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 42266,
+    "sha256": "db056cbaa331ec97d3c8aeaf36cf948a530761a0b017d0553cdb85ab140d5730"
+  },
+  {
+    "id": "magnet_clue",
+    "text": "我戴着磁铁，喜欢收走铁桶。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 43009,
+    "sha256": "75ebb42f9b7873402e2ecc89137c7783dd86ef2230c2d916ccbfdc37515b9f7b"
+  },
+  {
+    "id": "zombie_clue",
+    "text": "我没戴帽子，慢慢走来啃植物。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 42452,
+    "sha256": "bbd412e9b8928851e667d9fe3be7af75be129da1cf829af6e9ebfd109b69a5ec"
+  },
+  {
+    "id": "cone_clue",
+    "text": "我把橙色交通路障戴在头上。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 40593,
+    "sha256": "d1b2c8ae1f1a7da1fa36edd0caa1bce591d52185b2732fe1f32349374404d69b"
+  },
+  {
+    "id": "bucket_clue",
+    "text": "我把金属水桶当作头盔。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 34463,
+    "sha256": "d6dfb0d63aa35eaeeb48a7aa079e3672cf26235838476e5d27975a7280189f64"
+  },
+  {
+    "id": "pole_clue",
+    "text": "我带着长杆，能跳过矮植物。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 41894,
+    "sha256": "88c647a6ae7d3e50620a20143b3c79f0968ee0017a2cdfd031f0eab0e1a703fe"
+  },
+  {
+    "id": "paper_clue",
+    "text": "我在看报纸，报纸破了会生气。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 45424,
+    "sha256": "9611c4c111e83a6b2be227cc923e90c4d59e6e1afe07f5e3e51ec357ee3cc9ba"
+  },
+  {
+    "id": "football_clue",
+    "text": "我穿红色球服，跑得快又耐打。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 46166,
+    "sha256": "2f80a5b2f3d7da924321e3bb78b07ed8fde07f1bb9ff60185d1795f99974ec68"
+  },
+  {
+    "id": "balloon_clue",
+    "text": "我抓着气球，从植物上方飞过。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 45424,
+    "sha256": "e1240a3b4206e64f230d94f3e1c2c34402a0ac840d265d54dc5d52d3ae529d6e"
+  },
+  {
+    "id": "gargantuar_clue",
+    "text": "我是大块头，还背着小鬼。",
+    "voice": "Tingting",
+    "rate": 210,
+    "samples": 37993,
+    "sha256": "9d77a37656f4ff034ee62a6bb9a85b42a968c768a0306e117975ce51542b5254"
+  }
+]

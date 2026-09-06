@@ -1,0 +1,56 @@
+{
+  "app_name": "clean-sweep",
+  "status": "pending",
+  "operation": "create",
+  "title_zh": "俄罗斯方块｜三个键玩的方块游戏",
+  "description_zh": "把 AI Passport 变成一台随身方块机。三个键就够：上键左移，下键右移，确定键单击旋转、双击直接落底、长按暂停。\n\n方块下面一直有一圈虚影，标出松手会落在哪里；落到底之后还有半秒时间再挪一格。每消掉一行，整行先闪白、再炸开，上面的方块跟着塌下来；四行齐消时井会抖两下，横幅告诉你这一下拿了多少分。\n\n两种玩法：经典无尽越消越快，堆到顶结束，比总分；冲刺二十行比谁更快，适合和朋友抢秒数。连续消行有连击加分，把棋盘清空还有全清奖励。\n\n结果页会给出题号，同一个题号方块顺序完全一样，发给朋友就能同题比分。全中文操作、离线可用，无需账号，不联网、不用语音。玩累了记得让眼睛歇一会儿。",
+  "title_en": "Clean Sweep — Falling Blocks on Three Keys",
+  "description_en": "Turn AI Passport into a pocket block machine. Three keys are enough: up moves left, down moves right, a single click on OK rotates, a double click drops the piece to the floor, and a hold pauses.\n\nA ghost outline always marks where the piece will land, and a touched-down piece still has half a second of grace for one more nudge. Every cleared line flashes white and bursts apart while the rows above collapse into place; a four-line clear shakes the well, and a banner shows what the clear was worth.\n\nTwo modes: endless classic speeds up as you clear and ends when the stack reaches the top, and a twenty-line sprint measures how fast you can finish. Consecutive clears add a combo bonus, and emptying the board adds a perfect-clear bonus.\n\nThe result page shows a puzzle number; the same number always produces the same piece order, so sharing it sets up a fair rematch. The interface is Simplified Chinese, fully offline, with no account, no network, and no voice. Take a break for your eyes between rounds.",
+  "source_url": "https://github.com/liutaocode/esp32demo",
+  "project_directory": "projects/clean-sweep",
+  "implementation_directory": "main/apps/clean_sweep",
+  "firmware": {
+    "path": "build/clean-sweep/FoloToy-AI-Passport-full.bin",
+    "size": 760768,
+    "sha256": "1827741062b74fdadb7f6704493cffe4966c16de8ad3d3b6bec3a92cefba7389",
+    "built_with": "FAP_APP=clean_sweep ./tools/validate.sh --firmware"
+  },
+  "cover": {
+    "path": "assets/images/clean_sweep/community-cover.png",
+    "size": 88324,
+    "sha256": "82c415bb5ba421e3f211d40bfef35c43602dc27d78480e9c2b392230209f1989",
+    "width": 1152,
+    "height": 1536,
+    "aspect_ratio": "3:4",
+    "kind": "Composed by tools/render_clean_sweep_cover.py around the real LVGL host render"
+  },
+  "screen_capture": {
+    "path": "assets/images/clean_sweep/runtime-home.png",
+    "receipt": "assets/images/clean_sweep/runtime-home.png.fap-capture.json",
+    "size": 5397,
+    "sha256": "05b59eff6eb8c11d521fd7f3a3daf37b87bacc05517aebfb6c1345acd69bd65c",
+    "width": 240,
+    "height": 320,
+    "source": "serial-framebuffer",
+    "page": "home"
+  },
+  "confirmed": true,
+  "upload": true,
+  "authorization_checked": true,
+  "pending": [
+    "Community moderation",
+    "Capture a device screen during play (needs someone at the board)"
+  ],
+  "project_id": 201,
+  "revision_id": 298,
+  "slug": "community-4e55d1d4",
+  "source_state": "Public repository reachable; this application's source is not pushed yet",
+  "submission_result": {
+    "ok": true,
+    "projectId": 201,
+    "revisionId": 298,
+    "slug": "community-4e55d1d4",
+    "status": "pending"
+  },
+  "submitted_at": "2026-09-06T12:07:14.551892+00:00"
+}

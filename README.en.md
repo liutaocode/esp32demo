@@ -1,14 +1,8 @@
 [简体中文](README.md)
 
-# Published application sources
+# Applications and source code
 
-Sources for 40 published community applications: 31 root build selectors and 9 standalone projects. These are reviewed development snapshots, not byte-for-byte reproductions of community firmware. Pocket Arcade has a published version and a newer draft revision.
-
-## Open-source examples
-
-[Pocket Reader · Chinese TTS Demo](examples/chinese-tts/README.md): offline Chinese speech, twelve examples and six speeds, with custom text supported through the code API. The voice bank is approximately **930 KB**. This reusable developer example is being submitted for community review.
-
-[Mouthy Bean](examples/mouthy-bean/README.md): an offline Mandarin companion with listening ears, randomized thinking, button interactions and eight collectible expressions. Built from its own example directory; inspired by Xiaoshi Diary.
+One application list includes published applications and submissions awaiting review, with source links and review status. The original 40 applications include 31 root build selectors and 9 standalone projects. The added reader and bean applications build from their own directories. These are reviewed development snapshots, not byte-for-byte reproductions of community firmware. Pocket Arcade has a published version and a newer draft revision.
 
 ## Build
 
@@ -26,6 +20,9 @@ idf.py reconfigure
 
 | Community ID | Application | Source / build selector |
 | --- | --- | --- |
+| 222 | Pocket Bookshelf — TTS Edition · Pending review | Offline narration, three sample books and volume controls; integrated source pending upload |
+| 221 | Pocket Reader · Chinese TTS Demo · Pending review | [chinese-tts](examples/chinese-tts/README.md): twelve examples, six speeds, custom-text API; approximately **930 KB** voice bank |
+| 220 | Mouthy Bean | [mouthy-bean](examples/mouthy-bean/README.md): listening ears, randomized thinking, button interactions and eight expressions; inspired by Xiaoshi Diary |
 | 213 | Pocket Bookshelf | [ebook](main/apps/ebook) |
 | 204 | Pocket Arcade | [pocket_arcade](main/apps/pocket_arcade) |
 | 203 | Jelly Squeeze | [jelly_squeeze](main/apps/jelly_squeeze) |

@@ -24,3 +24,5 @@ source <path-to-esp-idf-v5.5.3>/export.sh
 Follow the [environment bootstrap](../engineering/environment-setup.md) if ESP-IDF 5.5.3 is
 not installed. Reproduce a CI failure with the same mode locally. Do not
 maintain duplicate validation commands inside the workflow.
+
+Host UI tests require the locked LVGL sources. CI first runs `idf.py reconfigure` with ESP-IDF 5.5.3 to resolve `dependencies.lock`, then runs static checks on the host. On a fresh local checkout, activate ESP-IDF and run the same configuration command first.

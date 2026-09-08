@@ -8,6 +8,8 @@ Sources for 40 published community applications: 31 root build selectors and 9 s
 
 [Pocket Reader · Chinese TTS Demo](examples/chinese-tts/README.md): offline Chinese speech, twelve examples and six speeds, with custom text supported through the code API. The voice bank is approximately **930 KB**. This reusable developer example is being submitted for community review.
 
+[Mouthy Bean](examples/mouthy-bean/README.md): an offline Mandarin companion with listening ears, randomized thinking, button interactions and eight collectible expressions. Built from its own example directory; inspired by Xiaoshi Diary.
+
 ## Build
 
 ```bash

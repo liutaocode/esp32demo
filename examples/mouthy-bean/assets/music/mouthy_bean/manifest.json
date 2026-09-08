@@ -1,0 +1,247 @@
+{
+  "voice": "Tingting",
+  "rate": 205,
+  "sample_rate": 16000,
+  "clips": [
+    {
+      "id": 0,
+      "text": "嗯，你接着说。",
+      "duration_s": 1.238,
+      "sha256": "a1c1fd97842203a05535f1f9767734366ecfbc0260ec88c303fa14b9fe257508"
+    },
+    {
+      "id": 1,
+      "text": "听懂了，但只懂一点。",
+      "duration_s": 1.875,
+      "sha256": "e76234c2db534f7be30e443c1db6c2b32bcdb8d9bec0b76ac39b471b0be84707"
+    },
+    {
+      "id": 2,
+      "text": "这事得问另一颗豆。",
+      "duration_s": 1.395,
+      "sha256": "f9723a5de90bd5deb56354235e9755ed8e5b8fa7b41401354ceeb081a551584a"
+    },
+    {
+      "id": 3,
+      "text": "我的脑袋刚路过鸭子。",
+      "duration_s": 1.608,
+      "sha256": "f9470560bec59024ed3b9ebb8dc767f28892c8af04250c8917de1f9e8d44094d"
+    },
+    {
+      "id": 4,
+      "text": "有道理，下次再想。",
+      "duration_s": 1.806,
+      "sha256": "b9a96fc0930ab8cdb19ab23cb9bb31d63898ba02935b80f8738f116fdce64d30"
+    },
+    {
+      "id": 5,
+      "text": "要不先喝口水？",
+      "duration_s": 1.399,
+      "sha256": "e47ca78c0f62702c68ff9b386a6f10c458caebf4cfc8eb9845753df71e65d416"
+    },
+    {
+      "id": 6,
+      "text": "我赞成先躺一会。",
+      "duration_s": 1.713,
+      "sha256": "4e257c2c73300876ed17ebb359b7a2609c12c1eb6e31fd10ec5d3ea5e3ce70cb"
+    },
+    {
+      "id": 7,
+      "text": "你说，我负责点头。",
+      "duration_s": 1.761,
+      "sha256": "959db9d8287dfd1650314f154edcfe227759b51b3720f51cf73375a6b48cb2ba"
+    },
+    {
+      "id": 8,
+      "text": "摸我？算你有眼光。",
+      "duration_s": 1.736,
+      "sha256": "68b508230880b03df780f0d61ca16af54321ab2360b4ebe04558d5deab1a0770"
+    },
+    {
+      "id": 9,
+      "text": "再摸一下，就一下。",
+      "duration_s": 1.645,
+      "sha256": "32f7b82f5b9aac034130718d2e0572e0d5d0e90dae57f6b5bbb781030ec270b3"
+    },
+    {
+      "id": 10,
+      "text": "我才没有偷偷开心。",
+      "duration_s": 1.724,
+      "sha256": "127ec327c0789b747c0be2aafa6d535fdfcdf68555dabcafb96adc2899675704"
+    },
+    {
+      "id": 11,
+      "text": "好吧，今天你最棒。",
+      "duration_s": 1.751,
+      "sha256": "6fde6f8c9900727e6b63c0af24bd2edaf1a850cc4b07bdb0ce52ff48afdde571"
+    },
+    {
+      "id": 12,
+      "text": "别停，我还没装够。",
+      "duration_s": 1.746,
+      "sha256": "350549b23671ddbf52941ee45ba67f08429fdedd92b2b02683df2e48ce88a160"
+    },
+    {
+      "id": 13,
+      "text": "这颗豆被你摸熟了。",
+      "duration_s": 1.453,
+      "sha256": "cfa957e138b5b5bd319dafbd05847bc9b09600dcbb8b228fb84d120b21e61394"
+    },
+    {
+      "id": 14,
+      "text": "我是豆，不是门铃。",
+      "duration_s": 1.666,
+      "sha256": "2b457a2e1e29bc500479a2b157fdd6eac38c72d80edf331bdfed3ac3105e5659"
+    },
+    {
+      "id": 15,
+      "text": "再戳我就变豆浆了。",
+      "duration_s": 1.661,
+      "sha256": "9aa5ef396cd7c3e0dd0cee09443e375dc436763ddc2063cd8e707d62929cd502"
+    },
+    {
+      "id": 16,
+      "text": "你是不是有点闲？",
+      "duration_s": 1.448,
+      "sha256": "7ed0b86acd4a5b0576fbd5319cd94419d7532655fd0a200a05358da7f78fd4f1"
+    },
+    {
+      "id": 17,
+      "text": "哼，我记你三秒钟。",
+      "duration_s": 1.834,
+      "sha256": "5ec0b126b26eaa684b809172b17d1d75dfac619d913cf91de5b6ddfbe45715a9"
+    },
+    {
+      "id": 18,
+      "text": "我宣布，你赢了。",
+      "duration_s": 1.365,
+      "sha256": "443e2fd7c878e71aa55a577e4e580548441976a32ec9ad8a4d1caa7c599e8e99"
+    },
+    {
+      "id": 19,
+      "text": "别闹，我快绷不住。",
+      "duration_s": 1.665,
+      "sha256": "cddf7effacfbedfd7d7c83ec7d4bd8509a8e56b9ecedde7eb01f57571f7c5bca"
+    },
+    {
+      "id": 20,
+      "text": "今天的云像个馒头。",
+      "duration_s": 1.642,
+      "sha256": "138e2e36931a2567a462f46408110b222f0e3a1fa932bc50727241be1819d3ff"
+    },
+    {
+      "id": 21,
+      "text": "我在给空气放假。",
+      "duration_s": 1.504,
+      "sha256": "dfb8829890da05b44fddaa1bdeaffd2b5086b5fdfb5572fd2c06f2cb16de59fe"
+    },
+    {
+      "id": 22,
+      "text": "刚刚差点想通宇宙。",
+      "duration_s": 1.72,
+      "sha256": "d333b71bc09496812ecd7dbf45a96fd4497b0f60342b853c5d3127b5ebfba3f1"
+    },
+    {
+      "id": 23,
+      "text": "发呆也是正经事。",
+      "duration_s": 1.401,
+      "sha256": "b4035819ea87c750e645dc50a01fdb6b56dd553285992c4b38ccf0d732bc1614"
+    },
+    {
+      "id": 24,
+      "text": "我先眯一小会。",
+      "duration_s": 1.202,
+      "sha256": "73cf8f32fce0411fb81a33659ad385530013364612c4a9727896a47dfa96e6eb"
+    },
+    {
+      "id": 25,
+      "text": "梦里也不加班。",
+      "duration_s": 1.238,
+      "sha256": "fd6a878ebd8e6c026f6f9fdf4d8d6e6691afba0f52575cca849f41c69c3b54aa"
+    },
+    {
+      "id": 26,
+      "text": "嘘，豆子正在充电。",
+      "duration_s": 1.805,
+      "sha256": "474208b9f851c2d42fea777dfc4a13ccba0b5722d48c4d3e570f49ae49a16cb7"
+    },
+    {
+      "id": 27,
+      "text": "晚安，醒了再嘴硬。",
+      "duration_s": 1.829,
+      "sha256": "f73656338b5784636832f8b824f7ccb2801d2d4fbc6144fbc30a9e00c95042fd"
+    },
+    {
+      "id": 28,
+      "text": "你一来，我就醒了。",
+      "duration_s": 1.61,
+      "sha256": "c2b50db02f0409b545a120e37946cd6c8711d06587374298da7701cb031f7b91"
+    },
+    {
+      "id": 29,
+      "text": "刚才那句，挺热闹。",
+      "duration_s": 1.754,
+      "sha256": "eb700fd635aac6efbafd38a89c19d1819208323cbc09ee41a705ffc111eeec74"
+    },
+    {
+      "id": 30,
+      "text": "我听见啦，继续呀。",
+      "duration_s": 1.678,
+      "sha256": "9377a3aba1ab093eec18ec4e45690e8184992303a4dd7eabff380e92dd60d95f"
+    },
+    {
+      "id": 31,
+      "text": "这声音，有点意思。",
+      "duration_s": 1.72,
+      "sha256": "4b0cd631e80cc01587e58c0a6723be426405d221f1617ea05d9958a4ef90d9ea"
+    },
+    {
+      "id": 32,
+      "text": "夸我还是逗我，选好。",
+      "duration_s": 2.083,
+      "sha256": "b14e60fdb86c23bd9460b58aca8533c9d8c3ed8818466bb42c9a610d0d935ea1"
+    },
+    {
+      "id": 33,
+      "text": "打一巴掌给颗糖？",
+      "duration_s": 1.506,
+      "sha256": "409b268107dde6c235bde8ae83c0bd3742a5c4537acc360b163bc2bfcaa4dc23"
+    },
+    {
+      "id": 34,
+      "text": "你把我整不会了。",
+      "duration_s": 1.215,
+      "sha256": "84a2c3a0692d2b694da5ad40b9941e37ad49460ff5c7c70f5bcfaf1740186fd3"
+    },
+    {
+      "id": 35,
+      "text": "我决定原谅你一秒。",
+      "duration_s": 1.597,
+      "sha256": "deb4321f1eb9c35f7c04307fb1780b13d734eb8a357e132b12822f1bcc1db9c5"
+    },
+    {
+      "id": 36,
+      "text": "好了好了，笑出声了。",
+      "duration_s": 1.925,
+      "sha256": "d2aa0113b5c10f09fc87a0c14d87ab81dfb55d321958ca6e88ff4a8c7c670602"
+    },
+    {
+      "id": 37,
+      "text": "这局算你把我逗笑。",
+      "duration_s": 1.592,
+      "sha256": "f0dffed59b90449501a22bca683576747de6cd5decb08182ec61e215a5c6e328"
+    },
+    {
+      "id": 38,
+      "text": "我没笑，是脸打滑。",
+      "duration_s": 1.794,
+      "sha256": "23d6837e494eb48e0e8dbadef390f45020708bd1a0003d6364a1d227f583b91d"
+    },
+    {
+      "id": 39,
+      "text": "忍住，豆设不能崩。",
+      "duration_s": 1.678,
+      "sha256": "bb595130b16c8ebeaf1620b9e16ba6ff9839bf54f5b5c93b8b897d61dbd7a69d"
+    }
+  ]
+}

@@ -15,6 +15,7 @@ run_static_checks() {
 
     python3 tools/check_repo.py
     python3 tools/check_published_apps.py
+    python3 examples/mouthy-bean/tools/test_mouthy_bean.py
     python3 tools/generate_ricochet_rush_font.py --check
     local ricochet_test_dir
     ricochet_test_dir="$(mktemp -d /tmp/ricochet-rush-state.XXXXXX)"

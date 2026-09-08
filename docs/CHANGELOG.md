@@ -4,6 +4,10 @@
 
 # Changelog
 
+## Mouthy Bean source package — 2026-09-08
+
+- Added the isolated `examples/mouthy-bean` source package, tests, voice assets and bilingual manual for version 1.0.1. It reuses existing board support without changing other application selectors. Community project 220 credits Xiaoshi Diary; no device data or generated firmware is committed.
+
 ## 2026-09-08
 
 - Make the repository README Chinese by default, with an English language switch.

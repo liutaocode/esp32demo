@@ -4,6 +4,10 @@
 
 Sources for 40 published community applications: 31 root build selectors and 9 standalone projects. These are reviewed development snapshots, not byte-for-byte reproductions of community firmware. Pocket Arcade has a published version and a newer draft revision.
 
+## Open-source examples
+
+[Pocket Reader · Chinese TTS Demo](examples/chinese-tts/README.md): offline Chinese speech, twelve examples and six speeds, with custom text supported through the code API. The voice bank is approximately **930 KB**. This reusable developer example is being submitted for community review.
+
 ## Build
 
 ```bash

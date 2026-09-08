@@ -1,0 +1,7 @@
+if(NOT IDF_TARGET STREQUAL "esp32c3")
+    message(FATAL_ERROR "This pinned ESP-TTS distribution supports ESP32-C3 only")
+endif()
+idf_component_register(INCLUDE_DIRS "include" REQUIRES log)
+add_prebuilt_library(tts_chinese "${CMAKE_CURRENT_LIST_DIR}/libesp_tts_chinese.a")
+add_prebuilt_library(tts_voice "${CMAKE_CURRENT_LIST_DIR}/libvoice_set_xiaole.a")
+target_link_libraries(${COMPONENT_LIB} INTERFACE tts_chinese tts_voice)

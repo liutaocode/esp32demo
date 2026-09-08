@@ -14,6 +14,8 @@ run_static_checks() {
     local test_dir
 
     python3 tools/check_repo.py
+    python3 tools/check_tts_assets.py
+    python3 tools/generate_chinese_tts_font.py --check
 
     actionlint_bin="${ACTIONLINT_BIN:-}"
     if [[ -z "${actionlint_bin}" ]]; then
@@ -37,6 +39,14 @@ run_static_checks() {
         tests/test_minecraft_adpcm.c main/minecraft_adpcm.c \
         -o "${test_dir}/test_minecraft_adpcm"
     "${test_dir}/test_minecraft_adpcm"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain \
+        tests/test_tts_model.c main/tts_model.c -o "${test_dir}/test_tts_model"
+    "${test_dir}/test_tts_model"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain \
+        tests/test_tts_compact.c main/tts_bank.c main/tts_tempo.c -lm -o "${test_dir}/test_tts_compact"
+    "${test_dir}/test_tts_compact" assets/music/chinese_tts/xiaole-compact.dat
+    python3 tests/test_tts_decode.py
+    python3 tests/test_tts_resource.py
     python3 tests/test_verify_firmware.py
     rm -rf "${test_dir}"
     echo "Host tests: PASS"

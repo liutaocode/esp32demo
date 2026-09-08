@@ -123,3 +123,5 @@ LICENSE                  仓库许可证
 GitHub 社区治理文档：[CONTRIBUTING.zh_CN.md](../.github/CONTRIBUTING.zh_CN.md)、[CODE_OF_CONDUCT.zh_CN.md](../.github/CODE_OF_CONDUCT.zh_CN.md)、[SECURITY.zh_CN.md](../.github/SECURITY.zh_CN.md)、[SUPPORT.zh_CN.md](../.github/SUPPORT.zh_CN.md)。
 
 > 注：本 README 只描述产品与仓库，不含给 AI 的执行说明；AI 开始开发前请先读根目录 `AGENTS.zh_CN.md`，再按任务路由读取相关文档。
+
+- [中文 TTS 移植与验收](development/engineering/chinese-tts.zh_CN.md)

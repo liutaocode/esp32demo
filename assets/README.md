@@ -59,3 +59,17 @@ Store reusable music and sound-effect sources in `music/`.
   `main/minecraft_guide_audio.c` as IMA ADPCM. The firmware decodes each clip in
   512-sample chunks and interrupts the current clip when the user switches to
   another entry.
+
+## Pocket Reader assets
+
+- `fonts/chinese_tts_zh_16.c`: 16 px, 2 bpp Source Han Sans SC subset generated
+  by `tools/generate_chinese_tts_font.py`; SIL OFL 1.1 is preserved in
+  `fonts/OFL-SourceHanSansSC.txt`. Source is the font bundled with LVGL 9.5.0.
+- `music/chinese_tts/xiaole.dat`: checksum-pinned original ESP-TTS Xiaole bank,
+  retained as offline conversion input only. Provenance and license files are in
+  `../components/esp_tts/upstream.json`, `LICENSE`, and `LICENSE-APACHE-2.0`.
+- `music/chinese_tts/xiaole-compact.dat`: 929,972-byte derived voice bank, all
+  pronunciation metadata and audio records retained. Speex wideband quality 2,
+  16 kHz, decoded to signed 16-bit mono PCM. Embedded in the application.
+  See [conversion instructions](../docs/development/engineering/chinese-tts.md).
+  Preserve the upstream voice notices and `../components/speex/COPYING`.

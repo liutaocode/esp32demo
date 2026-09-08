@@ -6,6 +6,12 @@
 
 ## Unreleased
 
+- Added Pocket Reader: twelve offline Chinese TTS examples, six speeds, cancellable
+  playback and USB controls. Embedded a 930 KB Speex voice bank preserving the
+  original pronunciation tables, with frame streaming at normal speed and
+  bounded syllable buffering for tempo changes. Voice preparation retains the
+  16 kHz band and adjusts default pacing offline. Removed the separate voice partition.
+
 - Replaced the BSP demo menu with a boot-direct Minecraft guide containing twenty
   illustrated entries. UP/DOWN cycles through the catalog and narrates the new
   entry, OK repeats the current narration, battery status remains visible, and

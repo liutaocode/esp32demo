@@ -5,21 +5,20 @@
 #include "bsp_audio.h"
 #include "bsp_battery.h"
 #include "bsp_pins.h"
-#include "minecraft_guide.h"
+#include "tts_demo.h"
 #include "fap_screenshot.h"
 #include "esp_log.h"
 #include "esp_sleep.h"
+#include <string.h>
 
 static const char *TAG = "main";
 static void on_key(bsp_btn_t btn, bsp_btn_ev_t ev, void *user) {
     (void)user;
-    if (!bsp_lvgl_lock(500)) return;
-    minecraft_guide_key(btn, ev);
-    bsp_lvgl_unlock();
+    tts_demo_key(btn, ev);
 }
 
 void app_main(void) {
-    ESP_LOGI(TAG, "FoloToy Minecraft guide starting");
+    ESP_LOGI(TAG, "FoloToy Chinese TTS demo starting");
     esp_sleep_wakeup_cause_t wakeup = esp_sleep_get_wakeup_cause();
     if (wakeup != ESP_SLEEP_WAKEUP_UNDEFINED) {
         ESP_LOGI(TAG, "wake-up cause: %d", wakeup);
@@ -40,7 +39,7 @@ void app_main(void) {
     bool battery_ok = (bsp_battery_init() == ESP_OK);
 
     if (bsp_lvgl_lock(1000)) {
-        minecraft_guide_enter(audio_ok, buttons_ok);
+        tts_demo_enter(audio_ok, buttons_ok);
         bsp_lvgl_unlock();
     }
 
@@ -48,4 +47,11 @@ void app_main(void) {
 
     ESP_LOGI(TAG, "ready: buttons=%d audio=%d battery=%d",
              buttons_ok, audio_ok, battery_ok);
+}
+
+/* Serial test controls follow the physical key path; no codec work here. */
+void fap_app_command(const char *line) {
+    if (strcmp(line, "TTS_DEMO_PLAY") == 0) tts_demo_key(BSP_BTN_OK, BSP_BTN_CLICK);
+    else if (strcmp(line, "TTS_DEMO_NEXT") == 0) tts_demo_key(BSP_BTN_DOWN, BSP_BTN_CLICK);
+    else if (strcmp(line, "TTS_DEMO_SPEED") == 0) tts_demo_key(BSP_BTN_OK, BSP_BTN_LONG);
 }

@@ -53,3 +53,15 @@
 - `tools/generate_minecraft_guide_audio.py` 按固定顺序把 WAV 打包为
   `main/minecraft_guide_audio.c` 中的 IMA ADPCM。固件每批解码 512 个采样；
   用户切换到其他条目时，会中断当前语音并播放最新条目的介绍。
+
+## 口袋朗读员资产
+
+- `fonts/chinese_tts_zh_16.c`：由 `tools/generate_chinese_tts_font.py` 生成的
+  16 px、2 bpp Source Han Sans SC 子集，来源为 LVGL 9.5.0 附带字体；
+  SIL OFL 1.1 许可保存在 `fonts/OFL-SourceHanSansSC.txt`。
+- `music/chinese_tts/xiaole.dat`：校验固定的上游小乐原始库，只作为离线转换输入。
+  来源与许可见 `../components/esp_tts/upstream.json`、`LICENSE`、`LICENSE-APACHE-2.0`。
+- `music/chinese_tts/xiaole-compact.dat`：929,972 字节派生语音库，保留全部发音词典
+  和语音记录。Speex 宽带质量 2、16 kHz，解码输出为有符号 16 位单声道 PCM，内嵌于应用。
+  参见[转换说明](../docs/development/engineering/chinese-tts.zh_CN.md)。
+  分发时保留上游语音许可及 `../components/speex/COPYING`。

@@ -127,6 +127,14 @@ def verify_recovery_contract(merged: bytes, build_dir: Path) -> None:
     print(f"Mini-program BLE contract: PASS (app {app_size} / {APP_MAX_SIZE} bytes)")
 
 
+def verify_tts_resource(merged: bytes, voice: bytes) -> None:
+    if not voice or len(voice) >= 1_000_000:
+        raise ValueError("compact TTS voice must be nonempty and below 1 MB")
+    application = merged[0x10000:0x10000 + APP_MAX_SIZE]
+    if voice not in application:
+        raise ValueError("application is missing or has corrupt embedded TTS voice data")
+
+
 def main() -> int:
     build_dir = Path(sys.argv[1] if len(sys.argv) > 1 else "build").resolve()
     merged_path = build_dir / "FoloToy-AI-Passport-full.bin"
@@ -159,11 +167,14 @@ def main() -> int:
 
     try:
         verify_recovery_contract(merged, build_dir)
+        voice = (Path(__file__).resolve().parents[1] / "assets/music/chinese_tts/xiaole-compact.dat").read_bytes()
+        verify_tts_resource(merged, voice)
+        print(f"Verified TTS voice data: {len(voice)} bytes embedded in application")
     except (OSError, UnicodeDecodeError, ValueError) as error:
         print(f"ERROR: {error}", file=sys.stderr)
         return 1
 
-    print(f"Merged firmware: PASS ({len(merged)} bytes, flash at 0x0)")
+    print(f"Merged firmware: PASS ({len(merged)} bytes, use mini-program or segmented flash)")
     return 0
 
 

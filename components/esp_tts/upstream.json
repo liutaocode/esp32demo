@@ -1,0 +1,60 @@
+{
+  "repository": "https://github.com/espressif/esp-sr",
+  "revision": "efa8d907c6d457cd0f99dae6c6b493412d3078d4",
+  "files": [
+    {
+      "upstream": "LICENSE",
+      "local": "LICENSE",
+      "sha256": "7d916fb00bc0742c47cafb0d0144b67f826d76779730b1cb8796045ea6ba1b9a",
+      "size": 1187
+    },
+    {
+      "upstream": "esp-tts/esp_tts_chinese/include/esp_tts.h",
+      "local": "include/esp_tts.h",
+      "sha256": "ef925074e8b8da7a7149a04f3a09cc14899a5415643a47a18dc80bbe270e3a4a",
+      "size": 3948
+    },
+    {
+      "upstream": "esp-tts/esp_tts_chinese/include/esp_tts_voice.h",
+      "local": "include/esp_tts_voice.h",
+      "sha256": "40496276b98bb25413d3abe015151806f40507ecf26b894e7558547a22eb496e",
+      "size": 915
+    },
+    {
+      "upstream": "esp-tts/esp_tts_chinese/include/esp_tts_voice_template.h",
+      "local": "include/esp_tts_voice_template.h",
+      "sha256": "d3e6aebae238a76c55445de63ba93a5d592575e4c6bb5bd9969ddcdb1fcf3bcd",
+      "size": 90
+    },
+    {
+      "upstream": "esp-tts/esp_tts_chinese/include/esp_tts_voice_xiaole.h",
+      "local": "include/esp_tts_voice_xiaole.h",
+      "sha256": "b7b9610f9ba1beac20eb0d58ef6b942e3b9099ee8bedb0622b0d4bef5e77e4ae",
+      "size": 88
+    },
+    {
+      "upstream": "esp-tts/esp_tts_chinese/esp32c3/libesp_tts_chinese.a",
+      "local": "libesp_tts_chinese.a",
+      "sha256": "5a1125b4739162e454fbbe4321fab944d5339ffd92f79401ff5542cc8c0038ea",
+      "size": 2259548
+    },
+    {
+      "upstream": "esp-tts/esp_tts_chinese/esp32c3/libvoice_set_xiaole.a",
+      "local": "libvoice_set_xiaole.a",
+      "sha256": "a841cd613cd4a81e9c45718679ebb3899778bec7fe75107de28914dedf530816",
+      "size": 4674340
+    },
+    {
+      "upstream": "esp-tts/esp_tts_chinese/esp_tts_voice_data_xiaole.dat",
+      "local": "../../assets/music/chinese_tts/xiaole.dat",
+      "sha256": "e4aaadc1566b984e3ffc47f654ff52ed3fb8f5af420ffb187bd8a8741706d382",
+      "size": 2938039
+    },
+    {
+      "upstream": "esp-tts/esp_tts_chinese/include/esp_tts_parser.h",
+      "local": "include/esp_tts_parser.h",
+      "sha256": "9c5cbe71ee2c2a118e9a1e38c995b990c31315d292731657799b604fd5893447",
+      "size": 668
+    }
+  ]
+}

@@ -16,6 +16,8 @@
 
 ## Unreleased
 
+- Published the standalone Pocket Bookshelf TTS source with three test books, continuous offline narration, and menu volume controls.
+
 - Add 20 submitted applications alongside Talking Minecraft Guide, with independent `FAP_APP` builds and state, audio and asset tests.
 - Exclude unsubmitted drafts, publication receipts, device records and workstation paths from the source collection.
 

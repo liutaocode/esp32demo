@@ -20,7 +20,7 @@ idf.py reconfigure
 
 | Community ID | Application | Source / build selector |
 | --- | --- | --- |
-| 222 | Pocket Bookshelf — TTS Edition · Pending review | Offline narration, three sample books and volume controls; integrated source pending upload |
+| 222 | Pocket Bookshelf — TTS Edition · Pending review | [bookshelf-tts](examples/bookshelf-tts/README.md): offline narration, three sample books and volume controls |
 | 221 | Pocket Reader · Chinese TTS Demo · Pending review | [chinese-tts](examples/chinese-tts/README.md): twelve examples, six speeds, custom-text API; approximately **930 KB** voice bank |
 | 220 | Mouthy Bean | [mouthy-bean](examples/mouthy-bean/README.md): listening ears, randomized thinking, button interactions and eight expressions; inspired by Xiaoshi Diary |
 | 213 | Pocket Bookshelf | [ebook](main/apps/ebook) |

@@ -20,7 +20,7 @@ idf.py reconfigure
 
 | 社区 ID | 应用 | 源码 / 构建选择器 |
 | --- | --- | --- |
-| 222 | 口袋书架（TTS版） · 待审核 | 离线听书、三本测试书、音量调节；整合源码待同步 |
+| 222 | 口袋书架（TTS版） · 待审核 | [bookshelf-tts](examples/bookshelf-tts/README.zh_CN.md)：离线听书、三本测试书、音量调节 |
 | 221 | 口袋朗读员 · 中文 TTS Demo · 待审核 | [chinese-tts](examples/chinese-tts/README.zh_CN.md)：十二组示例、六档语速、自定义文本 API，语音库约 **930 KB** |
 | 220 | 嘴硬小豆 | [mouthy-bean](examples/mouthy-bean/README.zh_CN.md)：竖耳倾听、随机思考、摸摸逗逗、八种表情；灵感来自「小狮日记」 |
 | 213 | 随身书架 | [ebook](main/apps/ebook) |

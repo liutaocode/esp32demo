@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Size: 16 px
  * Bpp: 2
- * Opts: --size 16 --bpp 2 --format lvgl --font <repo>/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols ·一上下不个中习书了亮休作保光兔入再冠到力加动包单卡去可同吧听味哪啦回园图复大失奶始嫩子存学它定家对小尺局岛已师开式待息成户找拍择按探收故效星是有本林果校桃桌梨森椅模橡次每水没灵点熊牛物狗狮猫猴球瓜生用的皇皮着确离窗笔答米精糕线练继续美翅老膀芽苹获萄葡蕉虎蛋西认识词语读课象败跟这选遍重鉴钢铅错键镇长门阅险障面音颗饭香鱼鸟鸡鸭！，：？ --range 0x20-0x7e --no-compress --no-kerning --lv-include lvgl.h --lv-font-name word_sprite_zh_16 -o <repo>/assets/fonts/word_sprite_zh_16.c
+ * Opts: --size 16 --bpp 2 --format lvgl --font /path/to/user/Desktop/CODE/folotoy/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols ·一上下不个中习书了亮休作保光兔入再冠到力加动包单卡去可同吧听味哪啦回园图复大失奶始嫩子存学它定家对小尺局岛已师开式待息成户找拍择按探收故效星是有本林果校桃桌梨森椅模橡次每水没灵点熊牛物狗狮猫猴球瓜生用的皇皮着确离窗笔答米精糕线练继续美翅老膀芽苹获萄葡蕉虎蛋西认识词语读课象败跟这选遍重鉴钢铅错键镇长门阅险障面音颗饭香鱼鸟鸡鸭！，：？ --range 0x20-0x7e --no-compress --no-kerning --lv-include lvgl.h --lv-font-name word_sprite_zh_16 -o /path/to/user/Desktop/CODE/folotoy/assets/fonts/word_sprite_zh_16.c
  ******************************************************************************/
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE

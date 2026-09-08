@@ -1,0 +1,31 @@
+{
+  "voice": "macOS Tingting",
+  "rate": 225,
+  "sample_rate": 16000,
+  "cues": [
+    {
+      "id": 0,
+      "text": "听好暗号",
+      "seconds": 0.844,
+      "wav_sha256": "ff41619d0ce92c021bdeb5c62956546dc9c5da31bf99d004a4d8a4c34da9d45a"
+    },
+    {
+      "id": 1,
+      "text": "轮到你了",
+      "seconds": 0.611,
+      "wav_sha256": "bdb1544805a8457ab606f430cb3ab5670b92ab6e3479deae018102f58136c261"
+    },
+    {
+      "id": 2,
+      "text": "破解成功",
+      "seconds": 0.804,
+      "wav_sha256": "e81299ebaea4b55a71edec9dc43cc794e13357bde20b4c81926196dc4bbb2dd1"
+    },
+    {
+      "id": 3,
+      "text": "再试一次",
+      "seconds": 0.749,
+      "wav_sha256": "fdf70d8fa5f9aab68ce47bc2aeeb87de039acfeae94800fb035142b6e4671bf2"
+    }
+  ]
+}

@@ -1,51 +1,64 @@
 [English](README.md)
 
-# ESP32 Demo — 已送审应用源码
+# 已发布应用源码
 
-本仓库包含 21 个已送审应用的源码、离线资源和主机测试，每个固件运行一个应用。默认应用为气场测试。
+收录 40 个社区已发布应用。31 个使用根目录构建选择器，9 个保留独立工程。源码是整理后的开发快照，不承诺与社区固件逐字节一致。口袋游戏厅已有发布版本，同时存在新的草稿修订。
 
 ## 构建
 
-启用 ESP-IDF 5.5.3 后，在仓库根目录运行：
-
 ```bash
-./tools/validate.sh --static
+# ESP-IDF 5.5.3; resolve pinned dependencies on a fresh clone.
+idf.py reconfigure
 FAP_APP=vibe_check ./tools/validate.sh
-FAP_APP=minecraft_guide ./tools/validate.sh --firmware
+# Standalone example
+cd applications/suzhou-travel
+idf.py reconfigure
+./tools/validate.sh
 ```
 
-将 `FAP_APP` 替换为下表中的应用标识。输出为 `build/FoloToy-AI-Passport-full.bin`。更换应用后请重新构建。
+## 应用
 
-安装前阅读 [BLE 安装与 Recovery 兼容性说明](docs/development/engineering/ble-recovery-compatibility.zh_CN.md)。
-
-## 应用目录
-
-| 应用标识 | 名称 | 源码 |
+| 社区 ID | 应用 | 源码 / 构建选择器 |
 | --- | --- | --- |
-| `balloon_rush` | 见好就收 | [source](main/apps/balloon_rush/balloon_rush.c) |
-| `cloud_hop` | 再跳一步 | [source](main/apps/cloud_hop/cloud_hop.c) |
-| `down_100` | 勇闯地下100层 | [source](main/apps/down_100/down_100.c) |
-| `focus_post` | 注意力小邮差 | [source](main/apps/focus_post/focus_post.c) |
-| `fruit_merge` | 再合一颗 | [source](main/apps/fruit_merge/fruit_merge.c) |
-| `idiom_pet` | 成语萌兽：读故事，孵伙伴 | [source](main/apps/idiom_pet/idiom_pet.c) |
-| `laoluo_quotes` | 老罗语录：口袋金句电台 | [source](main/apps/laoluo_quotes/laoluo_quotes.c) |
-| `math_rail` | 口算旅行号 | [source](main/apps/math_rail/math_rail.c) |
-| `math_train` | 口算小火车 | [source](main/apps/math_train/math_train.c) |
-| `memory_garden` | 天天记一记 | [source](main/apps/memory_garden/memory_garden.c) |
-| `needle_rush` | 再插一针 | [source](main/apps/needle_rush/needle_rush.c) |
-| `perfect_slice` | 一刀刚好 | [source](main/apps/perfect_slice/perfect_slice.c) |
-| `pocket_pond` | 口袋捞鱼 | [source](main/apps/pocket_pond/pocket_pond.c) |
-| `pvz_almanac` | 草坪研究所：植物大战僵尸图鉴 | [source](main/apps/pvz_almanac/pvz_almanac.c) |
-| `ricochet_rush` | 再弹一轮 | [source](main/apps/ricochet_rush/ricochet_rush.c) |
-| `social_battery` | 社交电量牌｜你不必随时在线 | [source](main/apps/social_battery/social_battery.c) |
-| `stack_rush` | 再叠一层 | [source](main/apps/stack_rush/stack_rush.c) |
-| `tomato_bloom` | 番茄花园 | [source](main/apps/tomato_bloom/tomato_bloom.c) |
-| `vibe_check` | 气场测试｜今天你是哪一种？ | [source](main/apps/vibe_check/vibe_check.c) |
-| `word_sprite` | 单词精灵｜听单词，养出小精灵 | [source](main/apps/word_sprite/word_sprite.c) |
-| `minecraft_guide` | 我的世界语音图鉴 | [source](main/minecraft_guide.c) |
+| 213 | 随身书架 | [ebook](main/apps/ebook) |
+| 204 | 口袋游戏厅 | [pocket_arcade](main/apps/pocket_arcade) |
+| 203 | 一挤就过 | [jelly_squeeze](main/apps/jelly_squeeze) |
+| 201 | 俄罗斯方块｜三个键玩的方块游戏 | [clean_sweep](main/apps/clean_sweep) |
+| 195 | 点点有数 | [tally-click](applications/tally-click) |
+| 194 | 借过一下 | [excuse_call](main/apps/excuse_call) |
+| 193 | 英语磨耳朵 | [listening-island](applications/listening-island) |
+| 189 | 口袋突围 | [pocket_breach](main/apps/pocket_breach) |
+| 188 | 小猫在呢 | [cat-is-here](applications/cat-is-here) |
+| 187 | 飞跃车道 | [lane_leap](main/apps/lane_leap) |
+| 186 | 码上装忙 | [code_theater](main/apps/code_theater) |
+| 183 | 海昏侯博物馆口袋云游 | [haihunhou-museum](applications/haihunhou-museum) |
+| 182 | 三星堆博物馆口袋云游 | [sanxingdui-museum](applications/sanxingdui-museum) |
+| 178 | 节奏特工｜听一遍，按回来 | [rhythm-agent](applications/rhythm-agent) |
+| 177 | 深夜来电｜今夜，请别挂断 | [night-call](applications/night-call) |
+| 176 | 截稿小站 | [deadline_station](main/apps/deadline_station) |
+| 173 | 口袋捧场王｜这一刻，就差你捧个场 | [pocket_hype](main/apps/pocket_hype) |
+| 172 | 再弹一轮 | [ricochet_rush](main/apps/ricochet_rush) |
+| 171 | 天天记一记 | [memory_garden](main/apps/memory_garden) |
+| 170 | 再合一颗 | [fruit_merge](main/apps/fruit_merge) |
+| 169 | 草坪研究所：植物大战僵尸图鉴 | [pvz_almanac](main/apps/pvz_almanac) |
+| 168 | 老罗语录：口袋金句电台 | [laoluo_quotes](main/apps/laoluo_quotes) |
+| 167 | 注意力小邮差 | [focus_post](main/apps/focus_post) |
+| 166 | 勇闯地下100层 | [down_100](main/apps/down_100) |
+| 164 | 再插一针 | [needle_rush](main/apps/needle_rush) |
+| 162 | 单词精灵｜听单词，养出小精灵 | [word_sprite](main/apps/word_sprite) |
+| 161 | 见好就收 | [just_seen](main/apps/just_seen) |
+| 160 | 口算旅行号 | [math_rail](main/apps/math_rail) |
+| 159 | 口袋捞鱼 | [pocket_pond](main/apps/pocket_pond) |
+| 158 | 口算小火车 | [math_train](main/apps/math_train) |
+| 157 | 成语萌兽：读故事，孵伙伴 | [idiom_pet](main/apps/idiom_pet) |
+| 156 | 气场测试｜今天你是哪一种？ | [vibe_check](main/apps/vibe_check) |
+| 155 | 再跳一步 | [cloud_hop](main/apps/cloud_hop) |
+| 154 | 一刀刚好 | [perfect_slice](main/apps/perfect_slice) |
+| 153 | 社交电量牌｜你不必随时在线 | [social_battery](main/apps/social_battery) |
+| 152 | 再叠一层 | [stack_rush](main/apps/stack_rush) |
+| 151 | 番茄花园 | [tomato_bloom](main/apps/tomato_bloom) |
+| 150 | 姑苏十景·随身语音导览 | [suzhou-travel](applications/suzhou-travel) |
+| 149 | 六悦博物馆口袋云游 | [six-arts-museum](applications/six-arts-museum) |
+| 148 | 我的世界语音图鉴 | [minecraft_guide](main/minecraft_guide.c) |
 
-## 资源与验证
-
-字体和音频来源见 [资源说明](assets/README.zh_CN.md)，开发资料见 [文档索引](docs/README.zh_CN.md)。编译通过不代表完成实机验证。
-
-基于 [FoloToy AI Passport](https://github.com/FoloToy/ai-passport)，保留其许可与署名。
+验证区分构建、主机测试与实机测试。参见[文档索引](docs/README.zh_CN.md)和[归档技能](skills/plays-archive/SKILL.zh_CN.md)。

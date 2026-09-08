@@ -1,0 +1,5 @@
+#pragma once
+typedef enum {
+    TC_FX_NONE, TC_FX_ADD, TC_FX_SUBTRACT, TC_FX_PAUSE, TC_FX_RESUME,
+    TC_FX_ARCHIVE, TC_FX_UP, TC_FX_DOWN, TC_FX_CONFIRM, TC_FX_LIMIT, TC_FX_ERROR
+} tc_feedback;

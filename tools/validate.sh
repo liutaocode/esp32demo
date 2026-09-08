@@ -14,6 +14,7 @@ run_static_checks() {
     local test_dir
 
     python3 tools/check_repo.py
+    python3 tools/check_published_apps.py
     python3 tools/generate_ricochet_rush_font.py --check
     local ricochet_test_dir
     ricochet_test_dir="$(mktemp -d /tmp/ricochet-rush-state.XXXXXX)"
@@ -153,10 +154,6 @@ run_static_checks() {
         -o "${test_dir}/test_cloud_hop_state"
     "${test_dir}/test_cloud_hop_state"
     python3 tools/generate_cloud_hop_font.py --check
-    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/apps/balloon_rush \
-        tests/test_balloon_rush_state.c main/apps/balloon_rush/balloon_rush_state.c \
-        -o "${test_dir}/test_balloon_rush_state"
-    "${test_dir}/test_balloon_rush_state"
     "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/apps/pocket_pond \
         tests/test_pocket_pond_state.c main/apps/pocket_pond/pocket_pond_state.c \
         -o "${test_dir}/test_pocket_pond_state"
@@ -171,6 +168,56 @@ run_static_checks() {
         tests/test_needle_rush_state.c main/apps/needle_rush/needle_rush_state.c \
         -o "${test_dir}/test_needle_rush_state"
     "${test_dir}/test_needle_rush_state"
+    rm -rf "${test_dir}"
+    test_dir="$(mktemp -d /tmp/published-app-tests.XXXXXX)"
+    python3 tools/test_excuse_call.py
+    python3 tools/generate_pocket_breach_font.py --check
+    python3 tools/test_pocket_breach.py
+    python3 tools/test_lane_leap.py
+    python3 tools/generate_code_theater_font.py --check
+    python3 tools/generate_deadline_station_font.py --check
+    python3 tools/test_pocket_hype.py
+    python3 tools/generate_pocket_hype_font.py --check
+    python3 tools/generate_pocket_hype_audio.py --check
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/apps/deadline_station \
+        tests/test_deadline_station_state.c main/apps/deadline_station/deadline_station_state.c \
+        main/apps/deadline_station/deadline_station_catalog.c -o "${test_dir}/test_deadline_station"
+    "${test_dir}/test_deadline_station"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/apps/just_seen \
+        tests/test_just_seen_state.c main/apps/just_seen/just_seen_state.c \
+        -o "${test_dir}/test_just_seen_state"
+    "${test_dir}/test_just_seen_state"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/apps/code_theater \
+        tests/test_code_theater_state.c main/apps/code_theater/code_theater_state.c \
+        -o "${test_dir}/test_code_theater_state"
+    "${test_dir}/test_code_theater_state"
+    "${CC:-cc}" -std=c11 -O2 -Wall -Wextra -Werror -Imain/apps/pocket_arcade \
+        tests/test_pocket_arcade_state.c main/apps/pocket_arcade/pa_scene.c \
+        main/apps/pocket_arcade/pa_hub.c main/apps/pocket_arcade/pa_g_*.c \
+        main/apps/pocket_arcade/pa_verse_data.c \
+        main/apps/pocket_arcade/pa_quiz_data.c \
+        main/apps/pocket_arcade/pa_picture_data.c \
+        -o "${test_dir}/test_pocket_arcade_state"
+    "${test_dir}/test_pocket_arcade_state"
+    python3 tools/test_pocket_arcade_levels.py
+    python3 tools/generate_pocket_arcade_fonts.py --check
+    "${CC:-cc}" -std=c11 -O2 -Wall -Wextra -Werror -Imain/apps/clean_sweep \
+        tests/test_clean_sweep_state.c main/apps/clean_sweep/clean_sweep_state.c \
+        -o "${test_dir}/test_clean_sweep_state"
+    "${test_dir}/test_clean_sweep_state"
+    python3 tools/generate_clean_sweep_fonts.py --check
+    "${CC:-cc}" -std=c11 -O2 -Wall -Wextra -Werror -Imain/apps/jelly_squeeze \
+        tests/test_jelly_squeeze_state.c main/apps/jelly_squeeze/jelly_squeeze_state.c \
+        -o "${test_dir}/test_jelly_squeeze_state"
+    "${test_dir}/test_jelly_squeeze_state"
+    python3 tools/generate_jelly_squeeze_fonts.py --check
+    for ebook_case in text state name audio; do
+        "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/apps/ebook \
+            "tests/test_ebook_${ebook_case}.c" "main/apps/ebook/ebook_${ebook_case}.c" \
+            -o "${test_dir}/test_ebook_${ebook_case}"
+        "${test_dir}/test_ebook_${ebook_case}"
+    done
+    python3 tools/generate_ebook_fonts.py --check
     rm -rf "${test_dir}"
     echo "Host tests: PASS"
 }

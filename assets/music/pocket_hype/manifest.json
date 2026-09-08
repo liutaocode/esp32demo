@@ -1,0 +1,367 @@
+{
+  "voice": "Tingting",
+  "speech_rate": 225,
+  "sample_rate": 16000,
+  "clips": [
+    {
+      "id": 0,
+      "scene": 0,
+      "tier": 1,
+      "phrase": "可以啊，有点东西",
+      "tts": true,
+      "duration_s": 1.641,
+      "peak": 15492,
+      "pcm_sha256": "7ec6498a23e8d1151372d42c1739da89866d9774b0d11f45b3e803fa144c15ea"
+    },
+    {
+      "id": 1,
+      "scene": 0,
+      "tier": 2,
+      "phrase": "这波必须给掌声",
+      "tts": true,
+      "duration_s": 1.578,
+      "peak": 21183,
+      "pcm_sha256": "502ac68dd19c37d4e4c731282859632d22ce86089a8e7424f1dcebfd2df29080"
+    },
+    {
+      "id": 2,
+      "scene": 0,
+      "tier": 3,
+      "phrase": "全体起立！太强了",
+      "tts": true,
+      "duration_s": 1.757,
+      "peak": 26869,
+      "pcm_sha256": "735de9c7d237d1991a92612688a212783a4fa9d0d220b0b4c2ea091d4d149039"
+    },
+    {
+      "id": 3,
+      "scene": 1,
+      "tier": 1,
+      "phrase": "让一让，主角来了",
+      "tts": true,
+      "duration_s": 1.584,
+      "peak": 16121,
+      "pcm_sha256": "2c9c5a41ae00188cb226c885117211af6e511397d77fb9930ce99d0d044eba69"
+    },
+    {
+      "id": 4,
+      "scene": 1,
+      "tier": 2,
+      "phrase": "灯光就位！看这里",
+      "tts": true,
+      "duration_s": 1.586,
+      "peak": 16310,
+      "pcm_sha256": "98b4aafdde239ddf619f6a6e8cba77baf50bd9e920ebc5ed014ab006a35f96c5"
+    },
+    {
+      "id": 5,
+      "scene": 1,
+      "tier": 3,
+      "phrase": "全场注意！闪亮登场",
+      "tts": true,
+      "duration_s": 2.14,
+      "peak": 16121,
+      "pcm_sha256": "45751d77ffb5c1296bfaa8ebb0f14949d997a33252b27200a91a79923f8865b4"
+    },
+    {
+      "id": 6,
+      "scene": 2,
+      "tier": 1,
+      "phrase": "等一下，先别揭晓",
+      "tts": true,
+      "duration_s": 1.853,
+      "peak": 16194,
+      "pcm_sha256": "3317e818770d4ad6573f307ce4d496b7f07f01f3d12693909ef4ec973d824637"
+    },
+    {
+      "id": 7,
+      "scene": 2,
+      "tier": 2,
+      "phrase": "答案马上就来",
+      "tts": true,
+      "duration_s": 1.389,
+      "peak": 17168,
+      "pcm_sha256": "b4fec2f67a14ec6a64224dcb1fca7a08d2a1d8c63f22dfc4f90c24d9422df4e6"
+    },
+    {
+      "id": 8,
+      "scene": 2,
+      "tier": 3,
+      "phrase": "见证奇迹的时候到了",
+      "tts": true,
+      "duration_s": 1.711,
+      "peak": 16121,
+      "pcm_sha256": "b4ca75b76958c972a58b78d7d1242226187ebbae3d8d7572eadac3ae638db4b6"
+    },
+    {
+      "id": 9,
+      "scene": 3,
+      "tier": 1,
+      "phrase": "刚刚是谁按了静音",
+      "tts": true,
+      "duration_s": 1.695,
+      "peak": 16991,
+      "pcm_sha256": "8bc58d6ae50e17d89e3443b9e9de1228218614547e8e186521b9d768cb44ff7e"
+    },
+    {
+      "id": 10,
+      "scene": 3,
+      "tier": 2,
+      "phrase": "没关系，我先笑一个",
+      "tts": true,
+      "duration_s": 1.885,
+      "peak": 16121,
+      "pcm_sha256": "d148d8b6fe10d8c4bb1b4a3c80073c0e630b390671a9cf8239eaf43e94157fd4"
+    },
+    {
+      "id": 11,
+      "scene": 3,
+      "tier": 3,
+      "phrase": "冷场不存在！我来捧",
+      "tts": true,
+      "duration_s": 2.024,
+      "peak": 16121,
+      "pcm_sha256": "f3086934facda9f1308c42bca661531184365a676be5d36c34e6304aaa9620f5"
+    },
+    {
+      "id": 12,
+      "scene": 4,
+      "tier": 1,
+      "phrase": "拿下！漂亮",
+      "tts": true,
+      "duration_s": 1.258,
+      "peak": 18432,
+      "pcm_sha256": "350405b152c30db218a363bb6d32d3bfee34899c85f58c497f30d6802523c114"
+    },
+    {
+      "id": 13,
+      "scene": 4,
+      "tier": 2,
+      "phrase": "这就是实力",
+      "tts": true,
+      "duration_s": 1.38,
+      "peak": 18222,
+      "pcm_sha256": "a2ffb46d714f020db65a7f8a34c75a13d3b52c8b7c2734bba4e7c324905d0813"
+    },
+    {
+      "id": 14,
+      "scene": 4,
+      "tier": 3,
+      "phrase": "冠军诞生！撒花",
+      "tts": true,
+      "duration_s": 1.776,
+      "peak": 16121,
+      "pcm_sha256": "055fc9fd7aa11216697991bbea58653619ca5657eb026eba8a93e28cd6297c54"
+    },
+    {
+      "id": 15,
+      "scene": 5,
+      "tier": 1,
+      "phrase": "没事，慢慢来",
+      "tts": true,
+      "duration_s": 1.49,
+      "peak": 17876,
+      "pcm_sha256": "96a3bc3c37b33916dcca0fcef20a5ec3a8ec59da26fb55869b52b62e99847b6d"
+    },
+    {
+      "id": 16,
+      "scene": 5,
+      "tier": 2,
+      "phrase": "已经很棒啦",
+      "tts": true,
+      "duration_s": 1.38,
+      "peak": 16116,
+      "pcm_sha256": "b472f48b64f41153fc97e69cb33728d8004abfcb7f78986ee3c51a0309ce84f8"
+    },
+    {
+      "id": 17,
+      "scene": 5,
+      "tier": 3,
+      "phrase": "给你一个大大的拥抱",
+      "tts": true,
+      "duration_s": 1.66,
+      "peak": 16083,
+      "pcm_sha256": "178d17a28b07394dcd232ede3a1dbf5e66d70675dd5854721ebd8a12ac7089c8"
+    },
+    {
+      "id": 18,
+      "scene": 0,
+      "tier": 1,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.1,
+      "peak": 15995,
+      "pcm_sha256": "5d3d80ef414500ca4e2dc8d9b7a03bcfeab3e4d69050e2f357c3e2ee5a904456"
+    },
+    {
+      "id": 19,
+      "scene": 0,
+      "tier": 2,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.38,
+      "peak": 19928,
+      "pcm_sha256": "ecc359c62fe982d565578f8f5e3b38015e6a74a20993a6510c284065d6dd3ec2"
+    },
+    {
+      "id": 20,
+      "scene": 0,
+      "tier": 3,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.66,
+      "peak": 26869,
+      "pcm_sha256": "87fc1a074c30bedc585539b0e5ed198c3892cc1deba73243d88356d3ff441b16"
+    },
+    {
+      "id": 21,
+      "scene": 1,
+      "tier": 1,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.1,
+      "peak": 8987,
+      "pcm_sha256": "473b3c5c7faa26a3ae4c36e773bf2ff16c1b5ea923ff301203805d388de84fa7"
+    },
+    {
+      "id": 22,
+      "scene": 1,
+      "tier": 2,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.38,
+      "peak": 8987,
+      "pcm_sha256": "afa18b5161c46b02c71fd8ee5c24fb818429b71afcc7011b9de88cc7087a8bbe"
+    },
+    {
+      "id": 23,
+      "scene": 1,
+      "tier": 3,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.66,
+      "peak": 8987,
+      "pcm_sha256": "7196a02bbb8582a5f131eddc670204ada9693c32d6abdb18356943c7ee5df263"
+    },
+    {
+      "id": 24,
+      "scene": 2,
+      "tier": 1,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.1,
+      "peak": 9055,
+      "pcm_sha256": "36145d31c580a35cf52ab244f5d31cf02734b5366f96138f049ef14181c05117"
+    },
+    {
+      "id": 25,
+      "scene": 2,
+      "tier": 2,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.38,
+      "peak": 9379,
+      "pcm_sha256": "4872e188058dfe85a445215e0faa59e7abf0c2eca12c824ef15904cd8fb96ceb"
+    },
+    {
+      "id": 26,
+      "scene": 2,
+      "tier": 3,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.66,
+      "peak": 11228,
+      "pcm_sha256": "4fae8a29d77f5c94c95fb4c43670b42483a977022d808eed710d517e20e2cb82"
+    },
+    {
+      "id": 27,
+      "scene": 3,
+      "tier": 1,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.1,
+      "peak": 6643,
+      "pcm_sha256": "c08a09edc4ff2bfee362a6c2a6a5a2986d2d48146d8bcc730535ffc42529ab1a"
+    },
+    {
+      "id": 28,
+      "scene": 3,
+      "tier": 2,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.38,
+      "peak": 6643,
+      "pcm_sha256": "e60445689e6f72ae966600b2a332690b1f9f63c1494da436b4616fc4d30421a8"
+    },
+    {
+      "id": 29,
+      "scene": 3,
+      "tier": 3,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.66,
+      "peak": 6643,
+      "pcm_sha256": "2f31db63a08ee58a19bc5c36c383b46de21949a346af51db6e6795ed5e1e5d75"
+    },
+    {
+      "id": 30,
+      "scene": 4,
+      "tier": 1,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.1,
+      "peak": 9608,
+      "pcm_sha256": "7e7645bfc951699434fd56a1da2eacf503765fab2bfaba6e35ad800869987fcd"
+    },
+    {
+      "id": 31,
+      "scene": 4,
+      "tier": 2,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.38,
+      "peak": 9608,
+      "pcm_sha256": "d5af27149ccf22e50de21154eac4926ac83d66410553dad0eec2affc46ac8cbc"
+    },
+    {
+      "id": 32,
+      "scene": 4,
+      "tier": 3,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.66,
+      "peak": 9608,
+      "pcm_sha256": "6ddf73b7a5a210621456163f93b1e475ad6395b3465dc8ba89c76f6c422ae94f"
+    },
+    {
+      "id": 33,
+      "scene": 5,
+      "tier": 1,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.1,
+      "peak": 6525,
+      "pcm_sha256": "242b7afe0c53462dc2428883f1fd9134a3e66dc626f7d71ece805693e23b97c9"
+    },
+    {
+      "id": 34,
+      "scene": 5,
+      "tier": 2,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.38,
+      "peak": 6525,
+      "pcm_sha256": "1df161bf792f700c699e168170394fc77a524bb21a5e033cb06652bd849b6858"
+    },
+    {
+      "id": 35,
+      "scene": 5,
+      "tier": 3,
+      "phrase": "",
+      "tts": false,
+      "duration_s": 1.66,
+      "peak": 6525,
+      "pcm_sha256": "1b76f68cd8afc17f295340da8485e3404463bc967163953da37be1d6684f11b5"
+    }
+  ]
+}

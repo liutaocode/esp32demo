@@ -65,3 +65,15 @@ Store reusable music and sound-effect sources in `music/`.
 Application font sources in `fonts/` are LVGL subsets of Noto Sans CJK or Source Han Sans, covered by the included SIL OFL 1.1 license. The corresponding `tools/generate_*` scripts record generation commands; firmware compiles the generated C files directly.
 
 `music/vibe_check/`, `music/idiom_pet/`, `music/word_sprite/`, `music/pvz_almanac/` and `music/laoluo_quotes/` contain offline narration assets. System voices are macOS Tingting (Mandarin) and Samantha (English); manifests record the text and asset hashes. WAV files support rebuilding and checks; ADPCM data is used by firmware. Lao Luo quote sources are listed in the application `quotes.csv`.
+
+## Additional published application assets
+
+Chinese fonts for the additional applications are Source Han Sans SC / Noto Sans
+CJK subsets under `fonts/OFL-NotoSansCJK.txt`. Bookshelf includes the GB2312 set
+at 12, 16 and 20 px; other applications include their UI characters. Generators
+and coverage checks live in `tools/`.
+
+Excuse Call ringtone credits and licenses are in the [audio sources](music/excuse_call/source/SOURCES.md).
+Phone icons live in `images/excuse_call/`. Other added game graphics are drawn
+by application code. Standalone projects retain their own `assets/` license
+documentation. Review covers, device captures and receipts are not source dependencies.

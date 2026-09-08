@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Size: 18 px
  * Bpp: 2
- * Opts: --size 18 --bpp 2 --format lvgl --font <repo>/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols ·。一三上下不么习亮人什住你健再出刚卡可叶和啦回园在壮声大天太失始它完定实家小尝康开张忆念慢戏成才择按数新明是有本朵来果柔树棵楚次正每没测清温游滴片生用的盛看确种第算繁练继续花芽茁见观记试说败起轮这选都键长阳雨鸟！，？ --range 0x20,0x23,0x25,0x2B,0x2D,0x2F,0x30-0x39,0x41-0x46 --no-compress --no-kerning --lv-fallback lv_font_montserrat_14 --lv-include lvgl.h --lv-font-name memory_garden_zh_18 -o <repo>/assets/fonts/memory_garden_zh_18.c
+ * Opts: --size 18 --bpp 2 --format lvgl --font /path/to/user/Desktop/CODE/folotoy/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols ·。一三上下不么习亮人什住你健再出刚卡可叶和啦回园在壮声大天太失始它完定实家小尝康开张忆念慢戏成才择按数新明是有本朵来果柔树棵楚次正每没测清温游滴片生用的盛看确种第算繁练继续花芽茁见观记试说败起轮这选都键长阳雨鸟！，？ --range 0x20,0x23,0x25,0x2B,0x2D,0x2F,0x30-0x39,0x41-0x46 --no-compress --no-kerning --lv-fallback lv_font_montserrat_14 --lv-include lvgl.h --lv-font-name memory_garden_zh_18 -o /path/to/user/Desktop/CODE/folotoy/assets/fonts/memory_garden_zh_18.c
  ******************************************************************************/
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE

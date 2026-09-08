@@ -1,0 +1,109 @@
+{
+  "recording_license": "CC0-1.0",
+  "recording_author": "Joseph SARDIN",
+  "source_pages": {
+    "purr": "https://bigsoundbank.com/cat-purr-s0436.html",
+    "meow": "https://bigsoundbank.com/miaulement-chat-2-s1890.html"
+  },
+  "original_sounds": "Three toy cues and a 120 BPM dance groove created for this application",
+  "format": "16 kHz mono IMA ADPCM; predictor/index zero, high nibble first; fresh decoder per loop",
+  "clips": [
+    {
+      "name": "call-0",
+      "group": 1,
+      "samples": 30400,
+      "bytes": 15200,
+      "adpcm_snr_db": 26.01,
+      "pcm_sha256": "ef6d17b47577d87dc9e03c535b0292f5ef5f054d60d8623224deae0d21c136cb"
+    },
+    {
+      "name": "call-1",
+      "group": 1,
+      "samples": 30400,
+      "bytes": 15200,
+      "adpcm_snr_db": 27.2,
+      "pcm_sha256": "bda087186c356342419cb636273cfc4cb3ae1783a2fa86adef4efd03c4bffeb1"
+    },
+    {
+      "name": "call-2",
+      "group": 1,
+      "samples": 30400,
+      "bytes": 15200,
+      "adpcm_snr_db": 24.5,
+      "pcm_sha256": "74b42e2fac8b3cd5757c72efe778bcece448b4e680501b7d1a8a4368c01bc441"
+    },
+    {
+      "name": "purr-0",
+      "group": 2,
+      "samples": 51200,
+      "bytes": 25600,
+      "adpcm_snr_db": 32.31,
+      "pcm_sha256": "c0868a2885d716975f89cbf9b1762f491fcb978f15ded31d0557d7c838487bbf"
+    },
+    {
+      "name": "purr-1",
+      "group": 2,
+      "samples": 51200,
+      "bytes": 25600,
+      "adpcm_snr_db": 25.75,
+      "pcm_sha256": "40034df4cf54b3cc36734b913f75d2324c3f072285b9535643d3033789f1c6f7"
+    },
+    {
+      "name": "purr-2",
+      "group": 2,
+      "samples": 51200,
+      "bytes": 25600,
+      "adpcm_snr_db": 24.76,
+      "pcm_sha256": "06d90b882fcabaa29d7e61542721dcab98d9efd5686bc58981db1bda53a6db0f"
+    },
+    {
+      "name": "toy-0",
+      "group": 3,
+      "samples": 9920,
+      "bytes": 4960,
+      "adpcm_snr_db": 32.55,
+      "pcm_sha256": "2ae873eab92d03cba1e3d588d16db0f897ab8c0dc91307172e934884e40e1cf2"
+    },
+    {
+      "name": "toy-1",
+      "group": 3,
+      "samples": 12000,
+      "bytes": 6000,
+      "adpcm_snr_db": 23.28,
+      "pcm_sha256": "01aab4e3f4870ee155c6dfd4eac77d316f39316182d8945fce9c5e40f55026ac"
+    },
+    {
+      "name": "toy-2",
+      "group": 3,
+      "samples": 13600,
+      "bytes": 6800,
+      "adpcm_snr_db": 27.17,
+      "pcm_sha256": "ab04be90a481d737cbdf93cd3727d4a2fe7ffcdfa8e2bc5a535f6f7e781ffb8e"
+    },
+    {
+      "name": "dance",
+      "group": 4,
+      "samples": 128000,
+      "bytes": 64000,
+      "adpcm_snr_db": 26.6,
+      "pcm_sha256": "6780c3d1e2b5a316e0fa0e581d2becfc252a492e45b8beed9598e270d03a9cbe"
+    }
+  ],
+  "sha256": {
+    "call-0.wav": "4b5869f0cce0807b3a32175bebf66594000c120bca9442696826fc108ad82b3d",
+    "call-1.wav": "081095598fee66403d48c654b69e16152f0ce3fd9f21fa8e57f228a141f59216",
+    "call-2.wav": "caa28a9d17d7d5220574a81b619b6c751d7d2774aaa8031410fe160b5fb969d1",
+    "cat_clips.c": "2824f4ad6cafbccc93ed4e13631cea8fad9062eb9f355392b44400fbc58fdd57",
+    "dance.wav": "ef598924f5a8df36c482d67964c9c0fd1d114d4b668c6dc5eae3b6654558c1bf",
+    "meow.wav": "c7954d203b1715f500dbd03b96fd022c3b50bbd135e91b48fd64991df9cbd20b",
+    "purr-0.wav": "b5714bb607b90fdb91c539b56dd36851b5de44e93094461fca5836695914c9e9",
+    "purr-1.wav": "5fa114862d3fe7ba586abdfd8f0ea706cdcb81796b263a628bc8f67c916ce235",
+    "purr-2.wav": "491b32c6de9338aba39c1686ab6aced46b54be6fc172d48c7635d19809cff6f4",
+    "purr.wav": "8db7bb17bb4785f9edd1cc352ea9c3324d4a611967945416f749a31ec5570951",
+    "source-meow.mp3": "87fb2d293e3d6ac6bf36b3d2910bc11df9155fe8b196fc273e2e4e52b950f4a2",
+    "source-purr.mp3": "1809316c24ddd40363201bdf09d1f43ae72a275c2510c552c286fee0ec53cac5",
+    "toy-0.wav": "452b4d6d4999ef9d58af28ed6efd34aa38a56d1b86ca4da40fab407b374b18d4",
+    "toy-1.wav": "e44423f4c60c9831d103d8c81225a83962c4bce56ef175b91b8abbf1a4e3fc29",
+    "toy-2.wav": "0e8cd8ba3fa42099b8782fd7b5fdd3bf41c2acae0d56762a3f2ef7e5c00a5cdf"
+  }
+}

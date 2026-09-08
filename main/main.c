@@ -58,7 +58,22 @@ void app_main(void) {
 #include "bsp_button.h"
 #include "bsp_battery.h"
 #include "bsp_pins.h"
-#if defined(FAP_APP_RICOCHET_RUSH)
+#if defined(FAP_APP_EXCUSE_CALL)
+#include "apps/excuse_call/excuse_call.h"
+#elif defined(FAP_APP_POCKET_BREACH)
+#include "apps/pocket_breach/pocket_breach.h"
+#include "bsp_audio.h"
+#elif defined(FAP_APP_CODE_THEATER)
+#include "apps/code_theater/code_theater.h"
+#elif defined(FAP_APP_DEADLINE_STATION)
+#include "apps/deadline_station/deadline_station.h"
+#elif defined(FAP_APP_POCKET_HYPE)
+#include "apps/pocket_hype/pocket_hype.h"
+#include "apps/pocket_hype/pocket_hype_audio.h"
+#include "bsp_audio.h"
+#elif defined(FAP_APP_LANE_LEAP)
+#include "apps/lane_leap/lane_leap.h"
+#elif defined(FAP_APP_RICOCHET_RUSH)
 #include "apps/ricochet_rush/ricochet_rush.h"
 #elif defined(FAP_APP_FRUIT_MERGE)
 #include "apps/fruit_merge/fruit_merge.h"
@@ -68,12 +83,14 @@ void app_main(void) {
 #include "apps/down_100/down_100.h"
 #elif defined(FAP_APP_MATH_RAIL)
 #include "apps/math_rail/math_rail.h"
+#elif defined(FAP_APP_EBOOK)
+#include "apps/ebook/ebook.h"
 #elif defined(FAP_APP_MATH_TRAIN)
 #include "apps/math_train/math_train.h"
+#elif defined(FAP_APP_JUST_SEEN)
+#include "apps/just_seen/just_seen.h"
 #elif defined(FAP_APP_POCKET_POND)
 #include "apps/pocket_pond/pocket_pond.h"
-#elif defined(FAP_APP_BALLOON_RUSH)
-#include "apps/balloon_rush/balloon_rush.h"
 #elif defined(FAP_APP_PVZ_ALMANAC)
 #include "apps/pvz_almanac/pvz_almanac.h"
 #include "bsp_audio.h"
@@ -102,18 +119,39 @@ void app_main(void) {
 #include "apps/memory_garden/memory_garden.h"
 #elif defined(FAP_APP_TOMATO_BLOOM)
 #include "apps/tomato_bloom/tomato_bloom.h"
+#elif defined(FAP_APP_POCKET_ARCADE)
+#include "apps/pocket_arcade/pocket_arcade.h"
+#elif defined(FAP_APP_JELLY_SQUEEZE)
+#include "apps/jelly_squeeze/jelly_squeeze.h"
+#include "apps/jelly_squeeze/jelly_squeeze_storage.h"
+#elif defined(FAP_APP_CLEAN_SWEEP)
+#include "apps/clean_sweep/clean_sweep.h"
 #else
 #include "apps/vibe_check/vibe_check.h"
 #include "bsp_audio.h"
 #endif
 #include "fap_screenshot.h"
+#include "esp_heap_caps.h"
 #include "esp_log.h"
 #include "esp_sleep.h"
+#include "esp_system.h"
 
 static const char *TAG = "main";
 static void on_key(bsp_btn_t btn, bsp_btn_ev_t ev, void *user) {
     (void)user;
-#if defined(FAP_APP_RICOCHET_RUSH)
+#if defined(FAP_APP_EXCUSE_CALL)
+    excuse_call_key(btn, ev);
+#elif defined(FAP_APP_POCKET_BREACH)
+    pocket_breach_key(btn, ev);
+#elif defined(FAP_APP_CODE_THEATER)
+    code_theater_key(btn, ev);
+#elif defined(FAP_APP_DEADLINE_STATION)
+    deadline_station_key(btn, ev);
+#elif defined(FAP_APP_POCKET_HYPE)
+    pocket_hype_key(btn, ev);
+#elif defined(FAP_APP_LANE_LEAP)
+    lane_leap_key(btn, ev);
+#elif defined(FAP_APP_RICOCHET_RUSH)
     ricochet_rush_key(btn, ev);
 #elif defined(FAP_APP_FRUIT_MERGE)
     fruit_merge_key(btn, ev);
@@ -123,12 +161,14 @@ static void on_key(bsp_btn_t btn, bsp_btn_ev_t ev, void *user) {
     down_100_key(btn, ev);
 #elif defined(FAP_APP_MATH_RAIL)
     math_rail_key(btn, ev);
+#elif defined(FAP_APP_EBOOK)
+    ebook_key(btn, ev);
 #elif defined(FAP_APP_MATH_TRAIN)
     math_train_key(btn, ev);
+#elif defined(FAP_APP_JUST_SEEN)
+    just_seen_key(btn, ev);
 #elif defined(FAP_APP_POCKET_POND)
     pocket_pond_key(btn, ev);
-#elif defined(FAP_APP_BALLOON_RUSH)
-    balloon_rush_key(btn, ev);
 #elif defined(FAP_APP_PVZ_ALMANAC)
     pvz_almanac_key(btn, ev);
 #elif defined(FAP_APP_WORD_SPRITE)
@@ -145,6 +185,12 @@ static void on_key(bsp_btn_t btn, bsp_btn_ev_t ev, void *user) {
     stack_rush_key(btn, ev);
 #elif defined(FAP_APP_IDIOM_PET)
     idiom_pet_key(btn, ev);
+#elif defined(FAP_APP_POCKET_ARCADE)
+    pocket_arcade_key(btn, ev);
+#elif defined(FAP_APP_JELLY_SQUEEZE)
+    jelly_squeeze_key(btn, ev);
+#elif defined(FAP_APP_CLEAN_SWEEP)
+    clean_sweep_key(btn, ev);
 #else
     if (!bsp_lvgl_lock(500)) return;
 #if defined(FAP_APP_LAOLUO_QUOTES)
@@ -161,7 +207,15 @@ static void on_key(bsp_btn_t btn, bsp_btn_ev_t ev, void *user) {
 }
 
 void app_main(void) {
-#if defined(FAP_APP_RICOCHET_RUSH)
+#if defined(FAP_APP_EXCUSE_CALL)
+    ESP_LOGI(TAG, "Excuse Call starting");
+#elif defined(FAP_APP_CODE_THEATER)
+    ESP_LOGI(TAG, "Code Theater starting");
+#elif defined(FAP_APP_DEADLINE_STATION)
+    ESP_LOGI(TAG, "FoloToy Deadline Station starting");
+#elif defined(FAP_APP_POCKET_HYPE)
+    ESP_LOGI(TAG, "FoloToy Pocket Hype starting");
+#elif defined(FAP_APP_RICOCHET_RUSH)
     ESP_LOGI(TAG, "FoloToy Ricochet Rush starting");
 #elif defined(FAP_APP_FRUIT_MERGE)
     ESP_LOGI(TAG, "FoloToy Fruit Merge starting");
@@ -171,12 +225,14 @@ void app_main(void) {
     ESP_LOGI(TAG, "FoloToy Down 100 starting");
 #elif defined(FAP_APP_MATH_RAIL)
     ESP_LOGI(TAG, "FoloToy Math Rail starting");
+#elif defined(FAP_APP_EBOOK)
+    ESP_LOGI(TAG, "FoloToy E-Book Reader starting");
 #elif defined(FAP_APP_MATH_TRAIN)
     ESP_LOGI(TAG, "FoloToy Math Train starting");
+#elif defined(FAP_APP_JUST_SEEN)
+    ESP_LOGI(TAG, "FoloToy Just Seen starting");
 #elif defined(FAP_APP_POCKET_POND)
     ESP_LOGI(TAG, "FoloToy Pocket Pond starting");
-#elif defined(FAP_APP_BALLOON_RUSH)
-    ESP_LOGI(TAG, "FoloToy Balloon Rush starting");
 #elif defined(FAP_APP_PVZ_ALMANAC)
     ESP_LOGI(TAG, "FoloToy Grassland Lab starting");
 #elif defined(FAP_APP_WORD_SPRITE)
@@ -199,6 +255,12 @@ void app_main(void) {
     ESP_LOGI(TAG, "FoloToy Daily Memory starting");
 #elif defined(FAP_APP_TOMATO_BLOOM)
     ESP_LOGI(TAG, "FoloToy Tomato Bloom starting");
+#elif defined(FAP_APP_POCKET_ARCADE)
+    ESP_LOGI(TAG, "FoloToy Pocket Arcade starting");
+#elif defined(FAP_APP_JELLY_SQUEEZE)
+    ESP_LOGI(TAG, "FoloToy Jelly Squeeze starting");
+#elif defined(FAP_APP_CLEAN_SWEEP)
+    ESP_LOGI(TAG, "FoloToy Clean Sweep starting");
 #else
     ESP_LOGI(TAG, "FoloToy Vibe Check starting");
 #endif
@@ -217,7 +279,19 @@ void app_main(void) {
     }
     bsp_display_backlight(100);
 
-#if defined(FAP_APP_RICOCHET_RUSH)
+#if defined(FAP_APP_EXCUSE_CALL)
+    excuse_call_prepare();
+#elif defined(FAP_APP_POCKET_BREACH)
+    pocket_breach_prepare();
+#elif defined(FAP_APP_CODE_THEATER)
+    code_theater_prepare();
+#elif defined(FAP_APP_DEADLINE_STATION)
+    deadline_station_prepare();
+#elif defined(FAP_APP_POCKET_HYPE)
+    pocket_hype_prepare();
+#elif defined(FAP_APP_LANE_LEAP)
+    lane_leap_prepare();
+#elif defined(FAP_APP_RICOCHET_RUSH)
     ricochet_rush_prepare();
 #elif defined(FAP_APP_FRUIT_MERGE)
     fruit_merge_prepare();
@@ -227,12 +301,15 @@ void app_main(void) {
     down_100_prepare();
 #elif defined(FAP_APP_MATH_RAIL)
     math_rail_prepare();
+#elif defined(FAP_APP_EBOOK)
+    // 挂载 books 分区和准备 netif 都会阻塞,和存档一样放在拿 LVGL 锁之前。
+    ebook_prepare();
 #elif defined(FAP_APP_MATH_TRAIN)
     math_train_prepare();
+#elif defined(FAP_APP_JUST_SEEN)
+    just_seen_prepare();
 #elif defined(FAP_APP_POCKET_POND)
     pocket_pond_prepare();
-#elif defined(FAP_APP_BALLOON_RUSH)
-    balloon_rush_prepare();
 #elif defined(FAP_APP_PVZ_ALMANAC)
     pvz_almanac_prepare();
 #elif defined(FAP_APP_WORD_SPRITE)
@@ -247,20 +324,44 @@ void app_main(void) {
     stack_rush_prepare_input();
 #elif defined(FAP_APP_IDIOM_PET)
     idiom_pet_prepare();
+#elif defined(FAP_APP_POCKET_ARCADE)
+    pocket_arcade_prepare();
+#elif defined(FAP_APP_CLEAN_SWEEP)
+    clean_sweep_prepare();
+#elif defined(FAP_APP_JELLY_SQUEEZE)
+    jelly_squeeze_prepare();
+    // 打开并读取 NVS 可能阻塞，放在拿 LVGL 锁之前做完。
+    js_progress_t jelly_progress = js_storage_init();
 #endif
     bool buttons_ok = (bsp_button_init(on_key, NULL) == ESP_OK);
     bool battery_ok = (bsp_battery_init() == ESP_OK);
-#if defined(FAP_APP_LAOLUO_QUOTES) || defined(FAP_APP_WORD_SPRITE) || defined(FAP_APP_IDIOM_PET) || defined(FAP_APP_PVZ_ALMANAC) || defined(FAP_APP_VIBE_CHECK)
+#if defined(FAP_APP_POCKET_BREACH) || defined(FAP_APP_POCKET_HYPE) || defined(FAP_APP_LAOLUO_QUOTES) || defined(FAP_APP_WORD_SPRITE) || defined(FAP_APP_IDIOM_PET) || defined(FAP_APP_PVZ_ALMANAC) || defined(FAP_APP_VIBE_CHECK) || defined(FAP_APP_F0_PROBE) || defined(FAP_APP_PM_KNIFE)
     bool audio_ok = (bsp_audio_init() == ESP_OK);
 #endif
-#if defined(FAP_APP_WORD_SPRITE)
+#if defined(FAP_APP_POCKET_BREACH)
+    pb_runtime_start(audio_ok);
+#elif defined(FAP_APP_POCKET_HYPE)
+    ph_audio_start(audio_ok);
+#elif defined(FAP_APP_WORD_SPRITE)
     ws_progress_t word_progress = ws_runtime_start(audio_ok);
 #elif defined(FAP_APP_IDIOM_PET)
     ip_voice_start(audio_ok);
 #endif
 
     if (bsp_lvgl_lock(1000)) {
-#if defined(FAP_APP_RICOCHET_RUSH)
+#if defined(FAP_APP_EXCUSE_CALL)
+        excuse_call_enter(buttons_ok);
+#elif defined(FAP_APP_POCKET_BREACH)
+        pocket_breach_enter(buttons_ok);
+#elif defined(FAP_APP_CODE_THEATER)
+        code_theater_enter(buttons_ok);
+#elif defined(FAP_APP_DEADLINE_STATION)
+        deadline_station_enter(buttons_ok);
+#elif defined(FAP_APP_POCKET_HYPE)
+        pocket_hype_enter(buttons_ok);
+#elif defined(FAP_APP_LANE_LEAP)
+        lane_leap_enter(buttons_ok);
+#elif defined(FAP_APP_RICOCHET_RUSH)
         ricochet_rush_enter(buttons_ok);
 #elif defined(FAP_APP_FRUIT_MERGE)
         fruit_merge_enter(buttons_ok);
@@ -270,12 +371,14 @@ void app_main(void) {
         down_100_enter(buttons_ok);
 #elif defined(FAP_APP_MATH_RAIL)
         math_rail_enter(buttons_ok);
+#elif defined(FAP_APP_EBOOK)
+        ebook_enter(buttons_ok);
 #elif defined(FAP_APP_MATH_TRAIN)
-        math_train_enter(buttons_ok);
+    math_train_enter(buttons_ok);
+#elif defined(FAP_APP_JUST_SEEN)
+        just_seen_enter(buttons_ok);
 #elif defined(FAP_APP_POCKET_POND)
         pocket_pond_enter(buttons_ok);
-#elif defined(FAP_APP_BALLOON_RUSH)
-        balloon_rush_enter(buttons_ok);
 #elif defined(FAP_APP_PVZ_ALMANAC)
         pvz_almanac_enter(audio_ok, buttons_ok);
 #elif defined(FAP_APP_WORD_SPRITE)
@@ -298,15 +401,24 @@ void app_main(void) {
         memory_garden_enter(buttons_ok);
 #elif defined(FAP_APP_TOMATO_BLOOM)
         tomato_bloom_enter(buttons_ok);
+#elif defined(FAP_APP_POCKET_ARCADE)
+        pocket_arcade_enter(buttons_ok);
+#elif defined(FAP_APP_JELLY_SQUEEZE)
+        jelly_squeeze_enter(buttons_ok, jelly_progress);
+#elif defined(FAP_APP_CLEAN_SWEEP)
+        clean_sweep_enter(buttons_ok);
 #else
         vibe_check_enter(buttons_ok, audio_ok);
 #endif
         bsp_lvgl_unlock();
     }
 
+    // 截图改成分条流式发送后不再需要整屏缓冲，只有这两款仍然带不动：
+    // 它们占住的是射频协议栈的静态内存，和截图任务的栈无关。
     fap_screenshot_start();
 
-#if defined(FAP_APP_LAOLUO_QUOTES) || defined(FAP_APP_WORD_SPRITE) || defined(FAP_APP_IDIOM_PET) || defined(FAP_APP_PVZ_ALMANAC) || defined(FAP_APP_VIBE_CHECK)
+
+#if defined(FAP_APP_POCKET_BREACH) || defined(FAP_APP_POCKET_HYPE) || defined(FAP_APP_LAOLUO_QUOTES) || defined(FAP_APP_WORD_SPRITE) || defined(FAP_APP_IDIOM_PET) || defined(FAP_APP_PVZ_ALMANAC) || defined(FAP_APP_VIBE_CHECK) || defined(FAP_APP_PM_KNIFE)
     ESP_LOGI(TAG, "ready: buttons=%d battery=%d audio=%d",
              buttons_ok, battery_ok, audio_ok);
 #else

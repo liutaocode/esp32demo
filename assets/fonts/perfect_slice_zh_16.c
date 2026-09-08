@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Size: 16 px
  * Bpp: 2
- * Opts: --size 16 --bpp 2 --format lvgl --font <repo>/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一上下不东习了亮人今份会传住你例停儿再准凭出击刀分切刚力加十半友可号启回块大好始完定家就左差已师开式归录得感成我战手把指按挑新日是暂更最有朋本术来松标模歇歪比水漂点甜生用目看真眼确称稳端第等精糕纪线练给继绩续绿缘能艺蛋西要请轻边返这连选配重键随高！，：？ --no-compress --no-kerning --lv-include lvgl.h --lv-font-name perfect_slice_zh_16 --lv-fallback lv_font_montserrat_14 -o <repo>/assets/fonts/perfect_slice_zh_16.c
+ * Opts: --size 16 --bpp 2 --format lvgl --font /path/to/user/Desktop/CODE/folotoy/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一上下不东习了亮人今份会传住你例停儿再准凭出击刀分切刚力加十半友可号启回块大好始完定家就左差已师开式归录得感成我战手把指按挑新日是暂更最有朋本术来松标模歇歪比水漂点甜生用目看真眼确称稳端第等精糕纪线练给继绩续绿缘能艺蛋西要请轻边返这连选配重键随高！，：？ --no-compress --no-kerning --lv-include lvgl.h --lv-font-name perfect_slice_zh_16 --lv-fallback lv_font_montserrat_14 -o /path/to/user/Desktop/CODE/folotoy/assets/fonts/perfect_slice_zh_16.c
  ******************************************************************************/
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE

@@ -1,0 +1,47 @@
+{
+  "rate": 16000,
+  "rings": 5,
+  "samples_per_ring": 72000,
+  "files": [
+    {
+      "path": "assets/music/excuse_call/source/marimba.mp3",
+      "sha256": "1b898c4d77969ee80e7a53ef227c38c6bd842045c1f1f37838914fa8ca5398ac",
+      "bytes": 63888
+    },
+    {
+      "path": "assets/music/excuse_call/source/vibration.mp3",
+      "sha256": "0125e5aac83f431305263569134611567f6823ef29ac52446b23ccac210b60f4",
+      "bytes": 28491
+    },
+    {
+      "path": "assets/music/excuse_call/excuse_call_pcm.c",
+      "sha256": "7ecbff72fdfe9cc0f96be5974b10d1498e44cdfdee7b1d880a43bf58a335da8f",
+      "bytes": 1555562
+    },
+    {
+      "path": "assets/music/excuse_call/ringtone-1.wav",
+      "sha256": "a8cef9e426bfe9fdd4a82f83132f0df44034aaee5862fb3f4e8c05b5d4b8d69e",
+      "bytes": 144044
+    },
+    {
+      "path": "assets/music/excuse_call/ringtone-2.wav",
+      "sha256": "c3678b41e14927040040d6d3e57884e36df7ed4190d535868389c07f96c360be",
+      "bytes": 144044
+    },
+    {
+      "path": "assets/music/excuse_call/ringtone-3.wav",
+      "sha256": "0fb3f8f0f85d8070d77d9c78db39ee9621776604b54fc52e571b36728d4927fd",
+      "bytes": 144044
+    },
+    {
+      "path": "assets/music/excuse_call/ringtone-4.wav",
+      "sha256": "f6aac8e48b0d42bd9400a5eb01ed9915c6df002c7d414dba2e394562b5edac4f",
+      "bytes": 144044
+    },
+    {
+      "path": "assets/music/excuse_call/ringtone-5.wav",
+      "sha256": "a9580ef5be8ed69bc1e1808443e9df5181faac0c5eb3993a0c9dbe31220e1ba8",
+      "bytes": 144044
+    }
+  ]
+}

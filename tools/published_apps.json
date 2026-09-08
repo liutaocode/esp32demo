@@ -1,0 +1,486 @@
+{
+  "checked_on": "2026-09-08",
+  "source_snapshot": "Reviewed local development sources; not a claim of binary reproduction.",
+  "applications": [
+    {
+      "community_id": 213,
+      "slug": "community-25c6443a",
+      "title": {
+        "zh": "随身书架",
+        "en": "Pocket Bookshelf"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "ebook"
+    },
+    {
+      "community_id": 204,
+      "slug": "community-b8400ebd",
+      "title": {
+        "zh": "口袋游戏厅",
+        "en": "Pocket Arcade"
+      },
+      "project_status": "published",
+      "latest_revision_status": "draft",
+      "source_directory": ".",
+      "build_selector": "pocket_arcade"
+    },
+    {
+      "community_id": 203,
+      "slug": "community-aa9d555f",
+      "title": {
+        "zh": "一挤就过",
+        "en": "Jelly Squeeze"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "jelly_squeeze"
+    },
+    {
+      "community_id": 201,
+      "slug": "community-4e55d1d4",
+      "title": {
+        "zh": "俄罗斯方块｜三个键玩的方块游戏",
+        "en": "Clean Sweep — Falling Blocks on Three Keys"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "clean_sweep"
+    },
+    {
+      "community_id": 195,
+      "slug": "community-96a3ecc3",
+      "title": {
+        "zh": "点点有数",
+        "en": "Tally Click"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/tally-click",
+      "build_selector": null
+    },
+    {
+      "community_id": 194,
+      "slug": "community-1f3ad7f6",
+      "title": {
+        "zh": "借过一下",
+        "en": "Excuse Call"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "excuse_call"
+    },
+    {
+      "community_id": 193,
+      "slug": "community-dc3adfbd",
+      "title": {
+        "zh": "英语磨耳朵",
+        "en": "English Listening Practice"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/listening-island",
+      "build_selector": null
+    },
+    {
+      "community_id": 189,
+      "slug": "community-26c9e714",
+      "title": {
+        "zh": "口袋突围",
+        "en": "Pocket Breach"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "pocket_breach"
+    },
+    {
+      "community_id": 188,
+      "slug": "community-88a4ee96",
+      "title": {
+        "zh": "小猫在呢",
+        "en": "Cat Is Here"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/cat-is-here",
+      "build_selector": null
+    },
+    {
+      "community_id": 187,
+      "slug": "community-4ea6d68e",
+      "title": {
+        "zh": "飞跃车道",
+        "en": "Lane Leap"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "lane_leap"
+    },
+    {
+      "community_id": 186,
+      "slug": "community-7c431eb1",
+      "title": {
+        "zh": "码上装忙",
+        "en": "Code Theater"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "code_theater"
+    },
+    {
+      "community_id": 183,
+      "slug": "community-9e09a683",
+      "title": {
+        "zh": "海昏侯博物馆口袋云游",
+        "en": "Haihunhou Museum Pocket Tour"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/haihunhou-museum",
+      "build_selector": null
+    },
+    {
+      "community_id": 182,
+      "slug": "community-dc933b82",
+      "title": {
+        "zh": "三星堆博物馆口袋云游",
+        "en": "Sanxingdui Museum Pocket Tour"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/sanxingdui-museum",
+      "build_selector": null
+    },
+    {
+      "community_id": 178,
+      "slug": "community-ac10c5ff",
+      "title": {
+        "zh": "节奏特工｜听一遍，按回来",
+        "en": "Rhythm Agent | Listen, Tap, Unlock"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/rhythm-agent",
+      "build_selector": null
+    },
+    {
+      "community_id": 177,
+      "slug": "community-81227539",
+      "title": {
+        "zh": "深夜来电｜今夜，请别挂断",
+        "en": "Night Call — Stay on the Line"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/night-call",
+      "build_selector": null
+    },
+    {
+      "community_id": 176,
+      "slug": "community-d2588835",
+      "title": {
+        "zh": "截稿小站",
+        "en": "Deadline Station"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "deadline_station"
+    },
+    {
+      "community_id": 173,
+      "slug": "community-4adb3bf5",
+      "title": {
+        "zh": "口袋捧场王｜这一刻，就差你捧个场",
+        "en": "Pocket Hype — Bring Your Own Applause"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "pocket_hype"
+    },
+    {
+      "community_id": 172,
+      "slug": "community-f5ab8a8c",
+      "title": {
+        "zh": "再弹一轮",
+        "en": "One More Ricochet"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "ricochet_rush"
+    },
+    {
+      "community_id": 171,
+      "slug": "community-cae5fb9b",
+      "title": {
+        "zh": "天天记一记",
+        "en": "Daily Memory"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "memory_garden"
+    },
+    {
+      "community_id": 170,
+      "slug": "community-222649e0",
+      "title": {
+        "zh": "再合一颗",
+        "en": "One More Fruit"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "fruit_merge"
+    },
+    {
+      "community_id": 169,
+      "slug": "community-b8beeee9",
+      "title": {
+        "zh": "草坪研究所：植物大战僵尸图鉴",
+        "en": "Lawn Lab: A Plants vs. Zombies Field Guide"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "pvz_almanac"
+    },
+    {
+      "community_id": 168,
+      "slug": "community-484e10fa",
+      "title": {
+        "zh": "老罗语录：口袋金句电台",
+        "en": "Lao Luo Quotes: Pocket Quote Radio"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "laoluo_quotes"
+    },
+    {
+      "community_id": 167,
+      "slug": "community-763ce965",
+      "title": {
+        "zh": "注意力小邮差",
+        "en": "Focus Post"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "focus_post"
+    },
+    {
+      "community_id": 166,
+      "slug": "100",
+      "title": {
+        "zh": "勇闯地下100层",
+        "en": "Down 100"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "down_100"
+    },
+    {
+      "community_id": 164,
+      "slug": "community-472c0b64",
+      "title": {
+        "zh": "再插一针",
+        "en": "Needle Rush"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "needle_rush"
+    },
+    {
+      "community_id": 162,
+      "slug": "community-18a522a9",
+      "title": {
+        "zh": "单词精灵｜听单词，养出小精灵",
+        "en": "Word Sprite — Listen, Learn, Grow"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "word_sprite"
+    },
+    {
+      "community_id": 161,
+      "slug": "community-b7b5e77f",
+      "title": {
+        "zh": "见好就收",
+        "en": "Balloon Rush"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "just_seen"
+    },
+    {
+      "community_id": 160,
+      "slug": "community-2ed581a9",
+      "title": {
+        "zh": "口算旅行号",
+        "en": "Math Rail"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "math_rail"
+    },
+    {
+      "community_id": 159,
+      "slug": "community-d0a84997",
+      "title": {
+        "zh": "口袋捞鱼",
+        "en": "Pocket Pond"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "pocket_pond"
+    },
+    {
+      "community_id": 158,
+      "slug": "community-378ca239",
+      "title": {
+        "zh": "口算小火车",
+        "en": "Math Train"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "math_train"
+    },
+    {
+      "community_id": 157,
+      "slug": "community-fba80105",
+      "title": {
+        "zh": "成语萌兽：读故事，孵伙伴",
+        "en": "Idiom Pet: Read Stories, Hatch Friends"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "idiom_pet"
+    },
+    {
+      "community_id": 156,
+      "slug": "community-180190d9",
+      "title": {
+        "zh": "气场测试｜今天你是哪一种？",
+        "en": "Vibe Check — Who Are You Today?"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "vibe_check"
+    },
+    {
+      "community_id": 155,
+      "slug": "community-0f3de1f0",
+      "title": {
+        "zh": "再跳一步",
+        "en": "Cloud Hop"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "cloud_hop"
+    },
+    {
+      "community_id": 154,
+      "slug": "community-fa109d4f",
+      "title": {
+        "zh": "一刀刚好",
+        "en": "Perfect Slice"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "perfect_slice"
+    },
+    {
+      "community_id": 153,
+      "slug": "community-a3c75f23",
+      "title": {
+        "zh": "社交电量牌｜你不必随时在线",
+        "en": "Social Battery — You Decide When to Connect"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "social_battery"
+    },
+    {
+      "community_id": 152,
+      "slug": "community-2275ac25",
+      "title": {
+        "zh": "再叠一层",
+        "en": "Stack Rush"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "stack_rush"
+    },
+    {
+      "community_id": 151,
+      "slug": "community-e4f8437e",
+      "title": {
+        "zh": "番茄花园",
+        "en": "Tomato Bloom"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "tomato_bloom"
+    },
+    {
+      "community_id": 150,
+      "slug": "community-aaeaa7ff",
+      "title": {
+        "zh": "姑苏十景·随身语音导览",
+        "en": "Suzhou Ten Sights Audio Guide"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/suzhou-travel",
+      "build_selector": null
+    },
+    {
+      "community_id": 149,
+      "slug": "community-20696c87",
+      "title": {
+        "zh": "六悦博物馆口袋云游",
+        "en": "Six Arts Museum Pocket Tour"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": "applications/six-arts-museum",
+      "build_selector": null
+    },
+    {
+      "community_id": 148,
+      "slug": "community-afd10ee6",
+      "title": {
+        "zh": "我的世界语音图鉴",
+        "en": "Talking Minecraft Guide"
+      },
+      "project_status": "published",
+      "latest_revision_status": "approved",
+      "source_directory": ".",
+      "build_selector": "minecraft_guide"
+    }
+  ]
+}

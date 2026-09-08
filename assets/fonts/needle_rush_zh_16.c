@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Size: 16 px
  * Bpp: 2
- * Opts: --size 16 --bpp 2 --format lvgl --font <repo>/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一三上下不中了五会住余你停儿全关再准分别到剩加十友反发可同向启命回圆大始字定射就差已师开式录得惜慢战手按挑捕换插撞数新是暂更最朋本机来模次歇点用盘看着破确碰稳空第等纪给继续缝能见试请赢转过返进连选重针错键长隙页题高！， --no-compress --no-kerning --lv-include lvgl.h --lv-font-name needle_rush_zh_16 --lv-fallback lv_font_montserrat_14 -o <repo>/assets/fonts/needle_rush_zh_16.c
+ * Opts: --size 16 --bpp 2 --format lvgl --font /path/to/user/Desktop/CODE/folotoy/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一三上下不中了五会住余你停儿全关再准分别到剩加十友反发可同向启命回圆大始字定射就差已师开式录得惜慢战手按挑捕换插撞数新是暂更最朋本机来模次歇点用盘看着破确碰稳空第等纪给继续缝能见试请赢转过返进连选重针错键长隙页题高！， --no-compress --no-kerning --lv-include lvgl.h --lv-font-name needle_rush_zh_16 --lv-fallback lv_font_montserrat_14 -o /path/to/user/Desktop/CODE/folotoy/assets/fonts/needle_rush_zh_16.c
  ******************************************************************************/
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE

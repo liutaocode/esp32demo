@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Size: 16 px
  * Bpp: 2
- * Opts: --size 16 --bpp 2 --format lvgl --font <repo>/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一上下不专个主也五人今作你充光全其再冲出则创别到前剧力加动卡去反变古只可听哪在场境墙增多夜天头好始字安定实客家小师带常幸建开式忽怪总情想愈成扇手找把择按探揭文日时是晓柔格梦模次正步气水沌治法注洞测涡混温满潜灵然玩环现用电略的益看着确种突窝第答精索细群者聊能脑自节英藏行见观规角解言议试语超路转轮软运进选通速造里重量锁键长门隐雄静音预题魔黑，？ --no-compress --no-kerning --lv-include lvgl.h --lv-font-name vibe_check_zh_16 --lv-fallback lv_font_montserrat_14 -o <repo>/assets/fonts/vibe_check_zh_16.c
+ * Opts: --size 16 --bpp 2 --format lvgl --font /path/to/user/Desktop/CODE/folotoy/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一上下不专个主也五人今作你充光全其再冲出则创别到前剧力加动卡去反变古只可听哪在场境墙增多夜天头好始字安定实客家小师带常幸建开式忽怪总情想愈成扇手找把择按探揭文日时是晓柔格梦模次正步气水沌治法注洞测涡混温满潜灵然玩环现用电略的益看着确种突窝第答精索细群者聊能脑自节英藏行见观规角解言议试语超路转轮软运进选通速造里重量锁键长门隐雄静音预题魔黑，？ --no-compress --no-kerning --lv-include lvgl.h --lv-font-name vibe_check_zh_16 --lv-fallback lv_font_montserrat_14 -o /path/to/user/Desktop/CODE/folotoy/assets/fonts/vibe_check_zh_16.c
  ******************************************************************************/
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE

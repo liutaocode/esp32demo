@@ -131,3 +131,5 @@ GitHub community documents: [CONTRIBUTING.md](../.github/CONTRIBUTING.md), [CODE
 ## Submitted applications
 
 See the [application catalog](../README.md) for source locations and build selectors.
+
+- [Published source review (2026-09-08)](development/release/published-source-review.md)

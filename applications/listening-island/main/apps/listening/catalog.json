@@ -1,0 +1,2318 @@
+{
+  "topics": [
+    "早安小屋",
+    "早餐集市",
+    "校园邮局",
+    "动物森林",
+    "阳光运动场",
+    "天气花园",
+    "周末探险",
+    "晚安星港"
+  ],
+  "sentences": [
+    {
+      "id": 0,
+      "topic": 0,
+      "en": "Good morning, my little friend.",
+      "zh": "早上好，小伙伴"
+    },
+    {
+      "id": 1,
+      "topic": 0,
+      "en": "It is time to get up.",
+      "zh": "该起床了"
+    },
+    {
+      "id": 2,
+      "topic": 0,
+      "en": "Please open the window.",
+      "zh": "请打开窗户"
+    },
+    {
+      "id": 3,
+      "topic": 0,
+      "en": "The sun is in the sky.",
+      "zh": "太阳在天上"
+    },
+    {
+      "id": 4,
+      "topic": 0,
+      "en": "I can make my bed.",
+      "zh": "我会整理床铺"
+    },
+    {
+      "id": 5,
+      "topic": 0,
+      "en": "Where are my blue socks?",
+      "zh": "我的蓝袜子在哪"
+    },
+    {
+      "id": 6,
+      "topic": 0,
+      "en": "My shoes are under the bed.",
+      "zh": "我的鞋在床底下"
+    },
+    {
+      "id": 7,
+      "topic": 0,
+      "en": "Please wash your face.",
+      "zh": "请洗脸"
+    },
+    {
+      "id": 8,
+      "topic": 0,
+      "en": "I brush my teeth every day.",
+      "zh": "我每天刷牙"
+    },
+    {
+      "id": 9,
+      "topic": 0,
+      "en": "This is my little sister.",
+      "zh": "这是我的妹妹"
+    },
+    {
+      "id": 10,
+      "topic": 0,
+      "en": "My brother is very tall.",
+      "zh": "我哥哥很高"
+    },
+    {
+      "id": 11,
+      "topic": 0,
+      "en": "Dad is in the kitchen.",
+      "zh": "爸爸在厨房"
+    },
+    {
+      "id": 12,
+      "topic": 0,
+      "en": "Mum is reading a book.",
+      "zh": "妈妈正在看书"
+    },
+    {
+      "id": 13,
+      "topic": 0,
+      "en": "I love my family.",
+      "zh": "我爱我的家人"
+    },
+    {
+      "id": 14,
+      "topic": 0,
+      "en": "The baby is sleeping.",
+      "zh": "宝宝正在睡觉"
+    },
+    {
+      "id": 15,
+      "topic": 0,
+      "en": "Please close the door.",
+      "zh": "请关门"
+    },
+    {
+      "id": 16,
+      "topic": 0,
+      "en": "My room is small and clean.",
+      "zh": "我的房间小又干净"
+    },
+    {
+      "id": 17,
+      "topic": 0,
+      "en": "There is a clock on the wall.",
+      "zh": "墙上有一个钟"
+    },
+    {
+      "id": 18,
+      "topic": 0,
+      "en": "The cat is on the sofa.",
+      "zh": "猫在沙发上"
+    },
+    {
+      "id": 19,
+      "topic": 0,
+      "en": "I put my toys in the box.",
+      "zh": "我把玩具放进盒子"
+    },
+    {
+      "id": 20,
+      "topic": 0,
+      "en": "Can you help me, please?",
+      "zh": "请你帮帮我好吗"
+    },
+    {
+      "id": 21,
+      "topic": 0,
+      "en": "Thank you for your help.",
+      "zh": "谢谢你的帮助"
+    },
+    {
+      "id": 22,
+      "topic": 0,
+      "en": "Have a nice day!",
+      "zh": "祝你今天愉快"
+    },
+    {
+      "id": 23,
+      "topic": 0,
+      "en": "See you after school.",
+      "zh": "放学后见"
+    },
+    {
+      "id": 24,
+      "topic": 0,
+      "en": "My name is Lily.",
+      "zh": "我的名字叫莉莉"
+    },
+    {
+      "id": 25,
+      "topic": 0,
+      "en": "I am eight years old.",
+      "zh": "我八岁了"
+    },
+    {
+      "id": 26,
+      "topic": 0,
+      "en": "Our house has a red door.",
+      "zh": "我们家有一扇红门"
+    },
+    {
+      "id": 27,
+      "topic": 0,
+      "en": "There is a cup on the table.",
+      "zh": "桌上有一个杯子"
+    },
+    {
+      "id": 28,
+      "topic": 0,
+      "en": "My bed is next to the window.",
+      "zh": "我的床在窗户旁边"
+    },
+    {
+      "id": 29,
+      "topic": 0,
+      "en": "I wake up at seven.",
+      "zh": "我七点醒来"
+    },
+    {
+      "id": 30,
+      "topic": 0,
+      "en": "Please put on your shirt.",
+      "zh": "请穿上你的衬衫"
+    },
+    {
+      "id": 31,
+      "topic": 0,
+      "en": "My trousers are black.",
+      "zh": "我的裤子是黑色的"
+    },
+    {
+      "id": 32,
+      "topic": 0,
+      "en": "I can't find my glasses.",
+      "zh": "我找不到我的眼镜"
+    },
+    {
+      "id": 33,
+      "topic": 0,
+      "en": "Here is your clean towel.",
+      "zh": "这是你的干净毛巾"
+    },
+    {
+      "id": 34,
+      "topic": 0,
+      "en": "The mirror is in the bathroom.",
+      "zh": "镜子在浴室里"
+    },
+    {
+      "id": 35,
+      "topic": 0,
+      "en": "My grandma makes lovely cakes.",
+      "zh": "我奶奶会做好吃的蛋糕"
+    },
+    {
+      "id": 36,
+      "topic": 0,
+      "en": "Grandpa is watering the plants.",
+      "zh": "爷爷正在给植物浇水"
+    },
+    {
+      "id": 37,
+      "topic": 0,
+      "en": "There are four people in my family.",
+      "zh": "我家有四口人"
+    },
+    {
+      "id": 38,
+      "topic": 0,
+      "en": "My cousin is coming today.",
+      "zh": "我的表亲今天要来"
+    },
+    {
+      "id": 39,
+      "topic": 0,
+      "en": "We have a small white house.",
+      "zh": "我们有一座白色小房子"
+    },
+    {
+      "id": 40,
+      "topic": 0,
+      "en": "Please tidy your room.",
+      "zh": "请整理你的房间"
+    },
+    {
+      "id": 41,
+      "topic": 0,
+      "en": "The key is beside the phone.",
+      "zh": "钥匙在电话旁边"
+    },
+    {
+      "id": 42,
+      "topic": 0,
+      "en": "My hat is on the chair.",
+      "zh": "我的帽子在椅子上"
+    },
+    {
+      "id": 43,
+      "topic": 0,
+      "en": "I get dressed by myself.",
+      "zh": "我自己穿衣服"
+    },
+    {
+      "id": 44,
+      "topic": 0,
+      "en": "We eat breakfast together.",
+      "zh": "我们一起吃早餐"
+    },
+    {
+      "id": 45,
+      "topic": 0,
+      "en": "This is my favourite toy.",
+      "zh": "这是我最喜欢的玩具"
+    },
+    {
+      "id": 46,
+      "topic": 0,
+      "en": "The teddy bear is soft.",
+      "zh": "泰迪熊软软的"
+    },
+    {
+      "id": 47,
+      "topic": 0,
+      "en": "Let's get ready for school.",
+      "zh": "我们准备上学吧"
+    },
+    {
+      "id": 48,
+      "topic": 1,
+      "en": "I would like some milk.",
+      "zh": "我想喝点牛奶"
+    },
+    {
+      "id": 49,
+      "topic": 1,
+      "en": "Do you like apples?",
+      "zh": "你喜欢苹果吗"
+    },
+    {
+      "id": 50,
+      "topic": 1,
+      "en": "These bananas are yellow.",
+      "zh": "这些香蕉是黄色的"
+    },
+    {
+      "id": 51,
+      "topic": 1,
+      "en": "I have two eggs for breakfast.",
+      "zh": "我早餐吃两个鸡蛋"
+    },
+    {
+      "id": 52,
+      "topic": 1,
+      "en": "The bread is on the plate.",
+      "zh": "面包在盘子上"
+    },
+    {
+      "id": 53,
+      "topic": 1,
+      "en": "This orange is very sweet.",
+      "zh": "这个橙子很甜"
+    },
+    {
+      "id": 54,
+      "topic": 1,
+      "en": "Please give me some water.",
+      "zh": "请给我一些水"
+    },
+    {
+      "id": 55,
+      "topic": 1,
+      "en": "I am hungry now.",
+      "zh": "我现在饿了"
+    },
+    {
+      "id": 56,
+      "topic": 1,
+      "en": "Are you thirsty?",
+      "zh": "你渴了吗"
+    },
+    {
+      "id": 57,
+      "topic": 1,
+      "en": "The soup is too hot.",
+      "zh": "汤太烫了"
+    },
+    {
+      "id": 58,
+      "topic": 1,
+      "en": "I like rice and fish.",
+      "zh": "我喜欢米饭和鱼"
+    },
+    {
+      "id": 59,
+      "topic": 1,
+      "en": "We have lunch at twelve.",
+      "zh": "我们十二点吃午饭"
+    },
+    {
+      "id": 60,
+      "topic": 1,
+      "en": "There are three red tomatoes.",
+      "zh": "有三个红番茄"
+    },
+    {
+      "id": 61,
+      "topic": 1,
+      "en": "Would you like a sandwich?",
+      "zh": "你想吃三明治吗"
+    },
+    {
+      "id": 62,
+      "topic": 1,
+      "en": "My favourite food is chicken.",
+      "zh": "我最喜欢吃鸡肉"
+    },
+    {
+      "id": 63,
+      "topic": 1,
+      "en": "Please pass me the spoon.",
+      "zh": "请把勺子递给我"
+    },
+    {
+      "id": 64,
+      "topic": 1,
+      "en": "How much is this cake?",
+      "zh": "这个蛋糕多少钱"
+    },
+    {
+      "id": 65,
+      "topic": 1,
+      "en": "The ice cream is cold.",
+      "zh": "冰淇淋是凉的"
+    },
+    {
+      "id": 66,
+      "topic": 1,
+      "en": "Let's share this big pizza.",
+      "zh": "我们分享这个大披萨"
+    },
+    {
+      "id": 67,
+      "topic": 1,
+      "en": "I don't like onions.",
+      "zh": "我不喜欢洋葱"
+    },
+    {
+      "id": 68,
+      "topic": 1,
+      "en": "Wash the apple before you eat.",
+      "zh": "吃苹果前要洗一洗"
+    },
+    {
+      "id": 69,
+      "topic": 1,
+      "en": "There is some juice in the cup.",
+      "zh": "杯子里有一些果汁"
+    },
+    {
+      "id": 70,
+      "topic": 1,
+      "en": "Dinner is ready.",
+      "zh": "晚饭准备好了"
+    },
+    {
+      "id": 71,
+      "topic": 1,
+      "en": "This meal is really nice.",
+      "zh": "这顿饭真好吃"
+    },
+    {
+      "id": 72,
+      "topic": 1,
+      "en": "Can I have some noodles?",
+      "zh": "我能吃些面条吗"
+    },
+    {
+      "id": 73,
+      "topic": 1,
+      "en": "The potatoes are in the basket.",
+      "zh": "土豆在篮子里"
+    },
+    {
+      "id": 74,
+      "topic": 1,
+      "en": "I would like a pear.",
+      "zh": "我想要一个梨"
+    },
+    {
+      "id": 75,
+      "topic": 1,
+      "en": "These grapes are purple.",
+      "zh": "这些葡萄是紫色的"
+    },
+    {
+      "id": 76,
+      "topic": 1,
+      "en": "The watermelon is very big.",
+      "zh": "这个西瓜很大"
+    },
+    {
+      "id": 77,
+      "topic": 1,
+      "en": "I have a bowl of porridge.",
+      "zh": "我有一碗粥"
+    },
+    {
+      "id": 78,
+      "topic": 1,
+      "en": "We need some carrots.",
+      "zh": "我们需要一些胡萝卜"
+    },
+    {
+      "id": 79,
+      "topic": 1,
+      "en": "The strawberries smell nice.",
+      "zh": "草莓闻起来很香"
+    },
+    {
+      "id": 80,
+      "topic": 1,
+      "en": "I eat vegetables every day.",
+      "zh": "我每天吃蔬菜"
+    },
+    {
+      "id": 81,
+      "topic": 1,
+      "en": "There are six cups on the table.",
+      "zh": "桌上有六个杯子"
+    },
+    {
+      "id": 82,
+      "topic": 1,
+      "en": "Please cut the cake.",
+      "zh": "请切蛋糕"
+    },
+    {
+      "id": 83,
+      "topic": 1,
+      "en": "Can we make some cookies?",
+      "zh": "我们能做些饼干吗"
+    },
+    {
+      "id": 84,
+      "topic": 1,
+      "en": "The butter is in the fridge.",
+      "zh": "黄油在冰箱里"
+    },
+    {
+      "id": 85,
+      "topic": 1,
+      "en": "I like cheese on my bread.",
+      "zh": "我喜欢面包上放奶酪"
+    },
+    {
+      "id": 86,
+      "topic": 1,
+      "en": "This lemon tastes sour.",
+      "zh": "这个柠檬尝起来酸酸的"
+    },
+    {
+      "id": 87,
+      "topic": 1,
+      "en": "The bottle is empty.",
+      "zh": "瓶子是空的"
+    },
+    {
+      "id": 88,
+      "topic": 1,
+      "en": "Please use a small bowl.",
+      "zh": "请用一个小碗"
+    },
+    {
+      "id": 89,
+      "topic": 1,
+      "en": "I want a glass of orange juice.",
+      "zh": "我想要一杯橙汁"
+    },
+    {
+      "id": 90,
+      "topic": 1,
+      "en": "We buy food at the market.",
+      "zh": "我们在市场买食物"
+    },
+    {
+      "id": 91,
+      "topic": 1,
+      "en": "The fish is very fresh.",
+      "zh": "这条鱼很新鲜"
+    },
+    {
+      "id": 92,
+      "topic": 1,
+      "en": "I can use chopsticks.",
+      "zh": "我会用筷子"
+    },
+    {
+      "id": 93,
+      "topic": 1,
+      "en": "We need a little salt.",
+      "zh": "我们需要一点盐"
+    },
+    {
+      "id": 94,
+      "topic": 1,
+      "en": "Please save some cake for me.",
+      "zh": "请给我留点蛋糕"
+    },
+    {
+      "id": 95,
+      "topic": 1,
+      "en": "I am full now, thank you.",
+      "zh": "我吃饱了，谢谢"
+    },
+    {
+      "id": 96,
+      "topic": 2,
+      "en": "This is my new schoolbag.",
+      "zh": "这是我的新书包"
+    },
+    {
+      "id": 97,
+      "topic": 2,
+      "en": "My pencil is in the bag.",
+      "zh": "我的铅笔在包里"
+    },
+    {
+      "id": 98,
+      "topic": 2,
+      "en": "Please sit down.",
+      "zh": "请坐下"
+    },
+    {
+      "id": 99,
+      "topic": 2,
+      "en": "Please stand up.",
+      "zh": "请站起来"
+    },
+    {
+      "id": 100,
+      "topic": 2,
+      "en": "Open your book, please.",
+      "zh": "请打开书"
+    },
+    {
+      "id": 101,
+      "topic": 2,
+      "en": "Listen to the teacher.",
+      "zh": "听老师讲课"
+    },
+    {
+      "id": 102,
+      "topic": 2,
+      "en": "May I ask a question?",
+      "zh": "我可以问个问题吗"
+    },
+    {
+      "id": 103,
+      "topic": 2,
+      "en": "I can spell my name.",
+      "zh": "我会拼写自己的名字"
+    },
+    {
+      "id": 104,
+      "topic": 2,
+      "en": "There are ten books on the desk.",
+      "zh": "桌上有十本书"
+    },
+    {
+      "id": 105,
+      "topic": 2,
+      "en": "This ruler is very long.",
+      "zh": "这把尺子很长"
+    },
+    {
+      "id": 106,
+      "topic": 2,
+      "en": "Can I borrow your eraser?",
+      "zh": "我能借你的橡皮吗"
+    },
+    {
+      "id": 107,
+      "topic": 2,
+      "en": "We read stories in class.",
+      "zh": "我们在课上读故事"
+    },
+    {
+      "id": 108,
+      "topic": 2,
+      "en": "Our classroom is bright.",
+      "zh": "我们的教室很明亮"
+    },
+    {
+      "id": 109,
+      "topic": 2,
+      "en": "The library is next to the hall.",
+      "zh": "图书馆在大厅旁边"
+    },
+    {
+      "id": 110,
+      "topic": 2,
+      "en": "We play games after class.",
+      "zh": "我们课后玩游戏"
+    },
+    {
+      "id": 111,
+      "topic": 2,
+      "en": "Let's draw a big tree.",
+      "zh": "我们画一棵大树吧"
+    },
+    {
+      "id": 112,
+      "topic": 2,
+      "en": "I have art on Monday.",
+      "zh": "我星期一有美术课"
+    },
+    {
+      "id": 113,
+      "topic": 2,
+      "en": "My best friend is kind.",
+      "zh": "我最好的朋友很友善"
+    },
+    {
+      "id": 114,
+      "topic": 2,
+      "en": "We help each other.",
+      "zh": "我们互相帮助"
+    },
+    {
+      "id": 115,
+      "topic": 2,
+      "en": "It is time to go home.",
+      "zh": "该回家了"
+    },
+    {
+      "id": 116,
+      "topic": 2,
+      "en": "Don't run in the classroom.",
+      "zh": "不要在教室里跑"
+    },
+    {
+      "id": 117,
+      "topic": 2,
+      "en": "Please put up your hand.",
+      "zh": "请举手"
+    },
+    {
+      "id": 118,
+      "topic": 2,
+      "en": "I do my homework after dinner.",
+      "zh": "我晚饭后做作业"
+    },
+    {
+      "id": 119,
+      "topic": 2,
+      "en": "Let's clean the blackboard.",
+      "zh": "我们擦黑板吧"
+    },
+    {
+      "id": 120,
+      "topic": 2,
+      "en": "My teacher has a green bag.",
+      "zh": "我的老师有一个绿包"
+    },
+    {
+      "id": 121,
+      "topic": 2,
+      "en": "We sing songs in music class.",
+      "zh": "我们在音乐课上唱歌"
+    },
+    {
+      "id": 122,
+      "topic": 2,
+      "en": "I like learning new things.",
+      "zh": "我喜欢学习新东西"
+    },
+    {
+      "id": 123,
+      "topic": 2,
+      "en": "Can you read this word?",
+      "zh": "你会读这个单词吗"
+    },
+    {
+      "id": 124,
+      "topic": 2,
+      "en": "Write the date on the board.",
+      "zh": "在黑板上写下日期"
+    },
+    {
+      "id": 125,
+      "topic": 2,
+      "en": "My notebook is pink.",
+      "zh": "我的笔记本是粉色的"
+    },
+    {
+      "id": 126,
+      "topic": 2,
+      "en": "There are twenty children here.",
+      "zh": "这里有二十个孩子"
+    },
+    {
+      "id": 127,
+      "topic": 2,
+      "en": "Our lesson starts at eight.",
+      "zh": "我们八点开始上课"
+    },
+    {
+      "id": 128,
+      "topic": 2,
+      "en": "Please speak a little louder.",
+      "zh": "请说话大声一点"
+    },
+    {
+      "id": 129,
+      "topic": 2,
+      "en": "I don't understand this question.",
+      "zh": "我不明白这个问题"
+    },
+    {
+      "id": 130,
+      "topic": 2,
+      "en": "Can you say that again?",
+      "zh": "你能再说一遍吗"
+    },
+    {
+      "id": 131,
+      "topic": 2,
+      "en": "Let's count from one to ten.",
+      "zh": "我们从一数到十吧"
+    },
+    {
+      "id": 132,
+      "topic": 2,
+      "en": "The answer is five.",
+      "zh": "答案是五"
+    },
+    {
+      "id": 133,
+      "topic": 2,
+      "en": "This picture is very colourful.",
+      "zh": "这幅画色彩很丰富"
+    },
+    {
+      "id": 134,
+      "topic": 2,
+      "en": "We have science on Tuesday.",
+      "zh": "我们星期二有科学课"
+    },
+    {
+      "id": 135,
+      "topic": 2,
+      "en": "I sit next to my friend.",
+      "zh": "我坐在朋友旁边"
+    },
+    {
+      "id": 136,
+      "topic": 2,
+      "en": "The bell is ringing.",
+      "zh": "铃正在响"
+    },
+    {
+      "id": 137,
+      "topic": 2,
+      "en": "Please line up at the door.",
+      "zh": "请在门口排队"
+    },
+    {
+      "id": 138,
+      "topic": 2,
+      "en": "Our playground is very big.",
+      "zh": "我们的操场很大"
+    },
+    {
+      "id": 139,
+      "topic": 2,
+      "en": "Put the paper in the bin.",
+      "zh": "把纸放进垃圾桶"
+    },
+    {
+      "id": 140,
+      "topic": 2,
+      "en": "I forgot my pencil case.",
+      "zh": "我忘带铅笔盒了"
+    },
+    {
+      "id": 141,
+      "topic": 2,
+      "en": "Let's work in pairs.",
+      "zh": "我们两人一组吧"
+    },
+    {
+      "id": 142,
+      "topic": 2,
+      "en": "We learn something new today.",
+      "zh": "我们今天学了新东西"
+    },
+    {
+      "id": 143,
+      "topic": 2,
+      "en": "School finishes at four.",
+      "zh": "学校四点放学"
+    },
+    {
+      "id": 144,
+      "topic": 3,
+      "en": "A rabbit has long ears.",
+      "zh": "兔子有长耳朵"
+    },
+    {
+      "id": 145,
+      "topic": 3,
+      "en": "The dog is running fast.",
+      "zh": "狗跑得很快"
+    },
+    {
+      "id": 146,
+      "topic": 3,
+      "en": "I can see a little bird.",
+      "zh": "我看见一只小鸟"
+    },
+    {
+      "id": 147,
+      "topic": 3,
+      "en": "The panda is eating bamboo.",
+      "zh": "熊猫正在吃竹子"
+    },
+    {
+      "id": 148,
+      "topic": 3,
+      "en": "An elephant has a long nose.",
+      "zh": "大象有长鼻子"
+    },
+    {
+      "id": 149,
+      "topic": 3,
+      "en": "The monkey is in the tree.",
+      "zh": "猴子在树上"
+    },
+    {
+      "id": 150,
+      "topic": 3,
+      "en": "A fish can swim.",
+      "zh": "鱼会游泳"
+    },
+    {
+      "id": 151,
+      "topic": 3,
+      "en": "The duck is in the pond.",
+      "zh": "鸭子在池塘里"
+    },
+    {
+      "id": 152,
+      "topic": 3,
+      "en": "The tiger is very strong.",
+      "zh": "老虎很强壮"
+    },
+    {
+      "id": 153,
+      "topic": 3,
+      "en": "Look at that tall giraffe.",
+      "zh": "看那只高高的长颈鹿"
+    },
+    {
+      "id": 154,
+      "topic": 3,
+      "en": "The sheep is white.",
+      "zh": "绵羊是白色的"
+    },
+    {
+      "id": 155,
+      "topic": 3,
+      "en": "A frog can jump.",
+      "zh": "青蛙会跳"
+    },
+    {
+      "id": 156,
+      "topic": 3,
+      "en": "The horse is brown.",
+      "zh": "马是棕色的"
+    },
+    {
+      "id": 157,
+      "topic": 3,
+      "en": "There are five little pigs.",
+      "zh": "有五只小猪"
+    },
+    {
+      "id": 158,
+      "topic": 3,
+      "en": "The lion is sleeping.",
+      "zh": "狮子正在睡觉"
+    },
+    {
+      "id": 159,
+      "topic": 3,
+      "en": "This turtle is very slow.",
+      "zh": "这只乌龟很慢"
+    },
+    {
+      "id": 160,
+      "topic": 3,
+      "en": "Be quiet near the animals.",
+      "zh": "在动物旁要安静"
+    },
+    {
+      "id": 161,
+      "topic": 3,
+      "en": "Don't feed the bears.",
+      "zh": "不要喂熊"
+    },
+    {
+      "id": 162,
+      "topic": 3,
+      "en": "A butterfly is on the flower.",
+      "zh": "蝴蝶在花上"
+    },
+    {
+      "id": 163,
+      "topic": 3,
+      "en": "The bee is very busy.",
+      "zh": "蜜蜂很忙碌"
+    },
+    {
+      "id": 164,
+      "topic": 3,
+      "en": "My pet cat likes fish.",
+      "zh": "我的宠物猫喜欢鱼"
+    },
+    {
+      "id": 165,
+      "topic": 3,
+      "en": "The chicken has two legs.",
+      "zh": "鸡有两条腿"
+    },
+    {
+      "id": 166,
+      "topic": 3,
+      "en": "The mouse is behind the box.",
+      "zh": "老鼠在盒子后面"
+    },
+    {
+      "id": 167,
+      "topic": 3,
+      "en": "I want to visit the zoo.",
+      "zh": "我想去动物园"
+    },
+    {
+      "id": 168,
+      "topic": 3,
+      "en": "The fox has a big tail.",
+      "zh": "狐狸有一条大尾巴"
+    },
+    {
+      "id": 169,
+      "topic": 3,
+      "en": "A cow gives us milk.",
+      "zh": "奶牛给我们牛奶"
+    },
+    {
+      "id": 170,
+      "topic": 3,
+      "en": "The goat is on the hill.",
+      "zh": "山羊在山坡上"
+    },
+    {
+      "id": 171,
+      "topic": 3,
+      "en": "A snake has no legs.",
+      "zh": "蛇没有腿"
+    },
+    {
+      "id": 172,
+      "topic": 3,
+      "en": "The owl has big eyes.",
+      "zh": "猫头鹰有大眼睛"
+    },
+    {
+      "id": 173,
+      "topic": 3,
+      "en": "A whale lives in the sea.",
+      "zh": "鲸鱼住在海里"
+    },
+    {
+      "id": 174,
+      "topic": 3,
+      "en": "The dolphin can jump high.",
+      "zh": "海豚能跳得很高"
+    },
+    {
+      "id": 175,
+      "topic": 3,
+      "en": "A penguin cannot fly.",
+      "zh": "企鹅不会飞"
+    },
+    {
+      "id": 176,
+      "topic": 3,
+      "en": "The spider has eight legs.",
+      "zh": "蜘蛛有八条腿"
+    },
+    {
+      "id": 177,
+      "topic": 3,
+      "en": "There is an ant on the leaf.",
+      "zh": "叶子上有一只蚂蚁"
+    },
+    {
+      "id": 178,
+      "topic": 3,
+      "en": "The parrot can say hello.",
+      "zh": "鹦鹉会说你好"
+    },
+    {
+      "id": 179,
+      "topic": 3,
+      "en": "The squirrel is eating a nut.",
+      "zh": "松鼠正在吃坚果"
+    },
+    {
+      "id": 180,
+      "topic": 3,
+      "en": "Two birds are building a nest.",
+      "zh": "两只鸟正在筑巢"
+    },
+    {
+      "id": 181,
+      "topic": 3,
+      "en": "The duck has orange feet.",
+      "zh": "鸭子有橙色的脚"
+    },
+    {
+      "id": 182,
+      "topic": 3,
+      "en": "My puppy likes to play.",
+      "zh": "我的小狗喜欢玩耍"
+    },
+    {
+      "id": 183,
+      "topic": 3,
+      "en": "The kitten is drinking milk.",
+      "zh": "小猫正在喝牛奶"
+    },
+    {
+      "id": 184,
+      "topic": 3,
+      "en": "The bear has thick fur.",
+      "zh": "熊有浓密的毛"
+    },
+    {
+      "id": 185,
+      "topic": 3,
+      "en": "A zebra has black stripes.",
+      "zh": "斑马有黑色的条纹"
+    },
+    {
+      "id": 186,
+      "topic": 3,
+      "en": "The deer is very gentle.",
+      "zh": "鹿很温顺"
+    },
+    {
+      "id": 187,
+      "topic": 3,
+      "en": "The crab walks on the sand.",
+      "zh": "螃蟹在沙滩上走"
+    },
+    {
+      "id": 188,
+      "topic": 3,
+      "en": "We should be kind to animals.",
+      "zh": "我们应该善待动物"
+    },
+    {
+      "id": 189,
+      "topic": 3,
+      "en": "The hen is sitting on eggs.",
+      "zh": "母鸡正坐在蛋上"
+    },
+    {
+      "id": 190,
+      "topic": 3,
+      "en": "A camel lives in the desert.",
+      "zh": "骆驼住在沙漠里"
+    },
+    {
+      "id": 191,
+      "topic": 3,
+      "en": "I can hear a bird singing.",
+      "zh": "我能听到鸟儿歌唱"
+    },
+    {
+      "id": 192,
+      "topic": 4,
+      "en": "Let's play football together.",
+      "zh": "我们一起踢足球吧"
+    },
+    {
+      "id": 193,
+      "topic": 4,
+      "en": "I can ride a bike.",
+      "zh": "我会骑自行车"
+    },
+    {
+      "id": 194,
+      "topic": 4,
+      "en": "Can you swim with me?",
+      "zh": "你能和我游泳吗"
+    },
+    {
+      "id": 195,
+      "topic": 4,
+      "en": "She is good at dancing.",
+      "zh": "她擅长跳舞"
+    },
+    {
+      "id": 196,
+      "topic": 4,
+      "en": "He can jump very high.",
+      "zh": "他能跳得很高"
+    },
+    {
+      "id": 197,
+      "topic": 4,
+      "en": "Catch the ball, please.",
+      "zh": "请接住球"
+    },
+    {
+      "id": 198,
+      "topic": 4,
+      "en": "Throw the ball to me.",
+      "zh": "把球扔给我"
+    },
+    {
+      "id": 199,
+      "topic": 4,
+      "en": "We are on the same team.",
+      "zh": "我们在同一队"
+    },
+    {
+      "id": 200,
+      "topic": 4,
+      "en": "Run to the big tree.",
+      "zh": "跑向那棵大树"
+    },
+    {
+      "id": 201,
+      "topic": 4,
+      "en": "Please wait for your turn.",
+      "zh": "请等轮到你"
+    },
+    {
+      "id": 202,
+      "topic": 4,
+      "en": "I like playing basketball.",
+      "zh": "我喜欢打篮球"
+    },
+    {
+      "id": 203,
+      "topic": 4,
+      "en": "Let's fly a kite.",
+      "zh": "我们放风筝吧"
+    },
+    {
+      "id": 204,
+      "topic": 4,
+      "en": "The kite is high in the sky.",
+      "zh": "风筝高高地飞在天上"
+    },
+    {
+      "id": 205,
+      "topic": 4,
+      "en": "I walk to school every day.",
+      "zh": "我每天走路上学"
+    },
+    {
+      "id": 206,
+      "topic": 4,
+      "en": "We can skip with a rope.",
+      "zh": "我们可以跳绳"
+    },
+    {
+      "id": 207,
+      "topic": 4,
+      "en": "My legs are tired.",
+      "zh": "我的腿累了"
+    },
+    {
+      "id": 208,
+      "topic": 4,
+      "en": "Let's take a short break.",
+      "zh": "我们休息一会儿吧"
+    },
+    {
+      "id": 209,
+      "topic": 4,
+      "en": "Drink some water after running.",
+      "zh": "跑步后喝些水"
+    },
+    {
+      "id": 210,
+      "topic": 4,
+      "en": "You are doing very well.",
+      "zh": "你做得非常好"
+    },
+    {
+      "id": 211,
+      "topic": 4,
+      "en": "Try again, you can do it.",
+      "zh": "再试一次，你能做到"
+    },
+    {
+      "id": 212,
+      "topic": 4,
+      "en": "Playing outside is fun.",
+      "zh": "在外面玩很有趣"
+    },
+    {
+      "id": 213,
+      "topic": 4,
+      "en": "We have a race today.",
+      "zh": "我们今天有一场赛跑"
+    },
+    {
+      "id": 214,
+      "topic": 4,
+      "en": "The blue team wins.",
+      "zh": "蓝队赢了"
+    },
+    {
+      "id": 215,
+      "topic": 4,
+      "en": "Let's clap for our friends.",
+      "zh": "我们为朋友们鼓掌吧"
+    },
+    {
+      "id": 216,
+      "topic": 4,
+      "en": "I have a new tennis racket.",
+      "zh": "我有一副新网球拍"
+    },
+    {
+      "id": 217,
+      "topic": 4,
+      "en": "She runs faster than me.",
+      "zh": "她跑得比我快"
+    },
+    {
+      "id": 218,
+      "topic": 4,
+      "en": "He is learning to skate.",
+      "zh": "他正在学滑冰"
+    },
+    {
+      "id": 219,
+      "topic": 4,
+      "en": "Please wear your helmet.",
+      "zh": "请戴上你的头盔"
+    },
+    {
+      "id": 220,
+      "topic": 4,
+      "en": "The swimming pool is open.",
+      "zh": "游泳池开放了"
+    },
+    {
+      "id": 221,
+      "topic": 4,
+      "en": "We exercise in the morning.",
+      "zh": "我们在早上锻炼"
+    },
+    {
+      "id": 222,
+      "topic": 4,
+      "en": "Touch your toes slowly.",
+      "zh": "慢慢碰你的脚趾"
+    },
+    {
+      "id": 223,
+      "topic": 4,
+      "en": "Stretch your arms out.",
+      "zh": "把你的双臂伸展开"
+    },
+    {
+      "id": 224,
+      "topic": 4,
+      "en": "I can stand on one leg.",
+      "zh": "我能单脚站立"
+    },
+    {
+      "id": 225,
+      "topic": 4,
+      "en": "Let's hop like a rabbit.",
+      "zh": "我们像兔子一样跳吧"
+    },
+    {
+      "id": 226,
+      "topic": 4,
+      "en": "Walk slowly on the ice.",
+      "zh": "在冰上慢慢走"
+    },
+    {
+      "id": 227,
+      "topic": 4,
+      "en": "I want to learn table tennis.",
+      "zh": "我想学乒乓球"
+    },
+    {
+      "id": 228,
+      "topic": 4,
+      "en": "Kick the ball into the goal.",
+      "zh": "把球踢进球门"
+    },
+    {
+      "id": 229,
+      "topic": 4,
+      "en": "The match starts at three.",
+      "zh": "比赛三点开始"
+    },
+    {
+      "id": 230,
+      "topic": 4,
+      "en": "My favourite sport is swimming.",
+      "zh": "我最喜欢的运动是游泳"
+    },
+    {
+      "id": 231,
+      "topic": 4,
+      "en": "We are ready to start.",
+      "zh": "我们准备好开始了"
+    },
+    {
+      "id": 232,
+      "topic": 4,
+      "en": "Please tie your shoelaces.",
+      "zh": "请系好你的鞋带"
+    },
+    {
+      "id": 233,
+      "topic": 4,
+      "en": "My team wears yellow shirts.",
+      "zh": "我的队穿黄色上衣"
+    },
+    {
+      "id": 234,
+      "topic": 4,
+      "en": "Let's go for a long walk.",
+      "zh": "我们去走一大段路吧"
+    },
+    {
+      "id": 235,
+      "topic": 4,
+      "en": "The rope is too short.",
+      "zh": "这根绳子太短了"
+    },
+    {
+      "id": 236,
+      "topic": 4,
+      "en": "I can do ten jumps.",
+      "zh": "我能跳十下"
+    },
+    {
+      "id": 237,
+      "topic": 4,
+      "en": "Don't push your friends.",
+      "zh": "不要推你的朋友"
+    },
+    {
+      "id": 238,
+      "topic": 4,
+      "en": "Everyone can join the game.",
+      "zh": "每个人都能加入游戏"
+    },
+    {
+      "id": 239,
+      "topic": 4,
+      "en": "That was a great game!",
+      "zh": "那真是一场精彩的比赛"
+    },
+    {
+      "id": 240,
+      "topic": 5,
+      "en": "It is sunny today.",
+      "zh": "今天是晴天"
+    },
+    {
+      "id": 241,
+      "topic": 5,
+      "en": "It is raining outside.",
+      "zh": "外面正在下雨"
+    },
+    {
+      "id": 242,
+      "topic": 5,
+      "en": "Take your umbrella with you.",
+      "zh": "带上你的雨伞"
+    },
+    {
+      "id": 243,
+      "topic": 5,
+      "en": "The wind is very strong.",
+      "zh": "风很大"
+    },
+    {
+      "id": 244,
+      "topic": 5,
+      "en": "I like warm spring days.",
+      "zh": "我喜欢温暖的春天"
+    },
+    {
+      "id": 245,
+      "topic": 5,
+      "en": "Summer is hot.",
+      "zh": "夏天很热"
+    },
+    {
+      "id": 246,
+      "topic": 5,
+      "en": "Leaves fall in autumn.",
+      "zh": "树叶在秋天落下"
+    },
+    {
+      "id": 247,
+      "topic": 5,
+      "en": "We make a snowman in winter.",
+      "zh": "我们在冬天堆雪人"
+    },
+    {
+      "id": 248,
+      "topic": 5,
+      "en": "Put on your warm coat.",
+      "zh": "穿上你的暖外套"
+    },
+    {
+      "id": 249,
+      "topic": 5,
+      "en": "Look at the rainbow.",
+      "zh": "看那道彩虹"
+    },
+    {
+      "id": 250,
+      "topic": 5,
+      "en": "There are clouds in the sky.",
+      "zh": "天上有云"
+    },
+    {
+      "id": 251,
+      "topic": 5,
+      "en": "The flowers need some water.",
+      "zh": "花儿需要一些水"
+    },
+    {
+      "id": 252,
+      "topic": 5,
+      "en": "This flower is pink.",
+      "zh": "这朵花是粉色的"
+    },
+    {
+      "id": 253,
+      "topic": 5,
+      "en": "The grass is green.",
+      "zh": "草是绿色的"
+    },
+    {
+      "id": 254,
+      "topic": 5,
+      "en": "We plant a tree today.",
+      "zh": "我们今天种一棵树"
+    },
+    {
+      "id": 255,
+      "topic": 5,
+      "en": "The river is long.",
+      "zh": "这条河很长"
+    },
+    {
+      "id": 256,
+      "topic": 5,
+      "en": "I can see the moon.",
+      "zh": "我能看见月亮"
+    },
+    {
+      "id": 257,
+      "topic": 5,
+      "en": "The stars are bright tonight.",
+      "zh": "今晚星星很亮"
+    },
+    {
+      "id": 258,
+      "topic": 5,
+      "en": "It is cold in the morning.",
+      "zh": "早上很冷"
+    },
+    {
+      "id": 259,
+      "topic": 5,
+      "en": "The snow is soft and white.",
+      "zh": "雪又软又白"
+    },
+    {
+      "id": 260,
+      "topic": 5,
+      "en": "Let's go to the beach.",
+      "zh": "我们去海滩吧"
+    },
+    {
+      "id": 261,
+      "topic": 5,
+      "en": "The sea is blue.",
+      "zh": "大海是蓝色的"
+    },
+    {
+      "id": 262,
+      "topic": 5,
+      "en": "Please keep the park clean.",
+      "zh": "请保持公园整洁"
+    },
+    {
+      "id": 263,
+      "topic": 5,
+      "en": "What a beautiful day!",
+      "zh": "多么美好的一天"
+    },
+    {
+      "id": 264,
+      "topic": 5,
+      "en": "The sky is grey this morning.",
+      "zh": "今天早上天空灰蒙蒙的"
+    },
+    {
+      "id": 265,
+      "topic": 5,
+      "en": "It might rain this afternoon.",
+      "zh": "今天下午可能会下雨"
+    },
+    {
+      "id": 266,
+      "topic": 5,
+      "en": "I can hear the thunder.",
+      "zh": "我能听到雷声"
+    },
+    {
+      "id": 267,
+      "topic": 5,
+      "en": "The rain has stopped.",
+      "zh": "雨已经停了"
+    },
+    {
+      "id": 268,
+      "topic": 5,
+      "en": "There is a puddle on the path.",
+      "zh": "小路上有一个水坑"
+    },
+    {
+      "id": 269,
+      "topic": 5,
+      "en": "My boots keep my feet dry.",
+      "zh": "我的靴子让脚保持干燥"
+    },
+    {
+      "id": 270,
+      "topic": 5,
+      "en": "The air feels fresh today.",
+      "zh": "今天空气很清新"
+    },
+    {
+      "id": 271,
+      "topic": 5,
+      "en": "A rainbow has many colours.",
+      "zh": "彩虹有很多颜色"
+    },
+    {
+      "id": 272,
+      "topic": 5,
+      "en": "We can see a mountain far away.",
+      "zh": "我们能看到远处的山"
+    },
+    {
+      "id": 273,
+      "topic": 5,
+      "en": "The lake looks like a mirror.",
+      "zh": "湖面看起来像一面镜子"
+    },
+    {
+      "id": 274,
+      "topic": 5,
+      "en": "Small seeds grow into plants.",
+      "zh": "小种子长成植物"
+    },
+    {
+      "id": 275,
+      "topic": 5,
+      "en": "The tree has many green leaves.",
+      "zh": "这棵树有很多绿叶"
+    },
+    {
+      "id": 276,
+      "topic": 5,
+      "en": "Be careful with the little flower.",
+      "zh": "小心呵护这朵小花"
+    },
+    {
+      "id": 277,
+      "topic": 5,
+      "en": "The sun goes down in the evening.",
+      "zh": "太阳在傍晚落下"
+    },
+    {
+      "id": 278,
+      "topic": 5,
+      "en": "It gets dark early in winter.",
+      "zh": "冬天天黑得早"
+    },
+    {
+      "id": 279,
+      "topic": 5,
+      "en": "I love the sound of rain.",
+      "zh": "我喜欢下雨的声音"
+    },
+    {
+      "id": 280,
+      "topic": 5,
+      "en": "The sand feels warm.",
+      "zh": "沙子摸起来暖暖的"
+    },
+    {
+      "id": 281,
+      "topic": 5,
+      "en": "There are shells on the beach.",
+      "zh": "海滩上有贝壳"
+    },
+    {
+      "id": 282,
+      "topic": 5,
+      "en": "We pick up litter in the park.",
+      "zh": "我们在公园捡垃圾"
+    },
+    {
+      "id": 283,
+      "topic": 5,
+      "en": "Please turn off the tap.",
+      "zh": "请关掉水龙头"
+    },
+    {
+      "id": 284,
+      "topic": 5,
+      "en": "We should save water.",
+      "zh": "我们应该节约用水"
+    },
+    {
+      "id": 285,
+      "topic": 5,
+      "en": "The days are long in summer.",
+      "zh": "夏天白天很长"
+    },
+    {
+      "id": 286,
+      "topic": 5,
+      "en": "The moon looks round tonight.",
+      "zh": "今晚月亮看起来很圆"
+    },
+    {
+      "id": 287,
+      "topic": 5,
+      "en": "Spring is my favourite season.",
+      "zh": "春天是我最喜欢的季节"
+    },
+    {
+      "id": 288,
+      "topic": 6,
+      "en": "Where is the bus stop?",
+      "zh": "公交站在哪里"
+    },
+    {
+      "id": 289,
+      "topic": 6,
+      "en": "Turn left at the shop.",
+      "zh": "在商店处左转"
+    },
+    {
+      "id": 290,
+      "topic": 6,
+      "en": "Turn right at the school.",
+      "zh": "在学校处右转"
+    },
+    {
+      "id": 291,
+      "topic": 6,
+      "en": "Go straight, please.",
+      "zh": "请一直往前走"
+    },
+    {
+      "id": 292,
+      "topic": 6,
+      "en": "The park is near my home.",
+      "zh": "公园在我家附近"
+    },
+    {
+      "id": 293,
+      "topic": 6,
+      "en": "We go there by bus.",
+      "zh": "我们坐公交去那里"
+    },
+    {
+      "id": 294,
+      "topic": 6,
+      "en": "Wait for the green light.",
+      "zh": "等绿灯亮起"
+    },
+    {
+      "id": 295,
+      "topic": 6,
+      "en": "Hold my hand, please.",
+      "zh": "请牵着我的手"
+    },
+    {
+      "id": 296,
+      "topic": 6,
+      "en": "Let's visit our grandma.",
+      "zh": "我们去看望奶奶吧"
+    },
+    {
+      "id": 297,
+      "topic": 6,
+      "en": "We are going on a picnic.",
+      "zh": "我们要去野餐"
+    },
+    {
+      "id": 298,
+      "topic": 6,
+      "en": "Bring some fruit and water.",
+      "zh": "带一些水果和水"
+    },
+    {
+      "id": 299,
+      "topic": 6,
+      "en": "This map can help us.",
+      "zh": "这张地图能帮助我们"
+    },
+    {
+      "id": 300,
+      "topic": 6,
+      "en": "The shop opens at nine.",
+      "zh": "商店九点开门"
+    },
+    {
+      "id": 301,
+      "topic": 6,
+      "en": "I want to buy a red hat.",
+      "zh": "我想买一顶红帽子"
+    },
+    {
+      "id": 302,
+      "topic": 6,
+      "en": "These shoes are too big.",
+      "zh": "这双鞋太大了"
+    },
+    {
+      "id": 303,
+      "topic": 6,
+      "en": "Can I try this on?",
+      "zh": "我能试穿这件吗"
+    },
+    {
+      "id": 304,
+      "topic": 6,
+      "en": "The train is coming.",
+      "zh": "火车要来了"
+    },
+    {
+      "id": 305,
+      "topic": 6,
+      "en": "We can see a big bridge.",
+      "zh": "我们能看见一座大桥"
+    },
+    {
+      "id": 306,
+      "topic": 6,
+      "en": "Let's take a photo.",
+      "zh": "我们拍张照片吧"
+    },
+    {
+      "id": 307,
+      "topic": 6,
+      "en": "I found a beautiful shell.",
+      "zh": "我找到一个漂亮贝壳"
+    },
+    {
+      "id": 308,
+      "topic": 6,
+      "en": "Please stay with your family.",
+      "zh": "请和家人待在一起"
+    },
+    {
+      "id": 309,
+      "topic": 6,
+      "en": "The museum is very quiet.",
+      "zh": "博物馆很安静"
+    },
+    {
+      "id": 310,
+      "topic": 6,
+      "en": "We had a happy day.",
+      "zh": "我们度过了快乐的一天"
+    },
+    {
+      "id": 311,
+      "topic": 6,
+      "en": "Let's come here again.",
+      "zh": "我们下次再来这里吧"
+    },
+    {
+      "id": 312,
+      "topic": 6,
+      "en": "We pack our bags on Friday.",
+      "zh": "我们星期五收拾行李"
+    },
+    {
+      "id": 313,
+      "topic": 6,
+      "en": "Dad drives us to the countryside.",
+      "zh": "爸爸开车带我们去乡下"
+    },
+    {
+      "id": 314,
+      "topic": 6,
+      "en": "The ticket is in my pocket.",
+      "zh": "票在我的口袋里"
+    },
+    {
+      "id": 315,
+      "topic": 6,
+      "en": "Which bus goes to the park?",
+      "zh": "哪路公交去公园"
+    },
+    {
+      "id": 316,
+      "topic": 6,
+      "en": "We need to cross the street.",
+      "zh": "我们需要过马路"
+    },
+    {
+      "id": 317,
+      "topic": 6,
+      "en": "Look both ways before crossing.",
+      "zh": "过马路前看看两边"
+    },
+    {
+      "id": 318,
+      "topic": 6,
+      "en": "There is a bakery on the corner.",
+      "zh": "拐角处有一家面包店"
+    },
+    {
+      "id": 319,
+      "topic": 6,
+      "en": "The post office is over there.",
+      "zh": "邮局在那边"
+    },
+    {
+      "id": 320,
+      "topic": 6,
+      "en": "The hospital is behind the bank.",
+      "zh": "医院在银行后面"
+    },
+    {
+      "id": 321,
+      "topic": 6,
+      "en": "Let's meet at the front gate.",
+      "zh": "我们在前门见面吧"
+    },
+    {
+      "id": 322,
+      "topic": 6,
+      "en": "The bus is full of people.",
+      "zh": "公交车上坐满了人"
+    },
+    {
+      "id": 323,
+      "topic": 6,
+      "en": "Please give her your seat.",
+      "zh": "请把你的座位让给她"
+    },
+    {
+      "id": 324,
+      "topic": 6,
+      "en": "How far is the beach?",
+      "zh": "海滩有多远"
+    },
+    {
+      "id": 325,
+      "topic": 6,
+      "en": "We will arrive in ten minutes.",
+      "zh": "我们十分钟后到达"
+    },
+    {
+      "id": 326,
+      "topic": 6,
+      "en": "I can carry my own bag.",
+      "zh": "我能自己背包"
+    },
+    {
+      "id": 327,
+      "topic": 6,
+      "en": "We see old things in the museum.",
+      "zh": "我们在博物馆看古老物品"
+    },
+    {
+      "id": 328,
+      "topic": 6,
+      "en": "There is a painting of a horse.",
+      "zh": "有一幅画着马的画"
+    },
+    {
+      "id": 329,
+      "topic": 6,
+      "en": "Please don't touch the paintings.",
+      "zh": "请不要触摸画作"
+    },
+    {
+      "id": 330,
+      "topic": 6,
+      "en": "The gift shop sells postcards.",
+      "zh": "礼品店卖明信片"
+    },
+    {
+      "id": 331,
+      "topic": 6,
+      "en": "I want to send a card to Mum.",
+      "zh": "我想给妈妈寄张卡片"
+    },
+    {
+      "id": 332,
+      "topic": 6,
+      "en": "This road goes to the river.",
+      "zh": "这条路通向河边"
+    },
+    {
+      "id": 333,
+      "topic": 6,
+      "en": "Let's rest under that tree.",
+      "zh": "我们在那棵树下休息吧"
+    },
+    {
+      "id": 334,
+      "topic": 6,
+      "en": "I lost my hat on the bus.",
+      "zh": "我把帽子丢在公交车上"
+    },
+    {
+      "id": 335,
+      "topic": 6,
+      "en": "We can ask someone for help.",
+      "zh": "我们可以请别人帮忙"
+    },
+    {
+      "id": 336,
+      "topic": 7,
+      "en": "How do you feel today?",
+      "zh": "你今天感觉怎么样"
+    },
+    {
+      "id": 337,
+      "topic": 7,
+      "en": "I am happy to see you.",
+      "zh": "见到你我很开心"
+    },
+    {
+      "id": 338,
+      "topic": 7,
+      "en": "I feel a little sad.",
+      "zh": "我有一点难过"
+    },
+    {
+      "id": 339,
+      "topic": 7,
+      "en": "It's all right to ask for help.",
+      "zh": "可以向别人寻求帮助"
+    },
+    {
+      "id": 340,
+      "topic": 7,
+      "en": "Take a deep breath.",
+      "zh": "深深吸一口气"
+    },
+    {
+      "id": 341,
+      "topic": 7,
+      "en": "I am proud of you.",
+      "zh": "我为你感到骄傲"
+    },
+    {
+      "id": 342,
+      "topic": 7,
+      "en": "Tell me about your day.",
+      "zh": "说说你今天的事吧"
+    },
+    {
+      "id": 343,
+      "topic": 7,
+      "en": "I made a new friend today.",
+      "zh": "我今天交了一个新朋友"
+    },
+    {
+      "id": 344,
+      "topic": 7,
+      "en": "Let's read a story together.",
+      "zh": "我们一起读个故事吧"
+    },
+    {
+      "id": 345,
+      "topic": 7,
+      "en": "The little bear found his home.",
+      "zh": "小熊找到了自己的家"
+    },
+    {
+      "id": 346,
+      "topic": 7,
+      "en": "The princess has a small garden.",
+      "zh": "公主有一个小花园"
+    },
+    {
+      "id": 347,
+      "topic": 7,
+      "en": "The little duck is brave.",
+      "zh": "小鸭子很勇敢"
+    },
+    {
+      "id": 348,
+      "topic": 7,
+      "en": "Sharing makes us happy.",
+      "zh": "分享让我们快乐"
+    },
+    {
+      "id": 349,
+      "topic": 7,
+      "en": "Please say sorry to your friend.",
+      "zh": "请向你的朋友说对不起"
+    },
+    {
+      "id": 350,
+      "topic": 7,
+      "en": "Thank you for being kind.",
+      "zh": "谢谢你的友善"
+    },
+    {
+      "id": 351,
+      "topic": 7,
+      "en": "Tomorrow is a new day.",
+      "zh": "明天是新的一天"
+    },
+    {
+      "id": 352,
+      "topic": 7,
+      "en": "Put your books away.",
+      "zh": "把你的书收好"
+    },
+    {
+      "id": 353,
+      "topic": 7,
+      "en": "It is time for bed.",
+      "zh": "该睡觉了"
+    },
+    {
+      "id": 354,
+      "topic": 7,
+      "en": "Turn off the light, please.",
+      "zh": "请关灯"
+    },
+    {
+      "id": 355,
+      "topic": 7,
+      "en": "The room is quiet now.",
+      "zh": "房间现在很安静"
+    },
+    {
+      "id": 356,
+      "topic": 7,
+      "en": "Close your eyes gently.",
+      "zh": "轻轻闭上眼睛"
+    },
+    {
+      "id": 357,
+      "topic": 7,
+      "en": "Good night, sweet dreams.",
+      "zh": "晚安，做个好梦"
+    },
+    {
+      "id": 358,
+      "topic": 7,
+      "en": "I love you very much.",
+      "zh": "我非常爱你"
+    },
+    {
+      "id": 359,
+      "topic": 7,
+      "en": "See you in the morning.",
+      "zh": "明天早上见"
+    },
+    {
+      "id": 360,
+      "topic": 7,
+      "en": "I felt nervous before the game.",
+      "zh": "比赛前我感到紧张"
+    },
+    {
+      "id": 361,
+      "topic": 7,
+      "en": "My friend made me laugh.",
+      "zh": "我的朋友逗我笑了"
+    },
+    {
+      "id": 362,
+      "topic": 7,
+      "en": "It is okay to make mistakes.",
+      "zh": "犯错没有关系"
+    },
+    {
+      "id": 363,
+      "topic": 7,
+      "en": "I will try my best tomorrow.",
+      "zh": "我明天会尽最大努力"
+    },
+    {
+      "id": 364,
+      "topic": 7,
+      "en": "You can tell me anything.",
+      "zh": "你可以告诉我任何事"
+    },
+    {
+      "id": 365,
+      "topic": 7,
+      "en": "Being honest is very important.",
+      "zh": "诚实很重要"
+    },
+    {
+      "id": 366,
+      "topic": 7,
+      "en": "We can solve this together.",
+      "zh": "我们能一起解决这件事"
+    },
+    {
+      "id": 367,
+      "topic": 7,
+      "en": "Everyone is good at something.",
+      "zh": "每个人都有擅长的事"
+    },
+    {
+      "id": 368,
+      "topic": 7,
+      "en": "I learned to be patient today.",
+      "zh": "我今天学会了耐心"
+    },
+    {
+      "id": 369,
+      "topic": 7,
+      "en": "The little mouse helped the lion.",
+      "zh": "小老鼠帮助了狮子"
+    },
+    {
+      "id": 370,
+      "topic": 7,
+      "en": "The rabbit shared his carrots.",
+      "zh": "兔子分享了自己的胡萝卜"
+    },
+    {
+      "id": 371,
+      "topic": 7,
+      "en": "The lost bird found a friend.",
+      "zh": "迷路的小鸟找到了朋友"
+    },
+    {
+      "id": 372,
+      "topic": 7,
+      "en": "A tiny seed became a big tree.",
+      "zh": "小小种子变成了大树"
+    },
+    {
+      "id": 373,
+      "topic": 7,
+      "en": "The brave girl opened the gate.",
+      "zh": "勇敢的女孩打开了大门"
+    },
+    {
+      "id": 374,
+      "topic": 7,
+      "en": "The stars showed them the way.",
+      "zh": "星星为他们指路"
+    },
+    {
+      "id": 375,
+      "topic": 7,
+      "en": "They lived happily in the forest.",
+      "zh": "他们在森林里快乐生活"
+    },
+    {
+      "id": 376,
+      "topic": 7,
+      "en": "Which story shall we read next?",
+      "zh": "我们接下来读哪个故事"
+    },
+    {
+      "id": 377,
+      "topic": 7,
+      "en": "I like stories about friendship.",
+      "zh": "我喜欢关于友谊的故事"
+    },
+    {
+      "id": 378,
+      "topic": 7,
+      "en": "My pillow is soft and warm.",
+      "zh": "我的枕头又软又暖"
+    },
+    {
+      "id": 379,
+      "topic": 7,
+      "en": "Please pull up your blanket.",
+      "zh": "请把毯子盖好"
+    },
+    {
+      "id": 380,
+      "topic": 7,
+      "en": "I can hear the rain outside.",
+      "zh": "我能听见外面的雨声"
+    },
+    {
+      "id": 381,
+      "topic": 7,
+      "en": "Think of something happy.",
+      "zh": "想一件开心的事"
+    },
+    {
+      "id": 382,
+      "topic": 7,
+      "en": "Sleep well, my little friend.",
+      "zh": "睡个好觉，小伙伴"
+    },
+    {
+      "id": 383,
+      "topic": 7,
+      "en": "A new adventure starts tomorrow.",
+      "zh": "新的冒险明天开始"
+    }
+  ]
+}

@@ -127,3 +127,5 @@ GitHub 社区治理文档：[CONTRIBUTING.zh_CN.md](../.github/CONTRIBUTING.zh_C
 ## 已送审应用
 
 参见 [应用目录](../README.zh_CN.md)，了解每个应用的源码和构建标识。
+
+- [已发布源码检查（2026-09-08）](development/release/published-source-review.zh_CN.md)

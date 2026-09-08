@@ -1,51 +1,64 @@
 [简体中文](README.zh_CN.md)
 
-# ESP32 Demo — Submitted applications
+# Published application sources
 
-Source, offline assets and host tests for 21 submitted applications. Each firmware runs one application. Vibe Check is the default.
+Sources for 40 published community applications: 31 root build selectors and 9 standalone projects. These are reviewed development snapshots, not byte-for-byte reproductions of community firmware. Pocket Arcade has a published version and a newer draft revision.
 
 ## Build
 
-Activate ESP-IDF 5.5.3, then run from the repository root:
-
 ```bash
-./tools/validate.sh --static
+# ESP-IDF 5.5.3; resolve pinned dependencies on a fresh clone.
+idf.py reconfigure
 FAP_APP=vibe_check ./tools/validate.sh
-FAP_APP=minecraft_guide ./tools/validate.sh --firmware
+# Standalone example
+cd applications/suzhou-travel
+idf.py reconfigure
+./tools/validate.sh
 ```
-
-Replace `FAP_APP` with a selector below. The output is `build/FoloToy-AI-Passport-full.bin`. Rebuild when switching applications.
-
-Read the [BLE installation and Recovery contract](docs/development/engineering/ble-recovery-compatibility.md) before installation.
 
 ## Applications
 
-| Selector | Application | Source |
+| Community ID | Application | Source / build selector |
 | --- | --- | --- |
-| `balloon_rush` | Balloon Rush | [source](main/apps/balloon_rush/balloon_rush.c) |
-| `cloud_hop` | Cloud Hop | [source](main/apps/cloud_hop/cloud_hop.c) |
-| `down_100` | Down 100 | [source](main/apps/down_100/down_100.c) |
-| `focus_post` | Focus Post | [source](main/apps/focus_post/focus_post.c) |
-| `fruit_merge` | One More Fruit | [source](main/apps/fruit_merge/fruit_merge.c) |
-| `idiom_pet` | Idiom Pet: Read Stories, Hatch Friends | [source](main/apps/idiom_pet/idiom_pet.c) |
-| `laoluo_quotes` | Lao Luo Quotes: Pocket Quote Radio | [source](main/apps/laoluo_quotes/laoluo_quotes.c) |
-| `math_rail` | Math Rail | [source](main/apps/math_rail/math_rail.c) |
-| `math_train` | Math Train | [source](main/apps/math_train/math_train.c) |
-| `memory_garden` | Daily Memory | [source](main/apps/memory_garden/memory_garden.c) |
-| `needle_rush` | Needle Rush | [source](main/apps/needle_rush/needle_rush.c) |
-| `perfect_slice` | Perfect Slice | [source](main/apps/perfect_slice/perfect_slice.c) |
-| `pocket_pond` | Pocket Pond | [source](main/apps/pocket_pond/pocket_pond.c) |
-| `pvz_almanac` | Lawn Lab: A Plants vs. Zombies Field Guide | [source](main/apps/pvz_almanac/pvz_almanac.c) |
-| `ricochet_rush` | One More Ricochet | [source](main/apps/ricochet_rush/ricochet_rush.c) |
-| `social_battery` | Social Battery — You Decide When to Connect | [source](main/apps/social_battery/social_battery.c) |
-| `stack_rush` | Stack Rush | [source](main/apps/stack_rush/stack_rush.c) |
-| `tomato_bloom` | Tomato Bloom | [source](main/apps/tomato_bloom/tomato_bloom.c) |
-| `vibe_check` | Vibe Check — Who Are You Today? | [source](main/apps/vibe_check/vibe_check.c) |
-| `word_sprite` | Word Sprite — Listen, Learn, Grow | [source](main/apps/word_sprite/word_sprite.c) |
-| `minecraft_guide` | Talking Minecraft Guide | [source](main/minecraft_guide.c) |
+| 213 | Pocket Bookshelf | [ebook](main/apps/ebook) |
+| 204 | Pocket Arcade | [pocket_arcade](main/apps/pocket_arcade) |
+| 203 | Jelly Squeeze | [jelly_squeeze](main/apps/jelly_squeeze) |
+| 201 | Clean Sweep — Falling Blocks on Three Keys | [clean_sweep](main/apps/clean_sweep) |
+| 195 | Tally Click | [tally-click](applications/tally-click) |
+| 194 | Excuse Call | [excuse_call](main/apps/excuse_call) |
+| 193 | English Listening Practice | [listening-island](applications/listening-island) |
+| 189 | Pocket Breach | [pocket_breach](main/apps/pocket_breach) |
+| 188 | Cat Is Here | [cat-is-here](applications/cat-is-here) |
+| 187 | Lane Leap | [lane_leap](main/apps/lane_leap) |
+| 186 | Code Theater | [code_theater](main/apps/code_theater) |
+| 183 | Haihunhou Museum Pocket Tour | [haihunhou-museum](applications/haihunhou-museum) |
+| 182 | Sanxingdui Museum Pocket Tour | [sanxingdui-museum](applications/sanxingdui-museum) |
+| 178 | Rhythm Agent / Listen, Tap, Unlock | [rhythm-agent](applications/rhythm-agent) |
+| 177 | Night Call — Stay on the Line | [night-call](applications/night-call) |
+| 176 | Deadline Station | [deadline_station](main/apps/deadline_station) |
+| 173 | Pocket Hype — Bring Your Own Applause | [pocket_hype](main/apps/pocket_hype) |
+| 172 | One More Ricochet | [ricochet_rush](main/apps/ricochet_rush) |
+| 171 | Daily Memory | [memory_garden](main/apps/memory_garden) |
+| 170 | One More Fruit | [fruit_merge](main/apps/fruit_merge) |
+| 169 | Lawn Lab: A Plants vs. Zombies Field Guide | [pvz_almanac](main/apps/pvz_almanac) |
+| 168 | Lao Luo Quotes: Pocket Quote Radio | [laoluo_quotes](main/apps/laoluo_quotes) |
+| 167 | Focus Post | [focus_post](main/apps/focus_post) |
+| 166 | Down 100 | [down_100](main/apps/down_100) |
+| 164 | Needle Rush | [needle_rush](main/apps/needle_rush) |
+| 162 | Word Sprite — Listen, Learn, Grow | [word_sprite](main/apps/word_sprite) |
+| 161 | Balloon Rush | [just_seen](main/apps/just_seen) |
+| 160 | Math Rail | [math_rail](main/apps/math_rail) |
+| 159 | Pocket Pond | [pocket_pond](main/apps/pocket_pond) |
+| 158 | Math Train | [math_train](main/apps/math_train) |
+| 157 | Idiom Pet: Read Stories, Hatch Friends | [idiom_pet](main/apps/idiom_pet) |
+| 156 | Vibe Check — Who Are You Today? | [vibe_check](main/apps/vibe_check) |
+| 155 | Cloud Hop | [cloud_hop](main/apps/cloud_hop) |
+| 154 | Perfect Slice | [perfect_slice](main/apps/perfect_slice) |
+| 153 | Social Battery — You Decide When to Connect | [social_battery](main/apps/social_battery) |
+| 152 | Stack Rush | [stack_rush](main/apps/stack_rush) |
+| 151 | Tomato Bloom | [tomato_bloom](main/apps/tomato_bloom) |
+| 150 | Suzhou Ten Sights Audio Guide | [suzhou-travel](applications/suzhou-travel) |
+| 149 | Six Arts Museum Pocket Tour | [six-arts-museum](applications/six-arts-museum) |
+| 148 | Talking Minecraft Guide | [minecraft_guide](main/minecraft_guide.c) |
 
-## Assets and validation
-
-See [asset credits](assets/README.md) and the [documentation index](docs/README.md). A passing build does not establish device validation.
-
-Based on [FoloToy AI Passport](https://github.com/FoloToy/ai-passport), retaining its license and attribution.
+Build, host tests, and device tests are reported separately. See the [documentation index](docs/README.md) and [archive skill](skills/plays-archive/SKILL.md).

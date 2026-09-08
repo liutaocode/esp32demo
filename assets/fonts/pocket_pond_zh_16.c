@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Size: 16 px
  * Bpp: 2
- * Opts: --size 16 --bpp 2 --format lvgl --font <repo>/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一三上下不中九也了二云五亮仅今以份休会住你保倒值停储儿光全册再冲分到前剩包发口可启回塘天好子存定小少就已开录息慢手把按捞接摸收放新日时星是晚最月有未本朵条来柠概檬次歇池没浪清游满点率王玩瓜甜用的确种稳空章第等篓纪继续缸翻能荷获落藏袋被装西要计请豆走起趟车运返还这进遇酸重金铜银锦键长闪随集霞页高鱼鲤！，？ --no-compress --no-kerning --lv-include lvgl.h --lv-font-name pocket_pond_zh_16 --lv-fallback lv_font_montserrat_14 -o <repo>/assets/fonts/pocket_pond_zh_16.c
+ * Opts: --size 16 --bpp 2 --format lvgl --font /path/to/user/Desktop/CODE/folotoy/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一三上下不中九也了二云五亮仅今以份休会住你保倒值停储儿光全册再冲分到前剩包发口可启回塘天好子存定小少就已开录息慢手把按捞接摸收放新日时星是晚最月有未本朵条来柠概檬次歇池没浪清游满点率王玩瓜甜用的确种稳空章第等篓纪继续缸翻能荷获落藏袋被装西要计请豆走起趟车运返还这进遇酸重金铜银锦键长闪随集霞页高鱼鲤！，？ --no-compress --no-kerning --lv-include lvgl.h --lv-font-name pocket_pond_zh_16 --lv-fallback lv_font_montserrat_14 -o /path/to/user/Desktop/CODE/folotoy/assets/fonts/pocket_pond_zh_16.c
  ******************************************************************************/
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE

@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Size: 16 px
  * Bpp: 2
- * Opts: --size 16 --bpp 2 --format lvgl --font <repo>/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一三上下不习五会住倒停再准到功十友变叠可回地城基复天始定家宽小就层差已市师度建开式录恢成战手按挑换接新方暂最朋本机来松极梦楼模次点生用登看确稳空筑精纪练给继续能落轻返连选速造键顶高！， --no-compress --no-kerning --lv-include lvgl.h --lv-font-name stack_rush_zh_16 --lv-fallback lv_font_montserrat_14 -o <repo>/assets/fonts/stack_rush_zh_16.c
+ * Opts: --size 16 --bpp 2 --format lvgl --font /path/to/user/Desktop/CODE/folotoy/managed_components/lvgl__lvgl/scripts/built_in_font/SourceHanSansSC-Normal.otf --symbols 一三上下不习五会住倒停再准到功十友变叠可回地城基复天始定家宽小就层差已市师度建开式录恢成战手按挑换接新方暂最朋本机来松极梦楼模次点生用登看确稳空筑精纪练给继续能落轻返连选速造键顶高！， --no-compress --no-kerning --lv-include lvgl.h --lv-font-name stack_rush_zh_16 --lv-fallback lv_font_montserrat_14 -o /path/to/user/Desktop/CODE/folotoy/assets/fonts/stack_rush_zh_16.c
  ******************************************************************************/
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE

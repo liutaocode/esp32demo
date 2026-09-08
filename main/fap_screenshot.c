@@ -20,41 +20,67 @@ static const char *TAG = "fap_shot";
 #define FAP_TX_CHUNK 512
 #define FAP_SNAP_BYTES ((uint32_t)BSP_LCD_W * BSP_LCD_H * 2)
 
-static uint8_t s_frame_pixels[FAP_SNAP_BYTES] __attribute__((aligned(64)));
-static bool s_started;
-
 /*
- * Keep a copy of each area immediately before the display port byte-swaps and
- * sends it to the panel. This avoids rendering a second off-screen copy of the
- * complete object tree when the host requests a screenshot.
+ * A capture streams the screen out band by band as LVGL renders it, so nothing
+ * here holds a full frame. The 240x320 RGB565 frame would be 150 KB of internal
+ * RAM, and on this board that is the same memory the radio stack and the audio
+ * DMA descriptors need — an application had to choose between screen capture
+ * and going online. Streaming removes the choice.
+ *
+ * The display renders in partial mode into a full-width 20-row buffer, so a
+ * full-screen invalidation arrives as consecutive top-to-bottom bands. That is
+ * exactly the row order the wire format needs. It is verified rather than
+ * assumed: a capture renders twice, first probing the band geometry without
+ * sending anything, and only then streaming the bytes.
  */
+typedef enum { FAP_MODE_IDLE = 0, FAP_MODE_PROBE, FAP_MODE_STREAM } fap_mode_t;
+
+static bool s_started;
+static fap_mode_t s_mode;        /* Only mutated while the UI lock is held. */
+static int s_expect_y;           /* Next row the band sequence must start on. */
+static bool s_bands_ok;
+static uint32_t s_sent_bytes;
+static bool write_all(const void *data, size_t length);
+
 static void mirror_flush_event(lv_event_t *event)
 {
+    if (s_mode == FAP_MODE_IDLE) return;
+
     lv_display_t *display = lv_event_get_target(event);
     const lv_area_t *area = lv_event_get_param(event);
     lv_draw_buf_t *draw_buf = lv_display_get_buf_active(display);
     if (!area || !draw_buf || !draw_buf->data ||
         lv_display_get_color_format(display) != LV_COLOR_FORMAT_RGB565) {
+        s_bands_ok = false;
         return;
     }
 
-    int x1 = area->x1 < 0 ? 0 : area->x1;
-    int y1 = area->y1 < 0 ? 0 : area->y1;
-    int x2 = area->x2 >= BSP_LCD_W ? BSP_LCD_W - 1 : area->x2;
-    int y2 = area->y2 >= BSP_LCD_H ? BSP_LCD_H - 1 : area->y2;
-    if (x1 > x2 || y1 > y2) return;
-
-    const uint8_t *source = draw_buf->data;
-    uint32_t source_stride = draw_buf->header.stride;
-    uint32_t source_x = (uint32_t)(x1 - area->x1) * 2;
-    uint32_t copy_bytes = (uint32_t)(x2 - x1 + 1) * 2;
-    for (int y = y1; y <= y2; y++) {
-        uint32_t source_y = (uint32_t)(y - area->y1);
-        uint8_t *destination = s_frame_pixels +
-            ((uint32_t)y * BSP_LCD_W + (uint32_t)x1) * 2;
-        memcpy(destination, source + source_y * source_stride + source_x,
-               copy_bytes);
+    /* Anything but a full-width band starting exactly where the previous one
+       ended would produce a skewed image, so refuse instead of guessing. */
+    if (area->x1 != 0 || area->x2 != BSP_LCD_W - 1 ||
+        area->y1 != s_expect_y || area->y2 < area->y1 || area->y2 >= BSP_LCD_H) {
+        s_bands_ok = false;
+        return;
     }
+
+    if (s_mode == FAP_MODE_STREAM && s_bands_ok) {
+        /* The event fires before the display port byte-swaps the buffer, so
+           the rows are still little-endian, matching the announced format. */
+        const uint8_t *source = draw_buf->data;
+        uint32_t stride = lv_display_get_render_mode(display) == LV_DISPLAY_RENDER_MODE_PARTIAL
+            ? lv_draw_buf_width_to_stride(lv_area_get_width(area), LV_COLOR_FORMAT_RGB565)
+            : draw_buf->header.stride;
+        uint32_t row_bytes = (uint32_t)BSP_LCD_W * 2;
+        for (int y = area->y1; y <= area->y2; y++) {
+            if (!write_all(source + (uint32_t)(y - area->y1) * stride, row_bytes)) {
+                s_bands_ok = false;
+                return;
+            }
+            s_sent_bytes += row_bytes;
+        }
+    }
+
+    s_expect_y = area->y2 + 1;
 }
 
 static bool write_all(const void *data, size_t length)
@@ -71,6 +97,18 @@ static bool write_all(const void *data, size_t length)
     return true;
 }
 
+/* Render the whole screen once with the callback in the given mode. */
+static bool render_pass(fap_mode_t mode)
+{
+    s_mode = mode;
+    s_expect_y = 0;
+    s_bands_ok = true;
+    lv_obj_invalidate(lv_screen_active());
+    lv_refr_now(lv_display_get_default());
+    s_mode = FAP_MODE_IDLE;
+    return s_bands_ok && s_expect_y == BSP_LCD_H;
+}
+
 static void send_screen(void)
 {
     if (!bsp_lvgl_lock(2000)) {
@@ -78,10 +116,15 @@ static void send_screen(void)
         return;
     }
 
-    /* Force one complete normal refresh so every row in the mirror is fresh. */
-    lv_obj_invalidate(lv_screen_active());
-    lv_refr_now(lv_display_get_default());
-    bsp_lvgl_unlock();
+    /* First pass proves the band geometry while nothing has been sent yet, so a
+       display configuration this code cannot stream fails loudly and cleanly
+       instead of putting a skewed frame on the wire. */
+    if (!render_pass(FAP_MODE_PROBE)) {
+        bsp_lvgl_unlock();
+        ESP_LOGE(TAG, "display does not render full-width top-to-bottom bands; "
+                      "capture unavailable");
+        return;
+    }
 
     char header[64];
     int header_length = snprintf(header, sizeof(header),
@@ -89,10 +132,27 @@ static void send_screen(void)
         (unsigned long)FAP_SNAP_BYTES);
 
     esp_log_level_set("*", ESP_LOG_NONE);
-    bool sent = write_all(header, (size_t)header_length) &&
-                write_all(s_frame_pixels, FAP_SNAP_BYTES);
+    s_sent_bytes = 0;
+    bool sent = write_all(header, (size_t)header_length) && render_pass(FAP_MODE_STREAM);
+
+    /* The probe already proved this pass would cover the frame, so a short
+       stream means the link failed underneath. Pad it out anyway: the host is
+       waiting for exactly FAP_SNAP_BYTES and must not be left desynchronised. */
+    if (s_sent_bytes < FAP_SNAP_BYTES) {
+        static const uint8_t filler[FAP_TX_CHUNK] = { 0 };
+        while (s_sent_bytes < FAP_SNAP_BYTES) {
+            uint32_t left = FAP_SNAP_BYTES - s_sent_bytes;
+            uint32_t chunk = left > FAP_TX_CHUNK ? FAP_TX_CHUNK : left;
+            if (!write_all(filler, chunk)) break;
+            s_sent_bytes += chunk;
+        }
+        sent = false;
+    }
     esp_log_level_set("*", ESP_LOG_INFO);
-    if (sent) ESP_LOGI(TAG, "screen capture sent");
+    bsp_lvgl_unlock();
+
+    if (sent) ESP_LOGI(TAG, "screen capture sent (%lu bytes)", (unsigned long)s_sent_bytes);
+    else ESP_LOGE(TAG, "screen capture incomplete");
 }
 
 static void screenshot_task(void *argument)

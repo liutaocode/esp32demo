@@ -21,3 +21,7 @@ projects/
 *.key
 .env
 .env.*
+
+# Private local review and generated publication materials
+applications/*/review/
+applications/*/release/

@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Size: 18 px
  * Bpp: 2
- * Opts: --size 18 --bpp 2 --format lvgl --font /tmp/NotoSansCJKsc-Regular.otf --symbols 行动做你想的，该不要为了怕被利用而选择作。理激烈主义者和彻底虚无其实只有一步之遥思考如果都就去禁忌定是坏处很多我们感觉天经地事情起推敲坦荡直答没能问归来将若开放彪悍人生需解释通过现让相信可转型际况：程里般嘲笑比较完热爱从个业到死换说坚持什么幸运产品制造会把这种性格当美德工匠精神东西但停尝试新今明得也好老罗语录金句合成音非本确朗读正在播毕按键上下永浩第条共收藏日失败重—… --no-compress --no-kerning --lv-include lvgl.h --lv-font-name laoluo_quotes_zh_18 --lv-fallback lv_font_montserrat_14 -o <repo>/assets/fonts/laoluo_quotes_zh_18.c
+ * Opts: --size 18 --bpp 2 --format lvgl --font /tmp/NotoSansCJKsc-Regular.otf --symbols 行动做你想的，该不要为了怕被利用而选择作。理激烈主义者和彻底虚无其实只有一步之遥思考如果都就去禁忌定是坏处很多我们感觉天经地事情起推敲坦荡直答没能问归来将若开放彪悍人生需解释通过现让相信可转型际况：程里般嘲笑比较完热爱从个业到死换说坚持什么幸运产品制造会把这种性格当美德工匠精神东西但停尝试新今明得也好老罗语录金句合成音非本确朗读正在播毕按键上下永浩第条共收藏日失败重—… --no-compress --no-kerning --lv-include lvgl.h --lv-font-name laoluo_quotes_zh_18 --lv-fallback lv_font_montserrat_14 -o /path/to/user/Desktop/CODE/folotoy/assets/fonts/laoluo_quotes_zh_18.c
  ******************************************************************************/
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE

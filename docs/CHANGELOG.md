@@ -4,6 +4,11 @@
 
 # Changelog
 
+## 2026-09-08
+
+- Organize sources, build entrypoints and standalone projects for 40 published community applications; exclude local review records and device receipts.
+- Include additional published-application host checks and update the archive skill with privacy, source-scope and destination-branch checks.
+
 ## Unreleased
 
 - Add 20 submitted applications alongside Talking Minecraft Guide, with independent `FAP_APP` builds and state, audio and asset tests.

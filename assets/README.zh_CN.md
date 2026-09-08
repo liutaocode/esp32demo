@@ -59,3 +59,13 @@
 `fonts/` 中的应用字体源文件是 Noto Sans CJK 或 Source Han Sans 的 LVGL 子集，遵循本目录的 SIL OFL 1.1 许可。相应 `tools/generate_*` 脚本记录生成方法；固件直接编译生成的 C 文件。
 
 `music/vibe_check/`、`music/idiom_pet/`、`music/word_sprite/`、`music/pvz_almanac/` 和 `music/laoluo_quotes/` 保存离线语音资源。系统语音为 macOS Tingting（中文）与 Samantha（英文）；清单记录文案及素材哈希。WAV 文件用于重建和检查，ADPCM 数据用于固件。老罗语录的引用来源列于应用的 `quotes.csv`。
+
+## 新增已发布应用素材
+
+新增应用的中文字体为 Source Han Sans SC / Noto Sans CJK 子集，遵循
+`fonts/OFL-NotoSansCJK.txt`。随身书架包含 GB2312 全集的 12、16、20 px 字体，
+其他应用仅包含界面字符。生成器与检查位于 `tools/`。
+
+借过一下的铃声来源及许可见 [音频来源](music/excuse_call/source/SOURCES.zh_CN.md)。
+手机图标位于 `images/excuse_call/`。其他新增游戏图形由应用代码绘制。
+独立工程的素材许可见各工程 `assets/` 文档。审核封面、设备截图和回执不属于源码依赖。

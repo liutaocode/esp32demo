@@ -62,3 +62,5 @@ https://ai-passport.folotoy.cn/trae/?s=<secret>&k=<key>
 - 删除用户文件或来源不明的生成物时使用系统回收站；没有安全回收方式时先询问用户。
 - 工具可以清理由自身通过 `mktemp` 创建且已验证路径的临时目录。
 - Git 分支、tag 和远端引用不是普通文件；删除它们前仍需确认目标和用户意图。
+
+根目录 README 按作者要求例外：`README.md` 为中文，`README.en.md` 为英文，互相提供切换链接；`README.zh_CN.md` 保留兼容链接。其他文档继续使用默认英文约定。

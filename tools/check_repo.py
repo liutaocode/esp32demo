@@ -26,6 +26,7 @@ ROOT_MARKDOWN_ALLOWLIST = {
     "CLAUDE.zh_CN.md",
     "README.md",
     "README.zh_CN.md",
+    "README.en.md",
 }
 
 
@@ -109,6 +110,15 @@ def check_document_languages(files: list[Path], errors: list[str]) -> None:
         name = path.name
         text = path.read_text(encoding="utf-8")
         opening = "\n".join(text.splitlines()[:8])
+
+        # The owner explicitly chooses Chinese for the repository landing page.
+        if path.parent == ROOT and name in {"README.md", "README.en.md"}:
+            peer = "README.en.md" if name == "README.md" else "README.md"
+            if path.with_name(peer).resolve() not in markdown or peer not in opening:
+                errors.append(f"{name}: missing top language link to {peer}")
+            if name == "README.en.md" and CJK_RE.search(text.replace("简体中文", "")):
+                errors.append(f"{name}: English page must use English prose")
+            continue
 
         if name.endswith(".zh_CN.md"):
             default_name = f"{name[:-len('.zh_CN.md')]}.md"

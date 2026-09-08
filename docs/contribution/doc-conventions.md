@@ -46,3 +46,5 @@ Do not create empty document scaffolding without a concrete purpose. Register ad
 - Record user-visible behavior, compatibility, and release-flow changes in `docs/CHANGELOG.md`.
 - Never commit credentials, tokens, keys, authorization files, private keys, personal data, internal endpoints, or unsanitized device QR parameters. Run `./tools/validate.sh --static` before committing.
 - Preserve existing user changes and untracked files. Use recoverable deletion for user files, and confirm intent before deleting branches, tags, or remote references.
+
+The owner-selected root README is an exception: `README.md` is Chinese, `README.en.md` is English, and both link to each other. `README.zh_CN.md` retains a compatibility link. Other documentation keeps the English-default convention.

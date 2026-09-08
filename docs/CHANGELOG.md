@@ -6,6 +6,7 @@
 
 ## 2026-09-08
 
+- Make the repository README Chinese by default, with an English language switch.
 - Organize sources, build entrypoints and standalone projects for 40 published community applications; exclude local review records and device receipts.
 - Include additional published-application host checks and update the archive skill with privacy, source-scope and destination-branch checks.
 

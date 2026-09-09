@@ -14,11 +14,11 @@ in `main/`, with no dependency on the original `main/apps` directory.
 2. On first boot, connect a phone to the password-protected hotspot shown on the
    device (a random eight-digit password). Nearby networks are scanned before
    the hotspot starts. Open `http://192.168.4.1` and choose a nearby 2.4 GHz Wi-Fi network, enter its password and the backend
-   computer IPv4 address. The device builds `ws://IP:3101/api/realtime`.
+   computer IPv4 address. The device fills port 3101 and `/api/realtime`: private LAN addresses use `ws://`, other IPv4 addresses use `wss://`.
    The access-token field is optional and hidden unless enabled.
 3. After saving and rebooting, wait for the ready state. Press OK to enable the
    microphone. Speak naturally and pause for the backend to answer.
-4. Press OK to close the microphone, UP to cycle volume, DOWN to interrupt a
+4. The home screen shows volume at the bottom right, explicitly showing mute at 0%. Press OK to close the microphone, UP to cycle volume, DOWN to interrupt a
    reply, or hold OK to open settings, review the saved connection, and confirm any reconfiguration.
 
 The microphone starts closed. Upload pauses during playback; press DOWN to
@@ -44,9 +44,7 @@ Gateway and its voice provider process that audio. Conversation retention and
 memory follow the backend settings. The device stores Wi-Fi credentials,
 endpoint and access token in its independent `bean_online` NVS namespace;
 it does not store recordings or model API keys. NVS is not flash-encrypted.
-The simplified IP setup uses private-LAN `ws://` on port 3101. It does not
-configure external WSS endpoints. Previously stored WSS endpoints remain
-supported by the transport and need successful clock synchronization.
+Public endpoints need a trusted TLS certificate valid for the entered IP, a reachable port 3101, and backend authentication. Deploy that HTTPS/WebSocket termination separately; the bundled device ingress itself serves local HTTP/WebSocket. TLS connections wait for successful clock synchronization. Never embed personal endpoints or credentials in shared firmware.
 
 ## Build and checks
 
@@ -69,4 +67,12 @@ LVGL renderer with synthetic status and are **not device captures**.
 
 ## Delivery status
 
-This is an independent application. Continuous conversation and repeated microphone pause/resume still require device acceptance.
+This independent application is published in the community. Recent updates fix issues found during repeated testing: heartbeat handling, audio buffering, transport recovery, UI memory pressure and volume visibility. Recovery, pause/resume and visual checks passed in diagnostic hardware testing; an intermittent network send timeout remains unresolved. Silent tests do not certify audible quality or every deployment.
+
+The client is open source at [liutaocode/esp32demo](https://github.com/liutaocode/esp32demo), under `examples/qwen-voice-bean`. For backend deployment, follow [Qwen Audio Agent](https://github.com/QwenAudio/qwen-audio-agent).
+
+Relay regression test (Node.js 22, a backend checkout with dependencies installed):
+
+```bash
+QWEN_AUDIO_RUNTIME=/path/to/qwen-audio-agent node tests/test_device_gateway.mjs
+```

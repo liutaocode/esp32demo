@@ -4,6 +4,12 @@
 
 # Changelog
 
+## Qwen Voice Bean stability update — 2026-09-10
+
+- Add a home-screen volume indicator and explicit mute state; avoid memory-heavy face clipping.
+- Improve reconnect handling, bounded audio delivery and TLS/Wi-Fi memory use; keep upstream heartbeat reads responsive.
+- Support encrypted public-IP endpoints without embedding personal server configuration. Network send timeouts remain possible.
+
 ## Mouthy Bean source package — 2026-09-08
 
 - Add the standalone Qwen Voice Bean example with phone Wi-Fi setup, Gateway audio streaming, and microphone pause/resume controls.

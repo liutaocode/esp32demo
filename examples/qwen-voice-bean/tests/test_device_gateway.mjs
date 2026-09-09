@@ -1,0 +1,21 @@
+// Requires QWEN_AUDIO_RUNTIME to point to a local Qwen Audio Agent checkout with ws installed.
+if (!process.env.QWEN_AUDIO_RUNTIME) throw Error('Set QWEN_AUDIO_RUNTIME to the backend checkout');
+import assert from 'node:assert/strict';import http from 'node:http';import {once} from 'node:events';import {createRequire} from 'node:module';
+import {createDeviceGateway} from '../backend/device-gateway.mjs';
+const {WebSocket,WebSocketServer}=createRequire(new URL('package.json', 'file://' + process.env.QWEN_AUDIO_RUNTIME.replace(/\/$/, '') + '/'))('ws');
+const up=http.createServer();const wss=new WebSocketServer({server:up});let upstream;
+wss.on('connection',p=>{upstream=p;p.on('message',raw=>{if(JSON.parse(raw).type==='input.mute')p.send(JSON.stringify({type:'mute.ack'}))})});up.listen(0,'127.0.0.1');await once(up,'listening');
+const token='test-only-token-01234567890123456789';const relay=createDeviceGateway({WebSocket,WebSocketServer,upstream:`http://127.0.0.1:${up.address().port}`,accessToken:token,requireToken:true});relay.listen(0,'127.0.0.1');await once(relay,'listening');
+const client=new WebSocket(`ws://127.0.0.1:${relay.address().port}/api/realtime`,{headers:{Authorization:`Bearer ${token}`}});await once(client,'open');
+const rejection=await new Promise((resolve,reject)=>{const bad=new WebSocket(`ws://127.0.0.1:${relay.address().port}/api/realtime`,{headers:{Authorization:'Bearer wrong'}});bad.on('unexpected-response',(_q,r)=>{resolve(r.statusCode);r.resume();bad.terminate()});bad.on('error',()=>{});bad.on('open',()=>reject(Error('bad token accepted')))});assert.equal(rejection,401);
+const received=[];let pcmBytes=0,finished;const done=new Promise(r=>finished=r);client.on('message',raw=>{const e=JSON.parse(raw);if(e.type==='audio.delta'){const pcm=Buffer.from(e.audio,'base64');assert(pcm.length<=1272);assert.equal(pcm.length%2,0);received.push(pcm);pcmBytes+=pcm.length;}if(e.type==='audio.done')finished()});
+const source=Buffer.from(Array.from({length:96000},(_,i)=>i%251));const begin=performance.now();upstream.send(JSON.stringify({type:'audio.delta',audio:source.toString('base64'),sampleRate:24000}));upstream.send(JSON.stringify({type:'audio.done'}));
+const pingStart=performance.now();client.ping();await once(client,'pong');const pingMs=performance.now()-pingStart;await done;const elapsed=performance.now()-begin;
+assert.equal(pcmBytes,96000);assert.deepEqual(Buffer.concat(received),source);assert(elapsed>1300&&elapsed<4000);assert(pingMs<500);
+let gotAck;const ack=new Promise(r=>gotAck=r);client.on('message',raw=>{if(JSON.parse(raw).type==='mute.ack')gotAck()});
+upstream.send(JSON.stringify({type:'audio.delta',audio:Buffer.alloc(480000).toString('base64'),sampleRate:24000}));
+await new Promise(r=>setTimeout(r,100));const upstreamPingStart=performance.now();const upPong=once(upstream,'pong');upstream.ping();
+const pongPrompt=await Promise.race([upPong.then(()=>true),new Promise(r=>setTimeout(()=>r(false),500))]);
+console.log('Upstream PONG while audio queued:',pongPrompt?'PASS':'FAIL');
+const cancelStart=performance.now();client.send(JSON.stringify({type:'input.mute'}));await Promise.race([ack,new Promise((_r,j)=>setTimeout(()=>j(Error('cancel stalled behind audio')),1500))]);const cancelMs=performance.now()-cancelStart;assert(cancelMs<1000);assert(pongPrompt,'Upstream PONG blocked by paced audio');
+console.log(JSON.stringify({cancelMs:Math.round(cancelMs),audioBytes:pcmBytes,pacedDurationMs:Math.round(elapsed),pingMs:Math.round(pingMs),result:'PASS'}));client.terminate();for(const p of wss.clients)p.terminate();await new Promise(r=>relay.close(r));await new Promise(r=>wss.close(r));await new Promise(r=>up.close(r));

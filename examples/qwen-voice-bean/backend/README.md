@@ -79,3 +79,7 @@ their settings; this is not an offline application. Keep all private
 configuration and logs out of the product package and Git.
 
 The installer also adds an isolated Node 22.22.2 runtime for subsequent service starts. The service helper prefers it without changing the system Node installation.
+
+## Device streaming reliability
+
+The device ingress splits audio into bounded chunks and paces playback while continuing to read upstream heartbeat frames. Its queue is bounded to 8 MiB; mute/cancel discards pending audio. These changes improve recovery but do not guarantee interruption-free playback on every network. For a public server, supply TLS termination with a trusted certificate matching the entered IP and require device tokens. Do not expose token-free mode publicly.

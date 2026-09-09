@@ -63,6 +63,17 @@ int main(void) {
         fixture.phase=i;fixture.mic=i>=3 && i<=5;fixture.level=19000;
         snprintf(fixture.message,sizeof(fixture.message),"%s",messages[i]);refresh(NULL);snap(names[i]);
     }
+    fixture.phase=ONLINE_READY;fixture.mic=false;
+    const unsigned volume_values[]={0,55,75,90,0};
+    for(unsigned i=0;i<sizeof(volume_values)/sizeof(volume_values[0]);i++) {
+        fixture.volume=volume_values[i];refresh(NULL);check();
+        char expected[32];
+        if(fixture.volume)snprintf(expected,sizeof(expected),"音量 %u%%",fixture.volume);
+        else snprintf(expected,sizeof(expected),"静音 0%%");
+        assert(!strcmp(lv_label_get_text(volume_label),expected));
+        assert(!lv_obj_has_flag(volume_label,LV_OBJ_FLAG_HIDDEN));
+    }
+    snap("muted");fixture.volume=75;refresh(NULL);snap("volume");
     battery_value=-1;update_battery(NULL);check();
     online_ui_key(BSP_BTN_OK,BSP_BTN_PRESS);assert(!toggles);
     online_ui_key(BSP_BTN_OK,BSP_BTN_CLICK);refresh(NULL);assert(toggles==1);

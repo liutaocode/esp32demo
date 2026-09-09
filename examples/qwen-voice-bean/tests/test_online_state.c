@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <string.h>
 int main(void) {
+    assert(!online_playback_prefill_wait(0,0));
+    assert(online_playback_prefill_wait(1,0));
+    assert(online_playback_prefill_wait(23,349));
+    assert(!online_playback_prefill_wait(24,0));
+    assert(!online_playback_prefill_wait(1,350));
+    assert(!online_playback_prefill_wait(32,1000));
     online_config_t c={.version=1,.ssid="network",.password="example-password",.url="wss://voice.example.com/api/realtime",.token="example-access-token-change-me"};
     assert(online_config_valid(&c));
     strcpy(c.url,"ws://192.168.1.2:3101/api/realtime");assert(online_config_valid(&c));
@@ -14,7 +20,17 @@ int main(void) {
     c.token[0]=0;assert(online_config_valid(&c));
     char endpoint[80],password[9];
     assert(online_endpoint_from_ip("192.0.2.10",endpoint,sizeof(endpoint)));
-    assert(!strcmp(endpoint,"ws://192.0.2.10:3101/api/realtime"));
+    assert(!strcmp(endpoint,"wss://192.0.2.10:3101/api/realtime"));
+    const char *lan[]={"10.0.0.1","172.16.0.1","172.31.255.254","192.168.1.2"};
+    for(unsigned i=0;i<sizeof(lan)/sizeof(lan[0]);i++) {
+        assert(online_endpoint_from_ip(lan[i],endpoint,sizeof(endpoint)));
+        assert(!strncmp(endpoint,"ws://",5));
+    }
+    const char *public_ips[]={"192.0.2.10","172.15.1.1","172.32.1.1","198.51.100.1"};
+    for(unsigned i=0;i<sizeof(public_ips)/sizeof(public_ips[0]);i++) {
+        assert(online_endpoint_from_ip(public_ips[i],endpoint,sizeof(endpoint)));
+        assert(!strncmp(endpoint,"wss://",6));
+    }
     const char *bad[]={"","192.168.1.256","192.168.1","1.2.3.4.5","1..2.3","1.2.3.4:80","ws://1.2.3.4","1.2.3.4/path","1.2.3.-1","192.168.001.1"};
     for(unsigned i=0;i<sizeof(bad)/sizeof(bad[0]);i++)assert(!online_endpoint_from_ip(bad[i],endpoint,sizeof(endpoint)));
     assert(!online_endpoint_from_ip("1.2.3.4",endpoint,8));

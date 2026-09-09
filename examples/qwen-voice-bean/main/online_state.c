@@ -29,7 +29,7 @@ const char *online_phase_text(online_phase_t p) {
 
 bool online_endpoint_from_ip(const char *ip,char *out,size_t size) {
     if(!ip || !*ip || strlen(ip)>15 || !out || !size)return false;
-    unsigned parts=0,value=0,digits=0;
+    unsigned parts=0,value=0,digits=0,octets[4]={0};
     for(const char *p=ip;;p++) {
         if(*p>='0' && *p<='9') {
             if(digits==1 && value==0)return false;
@@ -37,12 +37,15 @@ bool online_endpoint_from_ip(const char *ip,char *out,size_t size) {
             value=value*10+(unsigned)(*p-'0');if(value>255)return false;
         } else if(*p=='.' || !*p) {
             if(!digits || ++parts>4)return false;
+            octets[parts-1]=value;
             if(!*p)break;
             value=digits=0;
         } else return false;
     }
     if(parts!=4)return false;
-    int n=snprintf(out,size,"ws://%s:3101/api/realtime",ip);
+    bool lan=octets[0]==10 || (octets[0]==172 && octets[1]>=16 && octets[1]<=31) ||
+        (octets[0]==192 && octets[1]==168);
+    int n=snprintf(out,size,"%s://%s:3101/api/realtime",lan?"ws":"wss",ip);
     return n>0 && (size_t)n<size;
 }
 void online_setup_password(uint32_t random_value,char out[9]) {
@@ -67,4 +70,8 @@ online_action_t online_menu_key(online_menu_t *m,online_key_t key) {
         } else {m->page=ONLINE_SETTINGS;m->selected=1;}
     }
     return ONLINE_ACTION_NONE;
+}
+
+bool online_playback_prefill_wait(unsigned queued,unsigned elapsed_ms) {
+    return queued>0 && queued<24 && elapsed_ms<350;
 }

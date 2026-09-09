@@ -11,7 +11,7 @@ LV_FONT_DECLARE(mouthy_bean_zh_16);
 #define INK 0x553B23
 #define PAPER 0xFFF6D6
 static lv_obj_t *face_layer,*pupils[2],*lids[2],*closed_eyes[2],*ears[2],*mouth,*teeth,*tongue,*smile;
-static lv_obj_t *title,*caption,*footer,*battery,*setup_panel,*setup_text;
+static lv_obj_t *title,*caption,*footer,*volume_label,*battery,*setup_panel,*setup_text;
 static lv_obj_t *settings_layer,*confirm_layer,*settings_help,*wifi_value,*password_value,*host_value,*token_value;
 static lv_obj_t *settings_choices[2],*confirm_choices[2];
 static online_menu_t menu;
@@ -40,13 +40,14 @@ static void eye(int i,int x) {
     shape(rim,4,3,88,92,0xE7E4CF,43);
     shape(rim,8,7,80,84,0x9D9688,39);
     lv_obj_t *white=shape(rim,10,10,76,78,0xFFFEF5,38);
-    lv_obj_set_style_clip_corner(white,true,0);
+    /* Keep children inside the rounded eye geometrically. Corner clipping
+     * creates an off-screen alpha layer and can exhaust the TLS-era heap. */
     pupils[i]=shape(white,22,25,37,43,0x9C6842,20);
     shape(pupils[i],5,5,27,33,0x593C2D,15);
     shape(pupils[i],10,8,19,26,0x231D1B,12);
     shape(pupils[i],6,6,11,13,0xFFFFFF,7);
     shape(pupils[i],25,27,5,6,0xEED4AC,3);
-    lids[i]=shape(white,0,0,76,0,YELLOW,0);
+    lids[i]=shape(white,0,0,76,0,YELLOW,38);
     closed_eyes[i]=shape(white,10,53,56,4,INK,2);
     shape(rim,20,5,27,2,0xFFFFFF,1);
 }
@@ -68,6 +69,13 @@ static void refresh(lv_timer_t *timer) {
     bool speaking=s.phase==ONLINE_SPEAKING;
     lv_label_set_text(title,home?"Qwen 语音豆":menu.page==ONLINE_SETTINGS?"设置":"重新配置？");
     visibility(face_layer,home && !setup);visibility(setup_panel,home && setup);
+    visibility(volume_label,home && !setup);
+    static unsigned displayed_volume=101;
+    if(displayed_volume!=s.volume) {
+        if(s.volume)lv_label_set_text_fmt(volume_label,"音量 %u%%",s.volume);
+        else lv_label_set_text(volume_label,"静音 0%");
+        displayed_volume=s.volume;
+    }
     visibility(footer,home);visibility(settings_layer,menu.page==ONLINE_SETTINGS);
     visibility(confirm_layer,menu.page==ONLINE_CONFIRM);
     if(menu.page==ONLINE_SETTINGS) {
@@ -100,7 +108,9 @@ static void refresh(lv_timer_t *timer) {
     visibility(mouth,speaking);
     visibility(smile,!speaking);
     visibility(tongue,speaking);
-    lv_obj_set_y(footer,setup?281:300);lv_obj_set_height(footer,setup?34:18);
+    lv_obj_set_width(footer,setup||!buttons_available?228:132);
+    lv_obj_set_style_text_align(footer,setup||!buttons_available?LV_TEXT_ALIGN_CENTER:LV_TEXT_ALIGN_LEFT,0);
+    lv_obj_set_y(footer,setup||!buttons_available?281:300);lv_obj_set_height(footer,setup?34:18);
     lv_label_set_text(caption,(s.phase==ONLINE_ERROR || s.phase==ONLINE_CONNECTING)&&s.message[0]?s.message:
         s.phase==ONLINE_READY&&!s.mic?"按确定开麦":online_phase_text(s.phase));
     lv_label_set_text(footer,!buttons_available?"按键不可用，请检查设备":setup?
@@ -123,7 +133,7 @@ void online_ui_enter(bool buttons_ok) {
     eye(0,19);eye(1,125);
     shape(face_layer,27,191,37,12,0xE68048,6);shape(face_layer,177,191,37,12,0xE68048,6);
     mouth=shape(face_layer,90,206,60,24,0x49291F,18);
-    lv_obj_set_style_clip_corner(mouth,true,0);
+    /* Teeth/tongue stay inside the rounded mouth without an alpha layer. */
     teeth=shape(mouth,9,1,42,7,0xFFFEF5,3);
     tongue=shape(mouth,15,12,30,10,0xF28D89,7);
     smile=lv_arc_create(face_layer);lv_obj_remove_style_all(smile);
@@ -144,6 +154,9 @@ void online_ui_enter(bool buttons_ok) {
     label(setup_panel,"http://192.168.4.1",4,170,216,22,false,INK);
     label(setup_panel,"选择 Wi-Fi，填写密码\n再填后端 IP，保存配置",8,196,208,36,true,INK);
     footer=label(screen,"",6,281,228,34,true,INK);
+    volume_label=label(screen,"",146,300,88,18,true,INK);
+    lv_obj_set_style_text_align(volume_label,LV_TEXT_ALIGN_RIGHT,0);
+    lv_label_set_long_mode(volume_label,LV_LABEL_LONG_CLIP);
     settings_layer=shape(screen,0,35,240,285,YELLOW,0);
     settings_help=label(settings_layer,"",8,0,224,58,true,INK);
     lv_obj_t *configuration=shape(settings_layer,8,64,224,104,PAPER,12);

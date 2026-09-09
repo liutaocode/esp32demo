@@ -8,6 +8,8 @@ import {resolve} from 'node:path';
 import {parseEnv} from 'node:util';
 import {fileURLToPath} from 'node:url';
 
+const AUDIO_CHUNK_BASE64=1696; // Two complete 636-byte device PCM blocks.
+
 export function createDeviceGateway({WebSocket,WebSocketServer,upstream,accessToken,requireToken=false}) {
   const target=new URL(upstream);
   if(!['127.0.0.1','localhost','[::1]'].includes(target.hostname))throw Error('Upstream must be loopback');
@@ -49,39 +51,64 @@ export function createDeviceGateway({WebSocket,WebSocketServer,upstream,accessTo
           }
           destination.send(data,{binary:false});
         };
-        peer.on('message',(data,binary)=>forward(remote,data,binary));
+        peer.on('message',(data,binary)=>{
+          let event;try{event=JSON.parse(data.toString());}catch{}
+          if(event?.type==='response.cancel'||event?.type==='input.mute'){
+            clearOutbound();audioUntil=0;
+          }
+          forward(remote,data,binary);
+        });
         // A voice provider can generate audio faster than real-time playback.
-        // Apply TCP backpressure instead of treating a slow device as a disconnect.
-        const outbound=[];let queuedBytes=0,pumpTimer=null;
+        // Pace the downstream queue without pausing upstream reads: control-frame
+        // PINGs must still be consumed and answered while a long reply plays.
+        const outbound=[];let queuedBytes=0,pumpTimer=null,audioUntil=0,lastAudioReceived=0,lastAudioSent=0;
         const clearOutbound=()=>{if(pumpTimer)clearTimeout(pumpTimer);pumpTimer=null;outbound.length=0;queuedBytes=0;};
         const pump=()=>{
           pumpTimer=null;
           if(peer.readyState!==WebSocket.OPEN){clearOutbound();return;}
           while(outbound.length && peer.bufferedAmount<32768) {
-            const data=outbound.shift();queuedBytes-=Buffer.byteLength(data);
+            // Bound audio already sent into nginx/TCP to about half a second.
+            // Otherwise an entire long answer can sit ahead of WebSocket PONGs.
+            if(outbound[0].durationMs && audioUntil>performance.now()+500)break;
+            const {data,durationMs,type}=outbound.shift();queuedBytes-=Buffer.byteLength(data);
+            if(durationMs){
+              const now=performance.now();
+              if(lastAudioSent && now-lastAudioSent>200)console.warn('Audio delivery gap ms='+Math.round(now-lastAudioSent)+' queued='+queuedBytes+' socket='+peer.bufferedAmount);
+              lastAudioSent=now;audioUntil=Math.max(audioUntil,now)+durationMs;
+            }
+            if(type==='audio.done')lastAudioSent=0;
             peer.send(data,{binary:false},error=>{if(error)peer.terminate();});
           }
           if(outbound.length || peer.bufferedAmount>16384) {
-            remote.pause();pumpTimer=setTimeout(pump,10);
-          } else if(remote.readyState===WebSocket.OPEN)remote.resume();
+            pumpTimer=setTimeout(pump,10);
+          }
         };
         const enqueue=data=>{
           const bytes=Buffer.byteLength(data);
-          if(queuedBytes+bytes>2097152) {
+          if(queuedBytes+bytes>8388608) {
             console.warn('Device relay queue limit exceeded');
             clearOutbound();peer.close(1013,'Queue limit exceeded');remote.close();return false;
           }
-          outbound.push(data);queuedBytes+=bytes;return true;
+          let event;try{event=JSON.parse(data.toString());}catch{}
+          const rate=Number(event?.sampleRate)||24000;
+          const durationMs=event?.type==='audio.delta'&&typeof event.audio==='string'
+            ? Buffer.byteLength(event.audio,'base64')*1000/(rate*2):0;
+          if(durationMs){
+            const now=performance.now();
+            if(lastAudioReceived && now-lastAudioReceived>200)console.warn('Audio upstream gap ms='+Math.round(now-lastAudioReceived)+' queued='+queuedBytes+' socket='+peer.bufferedAmount);
+            lastAudioReceived=now;
+          }
+          if(event?.type==='audio.done')lastAudioReceived=0;
+          outbound.push({data,durationMs,type:event?.type});queuedBytes+=bytes;return true;
         };
         remote.on('message',(data,binary)=>{
           if(binary){peer.close(1003,'Text messages required');remote.close();return;}
           if(peer.readyState!==WebSocket.OPEN)return;
-          remote.pause();
           let event;try{event=JSON.parse(data.toString());}catch{}
-          if(event?.type==='audio.delta' && typeof event.audio==='string' && event.audio.length>4096) {
-            for(let offset=0;offset<event.audio.length;offset+=4096) {
-              const chunk={...event,audio:event.audio.slice(offset,offset+4096)};
-              if(event.event_id)chunk.event_id=`${event.event_id}_${offset/4096}`;
+          if(event?.type==='audio.delta' && typeof event.audio==='string' && event.audio.length>AUDIO_CHUNK_BASE64) {
+            for(let offset=0;offset<event.audio.length;offset+=AUDIO_CHUNK_BASE64) {
+              const chunk={...event,audio:event.audio.slice(offset,offset+AUDIO_CHUNK_BASE64)};
+              if(event.event_id)chunk.event_id=`${event.event_id}_${offset/AUDIO_CHUNK_BASE64}`;
               if(!enqueue(JSON.stringify(chunk)))return;
             }
           } else if(!enqueue(data))return;

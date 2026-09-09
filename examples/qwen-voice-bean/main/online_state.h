@@ -19,3 +19,6 @@ typedef enum { ONLINE_ACTION_NONE, ONLINE_ACTION_MIC, ONLINE_ACTION_VOLUME,
     ONLINE_ACTION_CANCEL, ONLINE_ACTION_SETUP } online_action_t;
 typedef struct { online_page_t page; unsigned selected; } online_menu_t;
 online_action_t online_menu_key(online_menu_t *menu,online_key_t key);
+
+/* Start once roughly 300 ms is queued, or after a bounded short-answer wait. */
+bool online_playback_prefill_wait(unsigned queued,unsigned elapsed_ms);

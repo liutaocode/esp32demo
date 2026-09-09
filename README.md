@@ -22,6 +22,7 @@ idf.py reconfigure
 
 | 社区 ID | 应用 | 源码 / 构建选择器 |
 | --- | --- | --- |
+| 233 | Qwen 语音豆 · 待审核 | [qwen-voice-bean](examples/qwen-voice-bean/README.zh_CN.md)<br>独立工程：`cd examples/qwen-voice-bean`<br>联网语音对话、Agent 任务、手机配网、下键打断 |
 | 222 | 口袋书架（TTS版） · 待审核 | [bookshelf-tts](examples/bookshelf-tts/README.zh_CN.md)<br>独立工程：`cd examples/bookshelf-tts`<br>离线听书、三本测试书、音量调节 |
 | 221 | 口袋朗读员 · 中文 TTS Demo · 待审核 | [chinese-tts](examples/chinese-tts/README.zh_CN.md)<br>独立工程：`cd examples/chinese-tts`<br>十二组示例、六档语速、自定义文本 API，语音库约 **930 KB** |
 | 220 | 嘴硬小豆 | [mouthy-bean](examples/mouthy-bean/README.zh_CN.md)<br>独立工程：`cd examples/mouthy-bean`<br>竖耳倾听、随机思考、摸摸逗逗、八种表情；灵感来自「小狮日记」 |

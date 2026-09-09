@@ -22,6 +22,7 @@ Each entry lists its source link, build selection and main features. For `FAP_AP
 
 | Community ID | Application | Source / build selector |
 | --- | --- | --- |
+| 233 | Qwen Voice Bean · Pending review | [qwen-voice-bean](examples/qwen-voice-bean/README.md)<br>Standalone: `cd examples/qwen-voice-bean`<br>Network voice chat, Agent tasks, phone setup, button interruption |
 | 222 | Pocket Bookshelf — TTS Edition · Pending review | [bookshelf-tts](examples/bookshelf-tts/README.md)<br>Standalone project: `cd examples/bookshelf-tts`<br>offline narration, three sample books and volume controls |
 | 221 | Pocket Reader · Chinese TTS Demo · Pending review | [chinese-tts](examples/chinese-tts/README.md)<br>Standalone project: `cd examples/chinese-tts`<br>twelve examples, six speeds, custom-text API; approximately **930 KB** voice bank |
 | 220 | Mouthy Bean | [mouthy-bean](examples/mouthy-bean/README.md)<br>Standalone project: `cd examples/mouthy-bean`<br>listening ears, randomized thinking, button interactions and eight expressions; inspired by Xiaoshi Diary |

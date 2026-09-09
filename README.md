@@ -2,7 +2,7 @@
 
 # 应用列表与源码
 
-应用列表统一收录已发布应用和待审核版本，并标注源码入口与审核状态。原有 40 个应用中，31 个使用根目录构建选择器，9 个保留独立工程。新增的书架 TTS 版、朗读员和小豆使用各自目录独立构建。源码是整理后的开发快照，不承诺与社区固件逐字节一致。口袋游戏厅已有发布版本，同时存在新的草稿修订。
+应用列表收录已上架应用，并标注源码入口与构建方式。原有 40 个应用中，31 个使用根目录构建选择器，9 个保留独立工程。新增的书架 TTS 版、朗读员和小豆使用各自目录独立构建。源码是整理后的开发快照，不承诺与社区固件逐字节一致。口袋游戏厅已有发布版本，同时存在新的草稿修订。
 
 ## 构建
 
@@ -22,9 +22,9 @@ idf.py reconfigure
 
 | 社区 ID | 应用 | 源码 / 构建选择器 |
 | --- | --- | --- |
-| 233 | Qwen 语音豆 · 待审核 | [qwen-voice-bean](examples/qwen-voice-bean/README.zh_CN.md)<br>独立工程：`cd examples/qwen-voice-bean`<br>联网语音对话、Agent 任务、手机配网、下键打断 |
-| 222 | 口袋书架（TTS版） · 待审核 | [bookshelf-tts](examples/bookshelf-tts/README.zh_CN.md)<br>独立工程：`cd examples/bookshelf-tts`<br>离线听书、三本测试书、音量调节 |
-| 221 | 口袋朗读员 · 中文 TTS Demo · 待审核 | [chinese-tts](examples/chinese-tts/README.zh_CN.md)<br>独立工程：`cd examples/chinese-tts`<br>十二组示例、六档语速、自定义文本 API，语音库约 **930 KB** |
+| 233 | Qwen 语音豆 · 已上架 | [qwen-voice-bean](examples/qwen-voice-bean/README.zh_CN.md)<br>独立工程：`cd examples/qwen-voice-bean`<br>联网语音对话、Agent 任务、手机配网、下键打断 |
+| 222 | 口袋书架（TTS版） · 已上架 | [bookshelf-tts](examples/bookshelf-tts/README.zh_CN.md)<br>独立工程：`cd examples/bookshelf-tts`<br>离线听书、三本测试书、音量调节 |
+| 221 | 口袋朗读员 · 中文 TTS Demo · 已上架 | [chinese-tts](examples/chinese-tts/README.zh_CN.md)<br>独立工程：`cd examples/chinese-tts`<br>十二组示例、六档语速、自定义文本 API，语音库约 **930 KB** |
 | 220 | 嘴硬小豆 | [mouthy-bean](examples/mouthy-bean/README.zh_CN.md)<br>独立工程：`cd examples/mouthy-bean`<br>竖耳倾听、随机思考、摸摸逗逗、八种表情；灵感来自「小狮日记」 |
 | 213 | 随身书架 | [ebook](main/apps/ebook)<br>根目录构建：`FAP_APP=ebook`<br>纯文本阅读、手机传书、书签与阅读进度 |
 | 204 | 口袋游戏厅 | [pocket_arcade](main/apps/pocket_arcade)<br>根目录构建：`FAP_APP=pocket_arcade`<br>32 款小游戏、玩法提示、成绩与星星收藏 |

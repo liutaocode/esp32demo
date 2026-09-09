@@ -2,7 +2,7 @@
 
 # Applications and source code
 
-One application list includes published applications and submissions awaiting review, with source links and review status. The original 40 applications include 31 root build selectors and 9 standalone projects. The added bookshelf TTS edition, reader and bean applications build from their own directories. These are reviewed development snapshots, not byte-for-byte reproductions of community firmware. Pocket Arcade has a published version and a newer draft revision.
+The application list includes published applications with source links and build instructions. The original 40 applications include 31 root build selectors and 9 standalone projects. The added bookshelf TTS edition, reader and bean applications build from their own directories. These are reviewed development snapshots, not byte-for-byte reproductions of community firmware. Pocket Arcade has a published version and a newer draft revision.
 
 ## Build
 
@@ -22,9 +22,9 @@ Each entry lists its source link, build selection and main features. For `FAP_AP
 
 | Community ID | Application | Source / build selector |
 | --- | --- | --- |
-| 233 | Qwen Voice Bean · Pending review | [qwen-voice-bean](examples/qwen-voice-bean/README.md)<br>Standalone: `cd examples/qwen-voice-bean`<br>Network voice chat, Agent tasks, phone setup, button interruption |
-| 222 | Pocket Bookshelf — TTS Edition · Pending review | [bookshelf-tts](examples/bookshelf-tts/README.md)<br>Standalone project: `cd examples/bookshelf-tts`<br>offline narration, three sample books and volume controls |
-| 221 | Pocket Reader · Chinese TTS Demo · Pending review | [chinese-tts](examples/chinese-tts/README.md)<br>Standalone project: `cd examples/chinese-tts`<br>twelve examples, six speeds, custom-text API; approximately **930 KB** voice bank |
+| 233 | Qwen Voice Bean · Published | [qwen-voice-bean](examples/qwen-voice-bean/README.md)<br>Standalone: `cd examples/qwen-voice-bean`<br>Network voice chat, Agent tasks, phone setup, button interruption |
+| 222 | Pocket Bookshelf — TTS Edition · Published | [bookshelf-tts](examples/bookshelf-tts/README.md)<br>Standalone project: `cd examples/bookshelf-tts`<br>offline narration, three sample books and volume controls |
+| 221 | Pocket Reader · Chinese TTS Demo · Published | [chinese-tts](examples/chinese-tts/README.md)<br>Standalone project: `cd examples/chinese-tts`<br>twelve examples, six speeds, custom-text API; approximately **930 KB** voice bank |
 | 220 | Mouthy Bean | [mouthy-bean](examples/mouthy-bean/README.md)<br>Standalone project: `cd examples/mouthy-bean`<br>listening ears, randomized thinking, button interactions and eight expressions; inspired by Xiaoshi Diary |
 | 213 | Pocket Bookshelf | [ebook](main/apps/ebook)<br>Root build: `FAP_APP=ebook`<br>Plain-text reading, phone uploads, bookmarks and reading progress |
 | 204 | Pocket Arcade | [pocket_arcade](main/apps/pocket_arcade)<br>Root build: `FAP_APP=pocket_arcade`<br>32 mini-games, play instructions, scores and collectible stars |

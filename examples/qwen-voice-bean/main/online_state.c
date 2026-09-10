@@ -75,3 +75,19 @@ online_action_t online_menu_key(online_menu_t *m,online_key_t key) {
 bool online_playback_prefill_wait(unsigned queued,unsigned elapsed_ms) {
     return queued>0 && queued<24 && elapsed_ms<350;
 }
+
+online_time_action_t online_time_step(online_time_wait_t *w, bool has_ip,
+                                     bool needs_time, uint64_t now_ms) {
+    if (!has_ip || !needs_time) { memset(w,0,sizeof(*w)); return ONLINE_TIME_IDLE; }
+    if (!w->active) {
+        w->active=true; w->started_ms=w->retry_ms=now_ms;
+        return ONLINE_TIME_START;
+    }
+    w->timed_out=now_ms-w->started_ms>=10000;
+    if (now_ms-w->retry_ms>=10000) {
+        w->retry_ms=now_ms;
+        w->source_index=(w->source_index+1)%3;
+        return ONLINE_TIME_RETRY;
+    }
+    return ONLINE_TIME_WAIT;
+}

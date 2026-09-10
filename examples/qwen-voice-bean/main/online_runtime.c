@@ -358,7 +358,9 @@ static void network_task(void *arg) {
     /* Voice streaming needs prompt uplink delivery after opening the microphone. */
     if(esp_wifi_set_ps(WIFI_PS_NONE)!=ESP_OK)ESP_LOGW("bean_network","Wi-Fi power-save disable failed");
     memset(wifi.sta.password,0,sizeof(wifi.sta.password));memset(config.password,0,sizeof(config.password));
-    esp_sntp_setoperatingmode(SNTP_OPMODE_POLL);esp_sntp_setservername(0,"pool.ntp.org");esp_sntp_init();
+    /* Start only after DHCP, so offline time does not exhaust SNTP retries. */
+    esp_sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    static const char *const time_sources[]={"ntp.aliyun.com","ntp1.aliyun.com","pool.ntp.org"};
     char headers[240]={0};
     if(config.token[0])snprintf(headers,sizeof(headers),"Authorization: Bearer %s\r\n",config.token);
     esp_websocket_client_config_t ws={.uri=config.url,.headers=config.token[0]?headers:NULL,.buffer_size=2048,.task_stack=6144,
@@ -368,6 +370,7 @@ static void network_task(void *arg) {
     if(!gateway_socket || esp_websocket_register_events(gateway_socket,WEBSOCKET_EVENT_ANY,websocket_event,NULL)!=ESP_OK) {
         state(ONLINE_ERROR,"后端连接初始化失败");vTaskDelete(NULL);return;
     }
+    online_time_wait_t time_wait={0};
     bool started=false,previous_mic=false;int64_t last_connect=0;capture_t c;receipt_t r;
     for(;;) {
         if(atomic_exchange(&setup_pending,false)) {
@@ -376,15 +379,30 @@ static void network_task(void *arg) {
             if(e==ESP_OK)esp_restart();else state(ONLINE_ERROR,"无法进入配置，请重试");
         }
         if(atomic_exchange(&volume_pending,false))atomic_store(&volume,atomic_load(&volume)>=90?0:atomic_load(&volume)==0?55:atomic_load(&volume)==55?75:90);
-        if(!atomic_load(&got_ip)) {
+        bool has_ip=atomic_load(&got_ip);
+        if(!started) {
+            bool was_waiting=time_wait.active;
+            online_time_action_t action=online_time_step(&time_wait,has_ip,
+                !strncmp(config.url,"wss://",6) && time(NULL)<1704067200,
+                (uint64_t)(esp_timer_get_time()/1000));
+            if(was_waiting && !has_ip)esp_sntp_stop();
+            if(action==ONLINE_TIME_START || action==ONLINE_TIME_RETRY) {
+                esp_sntp_stop();
+                esp_sntp_setservername(0,time_sources[time_wait.source_index]);
+                esp_sntp_init();
+                ESP_LOGI("bean_network","time sync %s source=%u",action==ONLINE_TIME_START?"started":"retry",time_wait.source_index);
+            }
+            if(was_waiting && !time_wait.active && has_ip)ESP_LOGI("bean_network","time sync complete");
+        }
+        if(!has_ip) {
             if(esp_timer_get_time()-last_connect>5000000 || !last_connect){esp_wifi_connect();last_connect=esp_timer_get_time();}
             vTaskDelay(pdMS_TO_TICKS(50));continue;
         }
-        if(!started && !strncmp(config.url,"wss://",6) && time(NULL)<1704067200) {
-            state(ONLINE_CONNECTING,"正在同步时间");
+        if(time_wait.active) {
+            state(ONLINE_CONNECTING,time_wait.timed_out?"校时超时，正在重试":"正在同步时间");
             vTaskDelay(pdMS_TO_TICKS(100));continue;
         }
-        if(!started){esp_websocket_client_start(gateway_socket);started=true;}
+        if(!started){state(ONLINE_CONNECTING,"正在连接后端");esp_websocket_client_start(gateway_socket);started=true;}
         if(!atomic_load(&fault) && atomic_load(&connected) && atomic_exchange(&hello_pending,false)) {send_hello();previous_mic=!atomic_load(&mic);}
         if(atomic_exchange(&fault,false)) {
             esp_websocket_client_stop(gateway_socket);atomic_store(&connected,false);vTaskDelay(pdMS_TO_TICKS(1000));

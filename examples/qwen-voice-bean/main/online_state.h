@@ -22,3 +22,9 @@ online_action_t online_menu_key(online_menu_t *menu,online_key_t key);
 
 /* Start once roughly 300 ms is queued, or after a bounded short-answer wait. */
 bool online_playback_prefill_wait(unsigned queued,unsigned elapsed_ms);
+
+/* Monotonic timing: warn and switch time sources every ten seconds. */
+typedef struct { bool active, timed_out; unsigned source_index; uint64_t started_ms, retry_ms; } online_time_wait_t;
+typedef enum { ONLINE_TIME_IDLE, ONLINE_TIME_START, ONLINE_TIME_WAIT, ONLINE_TIME_RETRY } online_time_action_t;
+online_time_action_t online_time_step(online_time_wait_t *wait, bool has_ip,
+                                     bool needs_time, uint64_t now_ms);

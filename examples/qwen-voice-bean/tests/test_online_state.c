@@ -2,7 +2,25 @@
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
+static void test_time_wait(void) {
+    online_time_wait_t w={0};
+    assert(online_time_step(&w,false,true,0)==ONLINE_TIME_IDLE);
+    assert(online_time_step(&w,true,false,0)==ONLINE_TIME_IDLE);
+    assert(online_time_step(&w,true,true,0)==ONLINE_TIME_START && w.source_index==0);
+    assert(online_time_step(&w,true,true,9999)==ONLINE_TIME_WAIT && !w.timed_out);
+    assert(online_time_step(&w,true,true,10000)==ONLINE_TIME_RETRY && w.timed_out && w.source_index==1);
+    assert(online_time_step(&w,true,true,10001)==ONLINE_TIME_WAIT && w.timed_out);
+    assert(online_time_step(&w,true,true,19999)==ONLINE_TIME_WAIT);
+    assert(online_time_step(&w,true,true,20000)==ONLINE_TIME_RETRY && w.source_index==2);
+    assert(online_time_step(&w,true,true,30000)==ONLINE_TIME_RETRY && w.source_index==0);
+    assert(online_time_step(&w,false,true,30001)==ONLINE_TIME_IDLE && !w.active && !w.timed_out);
+    assert(online_time_step(&w,true,true,400000)==ONLINE_TIME_START && !w.timed_out && w.source_index==0);
+    assert(online_time_step(&w,true,false,400001)==ONLINE_TIME_IDLE && !w.active);
+    assert(online_time_step(&w,true,true,UINT64_C(5000000000))==ONLINE_TIME_START);
+    assert(online_time_step(&w,true,true,UINT64_C(5000010000))==ONLINE_TIME_RETRY);
+}
 int main(void) {
+    test_time_wait();
     assert(!online_playback_prefill_wait(0,0));
     assert(online_playback_prefill_wait(1,0));
     assert(online_playback_prefill_wait(23,349));

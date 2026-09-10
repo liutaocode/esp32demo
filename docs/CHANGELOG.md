@@ -4,6 +4,11 @@
 
 # Changelog
 
+## Qwen Voice Bean time synchronization
+
+- Start time synchronization after obtaining a network address, with three fallback NTP sources.
+- Show a clear timeout message after 10 seconds and immediately retry the next time source every 10 seconds while preserving TLS verification.
+
 ## Qwen Voice Bean stability update — 2026-09-10
 
 - Add a home-screen volume indicator and explicit mute state; avoid memory-heavy face clipping.

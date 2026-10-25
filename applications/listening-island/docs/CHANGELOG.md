@@ -6,6 +6,10 @@
 
 ## Unreleased
 
+- Added saved screen-off choices of 1, 3, 5, and 10 minutes in Sound and Timer (default 1 minute), plus 30-minute and Off rest timer options. Upgrade older saves without losing listening records or volume.
+
+- Added screen-off after 10 minutes without a function-key event. Any function key wakes the screen without acting on the page; audio continues. Fixed saved volume levels being reset to 60 at boot.
+
 - Replaced the BSP demo menu with a boot-direct Minecraft guide containing twenty
   illustrated entries. UP/DOWN cycles through the catalog and narrates the new
   entry, OK repeats the current narration, battery status remains visible, and

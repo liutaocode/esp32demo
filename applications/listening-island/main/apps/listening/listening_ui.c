@@ -64,7 +64,9 @@ void li_ui_render(li_state_t *s,int battery,bool audio,int saving) {
   label(body,20,112,195,li_meanings[li_current(s)],false,0x36547A);
   label(body,20,156,195,!audio?"声音未就绪":s->paused?"已暂停":s->waiting?"留点空白，跟读一遍":"正在听英语",false,UI_INK);
   label(body,10,196,220,"上句 / 下句  确定暂停",false,0xFFFFFF);
-  snprintf(b,sizeof(b),"%u 分钟自动休息",s->progress.minutes);label(body,10,219,220,b,false,0xFFFFFF);break;
+  if(s->progress.minutes)snprintf(b,sizeof(b),"%u 分钟自动休息",s->progress.minutes);
+  else snprintf(b,sizeof(b),"已关闭定时休息");
+  label(body,10,219,220,b,false,0xFFFFFF);break;
  case LI_QUIZ:
   snprintf(b,sizeof(b),"听力寻宝  %u / 8",s->pos+1);label(body,10,0,220,b,false,0xFFFFFF);
   panel(27,59,colors[s->topic]);label(body,20,37,195,audio?"听一句，找中文":"声音未就绪",true,UI_INK);
@@ -90,10 +92,13 @@ void li_ui_render(li_state_t *s,int battery,bool audio,int saving) {
   label(body,20,187,195,"按确定回首页",false,UI_INK);break;
  case LI_SETTINGS:
   label(body,10,5,220,"调到舒服的声音",true,0xFFFFFF);
-  snprintf(b,sizeof(b),"音量  %u / 5",s->progress.volume/20);row(61,b,s->setting==0);
-  snprintf(b,sizeof(b),"定时休息  %u 分钟",s->progress.minutes);row(106,b,s->setting==1);
-  label(body,20,158,200,"上下选择  确定调整",false,0xFFFFFF);
-  label(body,20,192,200,"连听结束也会自动停下",false,0xFFFFFF);break;
+  snprintf(b,sizeof(b),"音量  %u / 5",s->progress.volume/20);row(49,b,s->setting==0);
+  if(s->progress.minutes)snprintf(b,sizeof(b),"定时休息  %u 分钟",s->progress.minutes);
+  else snprintf(b,sizeof(b),"定时休息  关闭");
+  row(91,b,s->setting==1);
+  snprintf(b,sizeof(b),"息屏时间  %u 分钟",s->progress.screen_minutes);row(133,b,s->setting==2);
+  label(body,20,181,200,"上下选择  确定调整",false,0xFFFFFF);
+  label(body,20,213,200,"连听结束也会自动停下",false,0xFFFFFF);break;
  }
  if(!audio && s->page!=LI_LISTEN && s->page!=LI_QUIZ) footer="声音不可用，请重启";
  else if(saving==0 || saving==3)footer="记录未保存，请重启";

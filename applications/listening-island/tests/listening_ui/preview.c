@@ -44,7 +44,13 @@ int main(void){
  s.page=LI_QUIZ;s.options[0]=24;s.options[1]=25;check(&s);snap("quiz");
  s.page=LI_FEEDBACK;s.order[0]=24;s.right=false;check(&s);snap("retry");
  s.page=LI_ALBUM;for(unsigned i=0;i<8;i++){s.topic=i;check(&s);}snap("album");
- s.page=LI_SETTINGS;check(&s);snap("settings");
+ s.page=LI_SETTINGS;
+ for(unsigned setting=0;setting<3;setting++)for(unsigned i=0;i<4;i++){
+  static const unsigned idle[]={1,3,5,10},rest[]={5,10,15,30};
+  s.setting=setting;s.progress.screen_minutes=idle[i];s.progress.minutes=rest[i];check(&s);
+ }
+ s.progress.minutes=0;check(&s);snap("settings");
+ s.page=LI_LISTEN;check(&s);s.page=LI_SETTINGS;
  s.page=LI_FINISH;check(&s);snap("finish");
  s.timed_out=true;check(&s);snap("rest");
  s.page=LI_HOME;for(unsigned i=0;i<LI_COUNT;i++){s.progress.heard[i]=1;s.progress.mistakes[i]=1;}check(&s);

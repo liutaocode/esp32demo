@@ -6,4 +6,8 @@ idf_component_register(
  INCLUDE_DIRS "." "apps/listening"
  REQUIRES bsp driver esp_hw_support esp_timer nvs_flash esp_partition)
 target_add_binary_data(${COMPONENT_LIB} "${CMAKE_CURRENT_LIST_DIR}/../assets/music/listening/listening_a.bin" BINARY)
-esptool_py_flash_to_partition(flash "listening" "${CMAKE_CURRENT_LIST_DIR}/../assets/music/listening/listening_b.bin")
+# Keep flash arguments inside the build tree. External relative paths can break
+# when macOS resolves the /tmp symlink during image merging.
+configure_file("${CMAKE_CURRENT_LIST_DIR}/../assets/music/listening/listening_b.bin"
+ "${CMAKE_CURRENT_BINARY_DIR}/listening_b.bin" COPYONLY)
+esptool_py_flash_to_partition(flash "listening" "${CMAKE_CURRENT_BINARY_DIR}/listening_b.bin")

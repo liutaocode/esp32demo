@@ -1,5 +1,6 @@
 #include "listening_state.h"
 #include <string.h>
+static bool screen_minutes_valid(unsigned minutes) {return minutes==1 || minutes==3 || minutes==5 || minutes==10;}
 static uint32_t random_next(li_state_t *s) { uint32_t x=s->rng; x^=x<<13; x^=x>>17; x^=x<<5; return s->rng=x; }
 static void voice(li_state_t *s,int id) { s->voice=id; ++s->serial; s->waiting=false; }
 uint16_t li_current(const li_state_t *s) { return s->count && s->pos<s->count ? s->order[s->pos] : 0; }
@@ -7,16 +8,20 @@ unsigned li_mistakes(const li_state_t *s) { unsigned n=0; for(unsigned i=0;i<LI_
 unsigned li_heard(const li_state_t *s) { unsigned n=0; for(unsigned i=0;i<LI_COUNT;i++) n+=s->progress.heard[i]>0; return n; }
 void li_init(li_state_t *s,const li_progress_t *p,uint32_t seed) {
  memset(s,0,sizeof(*s)); s->rng=seed?seed:20260906; s->voice=-1;
- s->progress=(li_progress_t){.version=LI_SAVE_VERSION,.volume=60,.minutes=10};
- if(p && (p->version==LI_SAVE_VERSION || p->version==1)) {
+ s->progress=(li_progress_t){.version=LI_SAVE_VERSION,.volume=60,.minutes=10,.screen_minutes=1};
+ if(p && (p->version==LI_SAVE_VERSION || p->version==2 || p->version==1)) {
   s->progress=*p;
   if(p->version==1) {
    unsigned level=(p->volume>=15 && p->volume<=75 && p->volume%15==0)?p->volume/15:3;
-   s->progress.volume=level*20;s->progress.version=LI_SAVE_VERSION;s->dirty=true;
+   s->progress.volume=level*20;
+  }
+  if(p->version<LI_SAVE_VERSION) {
+   s->progress.screen_minutes=1;s->progress.version=LI_SAVE_VERSION;s->dirty=true;
   }
  }
- if(s->progress.volume<15 || s->progress.volume>75 || s->progress.volume%15) s->progress.volume=60;
- if(s->progress.minutes!=5 && s->progress.minutes!=10 && s->progress.minutes!=15) s->progress.minutes=10;
+ if(!screen_minutes_valid(s->progress.screen_minutes)) s->progress.screen_minutes=1;
+ if(s->progress.volume<20 || s->progress.volume>100 || s->progress.volume%20) s->progress.volume=60;
+ if(s->progress.minutes!=0 && s->progress.minutes!=5 && s->progress.minutes!=10 && s->progress.minutes!=15 && s->progress.minutes!=30) s->progress.minutes=10;
  for(unsigned i=0;i<LI_COUNT;i++) { s->progress.mistakes[i]=s->progress.mistakes[i]?1:0; s->progress.heard[i]=s->progress.heard[i]?1:0; }
  for(unsigned i=0;i<LI_TOPICS;i++) if(s->progress.stamps[i]>3) s->progress.stamps[i]=0;
 }
@@ -88,9 +93,10 @@ void li_key(li_state_t *s,unsigned key,bool held,uint32_t now) {
   if(key==2) s->page=LI_HOME;else s->topic=(s->topic+(key==0?7:1))%LI_TOPICS;
   break;
  case LI_SETTINGS:
-  if(key!=2) s->setting=key==0?0:1;
+  if(key!=2) s->setting=(s->setting+(key==0?2:1))%3;
   else {if(s->setting==0)s->progress.volume=s->progress.volume==100?20:s->progress.volume+20;
-   else s->progress.minutes=s->progress.minutes==15?5:s->progress.minutes+5;
+   else if(s->setting==1) s->progress.minutes=s->progress.minutes==30?0:s->progress.minutes==15?30:s->progress.minutes+5;
+   else s->progress.screen_minutes=s->progress.screen_minutes==1?3:s->progress.screen_minutes==3?5:s->progress.screen_minutes==5?10:1;
    s->dirty=true;}
   break;
  }
@@ -98,7 +104,7 @@ void li_key(li_state_t *s,unsigned key,bool held,uint32_t now) {
 void li_tick(li_state_t *s,uint32_t now) {
  s->now=now;
  if(s->page==LI_LISTEN) {
-  if(now-s->started >= (uint32_t)s->progress.minutes*60000u) {s->timed_out=true;finish(s);return;}
+  if(s->progress.minutes && now-s->started >= (uint32_t)s->progress.minutes*60000u) {s->timed_out=true;finish(s);return;}
   if(s->waiting && !s->paused && now-s->wait_since>=2500u) {
    if(++s->pos==s->count) finish(s);else voice(s,li_current(s));
   }
@@ -109,4 +115,23 @@ void li_audio_done(li_state_t *s,uint32_t serial,uint32_t now) {
  if(s->page!=LI_LISTEN && s->page!=LI_QUIZ && s->page!=LI_FEEDBACK) return;
  unsigned id=li_current(s);if(!s->progress.heard[id]) {s->progress.heard[id]=1;s->dirty=true;}
  if(s->page==LI_LISTEN && !s->paused) {s->waiting=true;s->wait_since=now;}
+}
+
+void li_screen_init(li_screen_t *screen,uint32_t now) {
+ *screen=(li_screen_t){.last_key=now,.idle_ms=LI_SCREEN_IDLE_MS};
+}
+void li_screen_set_minutes(li_screen_t *screen,unsigned minutes) {
+ screen->idle_ms=(screen_minutes_valid(minutes)?minutes:1)*60000u;
+}
+void li_screen_tick(li_screen_t *screen,uint32_t now) {
+ if(now-screen->last_key>=screen->idle_ms) screen->off=true;
+}
+bool li_screen_key(li_screen_t *screen,unsigned key,bool press,uint32_t now) {
+ if(key>=3) return false;
+ li_screen_tick(screen,now);
+ bool waking=screen->off;
+ screen->off=false;screen->last_key=now;
+ if(press) screen->wake_only[key]=waking;
+ else if(waking) screen->wake_only[key]=true;
+ return !press && !screen->wake_only[key];
 }
